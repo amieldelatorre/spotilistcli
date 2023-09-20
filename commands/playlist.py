@@ -60,11 +60,11 @@ def playlist_command(original_args: List[str], sptfy: Sptfy):
         with open(filename, 'w') as file:
             logger.info(f"Writing to file '{filename}' in the local directory")
             file.write(json.dumps(playlists, default=get_obj_dict))
+            logger.info(f"Number of playlists processed: {len(playlists)}")
 
-        end = time.time()
-        time_taken = end - start
-        logger.info(f"Number of playlists processed: {len(playlists)}")
-        logger.info(f"Time taken: {round(time_taken, 2)} seconds")
+    end = time.time()
+    time_taken = end - start
+    logger.info(f"Time taken: {round(time_taken, 2)} seconds")
 
 
 def get_playlist_with_songs(playlist: PlaylistNoSongs, sptfy: Sptfy) -> PlaylistWithSongs:
