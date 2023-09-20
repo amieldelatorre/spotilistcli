@@ -1,1 +1,1 @@
-# Spotilistcli
+# SpotilistCLI
