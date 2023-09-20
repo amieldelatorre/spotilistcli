@@ -162,5 +162,6 @@ func GetSpotifyClient() *spotify.Client {
 
 	auth_client := spotifyauth.New().Client(ctx, &auth_token)
 	spotify_client := spotify.New(auth_client)
+
 	return spotify_client
 }

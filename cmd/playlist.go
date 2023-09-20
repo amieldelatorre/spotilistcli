@@ -144,6 +144,7 @@ func GetAllPlayLists() []spotify.SimplePlaylist {
 	spotify_client := GetSpotifyClient()
 
 	playlists, err := spotify_client.CurrentUsersPlaylists(ctx)
+	fmt.Println(err)
 	if err != nil {
 		log.Fatal(err)
 	}
