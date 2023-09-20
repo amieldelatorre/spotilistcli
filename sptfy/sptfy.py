@@ -3,6 +3,7 @@ import json
 from spotipy.oauth2 import SpotifyOAuth
 from dataclasses import dataclass
 from typing import List, Dict
+from log import logger
 
 
 @dataclass
@@ -71,6 +72,7 @@ def get_spotify_url(song: Dict) -> str:
 
 class Sptfy:
     def __init__(self, spotify_client_id, spotify_client_secret, spotify_redirect_uri):
+        logger.info(f"Authenticating with spotify")
         auth_manager = SpotifyOAuth(
             open_browser=True,
             client_id=spotify_client_id,
@@ -84,6 +86,7 @@ class Sptfy:
         )
 
     def get_all_playlists_no_songs(self, limit=50, offset=0) -> List[PlaylistNoSongs]:
+        logger.info(f"Retrieving all playlists")
         playlists = []
 
         while True:
@@ -106,6 +109,7 @@ class Sptfy:
         return playlists
 
     def get_playlist_content(self, playlist_id: str, limit=100, offset=0):
+        logger.debug(f"Retrieving contents for playlist '{playlist_id}'")
         songs = []
         while True:
             query = self.spotify.playlist_items(

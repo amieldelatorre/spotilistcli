@@ -7,4 +7,3 @@ def get_usage():
 
 def get_obj_dict(obj):
     return obj.__dict__
-

@@ -2,7 +2,6 @@ import os
 import sys
 from sptfy import Sptfy
 from dotenv import load_dotenv
-from argparse import ArgumentParser
 from commands import playlist
 from helpers import get_usage
 
