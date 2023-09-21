@@ -78,7 +78,7 @@ class Sptfy:
             client_id=spotify_client_id,
             client_secret=spotify_client_secret,
             redirect_uri=spotify_redirect_uri,
-            scope="playlist-read-private,playlist-read-collaborative"
+            scope="playlist-read-private,playlist-read-collaborative,user-library-read"
         )
 
         self.spotify = spotipy.Spotify(
@@ -137,4 +137,43 @@ class Sptfy:
             else:
                 break
         return songs
+
+    def get_saved_tracks_as_playlist(self, limit=20, offset=0) -> PlaylistWithSongs:
+        logger.debug(f"Retrieving saved tracks for user")
+
+        songs = []
+        while True:
+            query = self.spotify.current_user_saved_tracks(
+                limit=limit,
+                offset=offset,
+            )
+
+            for item in query["items"]:
+                if item is None or item["track"] is None:
+                    continue
+
+                artists = get_artists(item)
+                spotify_url = get_spotify_url(item)
+                song = Song(
+                    name=item["track"]["name"],
+                    artists=artists,
+                    spotify_url=spotify_url
+                )
+                songs.append(song)
+
+            if query['next'] is not None:
+                offset += limit
+            else:
+                break
+
+        playlist = PlaylistWithSongs(
+            PlaylistNoSongs(
+                id="liked_songs",
+                name="Liked Songs",
+                total=len(songs),
+                external_url="None"
+            ),
+            songs=songs
+        )
+        return playlist
 

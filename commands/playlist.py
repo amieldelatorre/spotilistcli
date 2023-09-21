@@ -57,10 +57,13 @@ def playlist_command(original_args: List[str], sptfy: Sptfy):
         with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
             playlists = list(executor.map(get_playlist_with_songs, playlists_no_songs, repeat(sptfy)))
 
+        liked_songs = sptfy.get_saved_tracks_as_playlist()
+        playlists.append(liked_songs)
+
         with open(filename, 'w') as file:
             logger.info(f"Writing to file '{filename}' in the local directory")
             file.write(json.dumps(playlists, default=get_obj_dict))
-            logger.info(f"Number of playlists processed: {len(playlists)}")
+            logger.info(f"Number of playlists processed: {len(playlists)} + 1 for liked songs")
 
     end = time.time()
     time_taken = end - start
