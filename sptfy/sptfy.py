@@ -177,3 +177,6 @@ class Sptfy:
         )
         return playlist
 
+    def get_user_id(self):
+        query = self.spotify.me()
+        return query["id"]

@@ -51,7 +51,8 @@ def playlist_command(original_args: List[str], sptfy: Sptfy):
     if subcommand == "list":
         print(*playlists_no_songs, sep="\n")
     elif subcommand == "download":
-        filename = f"playlists-{date.strftime('%d_%m_%YT%H_%M_%S')}.json"
+        user_id = sptfy.get_user_id()
+        filename = f"playlists-{user_id}-{date.strftime('%d_%m_%YT%H_%M_%S')}.json"
         print(f"The filename will be {filename}")
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
@@ -63,7 +64,7 @@ def playlist_command(original_args: List[str], sptfy: Sptfy):
         with open(filename, 'w') as file:
             logger.info(f"Writing to file '{filename}' in the local directory")
             file.write(json.dumps(playlists, default=get_obj_dict))
-            logger.info(f"Number of playlists processed: {len(playlists)} + 1 for liked songs")
+            logger.info(f"Number of playlists processed: {len(playlists)} (There is a +1 for liked songs)")
 
     end = time.time()
     time_taken = end - start
