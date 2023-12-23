@@ -56,7 +56,7 @@ class PlaylistWithSongs(PlaylistNoSongs):
 def get_artists(song: Dict) -> List[str]:
     artists = []
 
-    if song["track"]["artists"] is None:
+    if "artists" not in song["track"] or song["track"]["artists"] is None:
         return artists
     artists = [artist["name"] for artist in song["track"]["artists"]]
     return artists
