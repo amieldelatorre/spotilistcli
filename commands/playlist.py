@@ -15,18 +15,18 @@ PLAYLIST_COMMAND_NAME = "playlist"
 PLAYLIST_COMMAND_SUBCOMMANDS = ["list", "download"]
 
 
-def get_playlist_parser() -> ArgumentParser:
+def get_playlist_list_parser() -> ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog=PLAYLIST_COMMAND_NAME,
+        prog=f"{PLAYLIST_COMMAND_NAME} list",
         description="Show/Download playlist data from Spotify"
     )
 
     parser.add_argument(
-        "--id",
-        action="store",
-        help="Specify a playlist id and shows it's items. If a playlist id is not specified it will grab all playlists "
-             "names",
-        required=False
+        "--show-id",
+        action="store_true",
+        help="If the playlist Ids should be shown when listing",
+        required=False,
+        default=False
     )
 
     return parser
@@ -49,7 +49,7 @@ def playlist_command(original_args: List[str], sptfy: Sptfy):
     logger.info(f'Number of playlists found: {len(playlists_no_songs)}')
 
     if subcommand == "list":
-        print(*playlists_no_songs, sep="\n")
+        list_playlists(original_args[1:], playlists_no_songs)
     elif subcommand == "download":
         user_id = sptfy.get_user_id()
         filename = f"playlists-{user_id}-{date.strftime('%d_%m_%YT%H_%M_%S')}.json"
@@ -69,6 +69,28 @@ def playlist_command(original_args: List[str], sptfy: Sptfy):
     end = time.time()
     time_taken = end - start
     logger.info(f"Time taken: {round(time_taken, 2)} seconds")
+
+
+def get_longest_title_length(playlists_no_songs: List[PlaylistNoSongs]) -> int:
+    curr_longest_len = 0
+    for playlist in playlists_no_songs:
+        if len(playlist.name) > curr_longest_len:
+            curr_longest_len = len(playlist.name)
+
+    return curr_longest_len
+
+
+def list_playlists(args: List[str], playlists_no_songs: List[PlaylistNoSongs]) -> None:
+    parser = get_playlist_list_parser()
+    list_args = parser.parse_args(args)
+
+    longest_length = get_longest_title_length(playlists_no_songs)
+
+    for playlist in playlists_no_songs:
+        print(f"{playlist.name:>{longest_length}}\t", end="")
+        if list_args.show_id:
+            print(f"{playlist.id}", end="")
+        print()
 
 
 def get_playlist_with_songs(playlist: PlaylistNoSongs, sptfy: Sptfy) -> PlaylistWithSongs:
