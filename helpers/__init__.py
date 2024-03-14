@@ -1,8 +1,9 @@
 import os
 from dotenv import load_dotenv
+from typing import Dict
 
 
-def get_obj_dict(obj):
+def get_obj_dict(obj) -> Dict:
     return obj.__dict__
 
 

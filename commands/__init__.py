@@ -7,6 +7,6 @@ top_level_command_args = {
 }
 
 
-def get_usage():
+def get_usage() -> str:
     command_names = list(top_level_command_args.keys())
     return f"usage: spotiList {{help,{','.join(command_names)}}}"

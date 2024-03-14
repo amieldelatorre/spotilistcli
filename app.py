@@ -4,7 +4,7 @@ from commands import get_usage, top_level_command_args
 from helpers import get_required_environment_variables
 
 
-def main():
+def main() -> None:
     if len(sys.argv) < 2:  # 2 because the file path is the first argument
         print(get_usage())
         exit(1)

@@ -4,14 +4,14 @@ import json
 import time
 from datetime import datetime
 from argparse import ArgumentParser
-from typing import List
+from typing import List, Callable, Optional
 from sptfy import Sptfy, PlaylistNoSongs, PlaylistWithSongs, Song
 from itertools import repeat
 from helpers import get_obj_dict
 from log import logger
 
 
-def playlist_command(original_args: List[str], sptfy: Sptfy):
+def playlist_command(original_args: List[str], sptfy: Sptfy) -> None:
     if len(original_args) < 1:
         print(get_playlist_command_usage())
         exit(1)
@@ -22,7 +22,7 @@ def playlist_command(original_args: List[str], sptfy: Sptfy):
         print(get_playlist_command_usage())
         exit(0)
 
-    subcommand_function = PLAYLIST_COMMAND_SUBCOMMANDS.get(subcommand, None)
+    subcommand_function: Optional[Callable] = PLAYLIST_COMMAND_SUBCOMMANDS.get(subcommand, None)
     if subcommand_function is None:
         print(f"Unknown subcommand '{subcommand}', {get_playlist_command_usage()}")
         exit(1)
@@ -159,12 +159,13 @@ def list_playlists(args: List[str], sptfy: Sptfy) -> None:
     list_args = parser.parse_args(args)
 
     playlists_no_songs = sptfy.get_all_playlists_no_songs()
-    longest_length = get_longest_string([playlist.name for playlist in playlists_no_songs])
+    longest_playlist_name = get_longest_string([playlist.name for playlist in playlists_no_songs])
+    longest_playlist_id = get_longest_string([playlist.id for playlist in playlists_no_songs])
 
     for playlist in playlists_no_songs:
-        print(f"{playlist.name:>{longest_length}}", end="")
+        print(f"{playlist.name:<{longest_playlist_name}}", end="")
         if list_args.show_id:
-            print(f"\t{playlist.id}", end="")
+            print(f"\t{playlist.id:<{longest_playlist_id}}", end="")
         print()
 
 
@@ -203,7 +204,7 @@ def get_playlist_with_songs(playlist: PlaylistNoSongs, sptfy: Sptfy) -> Playlist
     return playlist_with_songs
 
 
-def get_playlist_command_usage():
+def get_playlist_command_usage() -> str:
     command_names = list(PLAYLIST_COMMAND_SUBCOMMANDS.keys())
     return f"usage: spotiList {PLAYLIST_COMMAND_NAME} {{help,{','.join(command_names)}}}"
 

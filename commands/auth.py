@@ -1,4 +1,3 @@
-from log import logger
 from typing import List
 from sptfy import Sptfy
 

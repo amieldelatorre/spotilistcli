@@ -47,7 +47,7 @@ class PlaylistWithSongs(PlaylistNoSongs):
         self.external_url = playlist.external_url
         self.songs = songs
 
-    def to_json(self):
+    def to_json(self) -> str:
         return json.dumps(
             self,
             default=lambda o: o.__dict__,
@@ -113,7 +113,7 @@ class Sptfy:
                 break
         return playlists
 
-    def get_playlist_content(self, playlist_id: str, limit=100, offset=0):
+    def get_playlist_content(self, playlist_id: str, limit=100, offset=0) -> List[Song]:
         logger.debug(f"Retrieving contents for playlist '{playlist_id}'")
         songs = []
         while True:
@@ -182,13 +182,13 @@ class Sptfy:
         )
         return playlist
 
-    def get_user_id(self):
+    def get_user_id(self) -> str:
         query = self.spotify.me()
         return query["id"]
 
     def playlist_exists(self, playlist_id: str) -> bool:
         try:
-            query = self.spotify.playlist(playlist_id=playlist_id)
+            self.spotify.playlist(playlist_id=playlist_id)
             return True
         except SpotifyException as e:
             if e.http_status == 400:
