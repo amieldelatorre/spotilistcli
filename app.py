@@ -2,8 +2,7 @@ import os
 import sys
 from sptfy import Sptfy
 from dotenv import load_dotenv
-from commands import playlist, auth
-from helpers import get_usage
+from commands import get_usage, top_level_command_args
 
 
 def main():
@@ -24,22 +23,20 @@ def main():
 
     command = sys.argv[1]
     following_args = sys.argv[2:]
-    match command:
-        case auth.AUTH_COMMAND_NAME:
-            auth.auth_command(
-                original_args=following_args,
-                sptfy=sptfy
-            )
-        case playlist.PLAYLIST_COMMAND_NAME:
-            playlist.playlist_command(
-                original_args=following_args,
-                sptfy=sptfy
-            )
-        case 'help':
-            print(get_usage())
-        case _:
-            print(f"Unknown command '{command}', {get_usage()}")
-            exit(1)
+
+    if command == "help":
+        print(get_usage())
+        exit(0)
+
+    command_function = top_level_command_args.get(command, None)
+    if command_function is None:
+        print(f"Unknown command '{command}', {get_usage()}")
+        exit(1)
+
+    command_function(
+        original_args=following_args,
+        sptfy=sptfy
+    )
 
 
 if __name__ == "__main__":
