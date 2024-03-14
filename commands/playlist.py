@@ -45,7 +45,7 @@ def get_longest_string(strings: List[str]) -> int:
 def get_filename(sptfy: Sptfy) -> str:
     date = datetime.now()
     user_id = sptfy.get_user_id()
-    filename = f"playlists-{user_id}-{date.strftime('%d_%m_%YT%H_%M_%S')}.json"
+    filename = f"playlists-{user_id}-{date.strftime('%Y_%m_%dT%H_%M_%S')}.json"
     return filename
 
 
@@ -71,11 +71,22 @@ def download_playlists(args: List[str], sptfy: Sptfy) -> None:
     playlists_no_songs = sptfy.get_all_playlists_no_songs()
     logger.info(f'Number of playlists found: {len(playlists_no_songs)}')
 
+    count = 0
+    num_playlists = len(playlists_no_songs) + 1  # There is a +1 for liked songs
+    playlists = []
+
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
-        playlists = list(executor.map(get_playlist_with_songs, playlists_no_songs, repeat(sptfy)))
+        tasks = executor.map(get_playlist_with_songs, playlists_no_songs, repeat(sptfy))
+        for task in tasks:
+            playlists.append(task)
+            count += 1
+            if download_args.show_progress:
+                print(f"{count}/{num_playlists} completed")
 
     liked_songs = sptfy.get_saved_tracks_as_playlist()
     playlists.append(liked_songs)
+    count += 1
+    print(f"{count}/{num_playlists} completed")
 
     with open(filename, 'w') as file:
         logger.info(f"Writing to file '{filename}' in the local directory")
@@ -117,6 +128,14 @@ def get_playlist_download_parser() -> ArgumentParser:
         help="The filename desired",
         required=False,
         default=None
+    )
+
+    parser.add_argument(
+        "--show-progress",
+        action="store_true",
+        help="Show how many have been completed out of the total amount",
+        required=False,
+        default=False
     )
 
     return parser
