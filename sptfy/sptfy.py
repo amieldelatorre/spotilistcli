@@ -85,6 +85,9 @@ class Sptfy:
             auth_manager=auth_manager
         )
 
+    def auth(self) -> None:
+        self.spotify.current_user()
+
     def get_all_playlists_no_songs(self, limit=50, offset=0) -> List[PlaylistNoSongs]:
         logger.info(f"Retrieving all playlists")
         playlists = []

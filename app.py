@@ -2,7 +2,7 @@ import os
 import sys
 from sptfy import Sptfy
 from dotenv import load_dotenv
-from commands import playlist
+from commands import playlist, auth
 from helpers import get_usage
 
 
@@ -25,6 +25,11 @@ def main():
     command = sys.argv[1]
     following_args = sys.argv[2:]
     match command:
+        case auth.AUTH_COMMAND_NAME:
+            auth.auth_command(
+                original_args=following_args,
+                sptfy=sptfy
+            )
         case playlist.PLAYLIST_COMMAND_NAME:
             playlist.playlist_command(
                 original_args=following_args,
