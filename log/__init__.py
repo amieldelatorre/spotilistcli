@@ -7,4 +7,4 @@ log_format = logging.Formatter(fmt="%(name)s:%(levelname)s:%(message)s")
 handler.setFormatter(log_format)
 logger.addHandler(handler)
 
-logger.setLevel(logging.INFO)
+logger.setLevel(logging.WARNING)
