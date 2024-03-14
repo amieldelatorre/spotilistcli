@@ -1,0 +1,22 @@
+name: New Tag Created
+
+on:
+  push:
+    tags:
+      - "**"
+
+jobs:
+  create-realease:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Create release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ github.ref_name }}
+        run: gh release create "$TAG" --title="$TAG" --notes-file ./CHANGELOG.md
