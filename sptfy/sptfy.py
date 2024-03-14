@@ -1,5 +1,7 @@
 import spotipy
 import json
+
+from spotipy import SpotifyException
 from spotipy.oauth2 import SpotifyOAuth
 from dataclasses import dataclass
 from typing import List, Dict
@@ -183,3 +185,14 @@ class Sptfy:
     def get_user_id(self):
         query = self.spotify.me()
         return query["id"]
+
+    def playlist_exists(self, playlist_id: str) -> bool:
+        try:
+            query = self.spotify.playlist(playlist_id=playlist_id)
+            return True
+        except SpotifyException as e:
+            if e.http_status == 400:
+                return False
+        except:
+            print(f"ERROR: Something went wrong!")
+            exit(1)

@@ -33,11 +33,11 @@ def playlist_command(original_args: List[str], sptfy: Sptfy):
     )
 
 
-def get_longest_title_length(playlists_no_songs: List[PlaylistNoSongs]) -> int:
+def get_longest_string(strings: List[str]) -> int:
     curr_longest_len = 0
-    for playlist in playlists_no_songs:
-        if len(playlist.name) > curr_longest_len:
-            curr_longest_len = len(playlist.name)
+    for string in strings:
+        if len(string) > curr_longest_len:
+            curr_longest_len = len(string)
 
     return curr_longest_len
 
@@ -67,7 +67,6 @@ def download_playlists(args: List[str], sptfy: Sptfy) -> None:
         filename = download_args.filename
 
     print(f"The filename will be {filename}")
-
 
     playlists_no_songs = sptfy.get_all_playlists_no_songs()
     logger.info(f'Number of playlists found: {len(playlists_no_songs)}')
@@ -123,17 +122,75 @@ def get_playlist_download_parser() -> ArgumentParser:
     return parser
 
 
+def get_playlist_show_parser() -> ArgumentParser:
+    parser = argparse.ArgumentParser(
+        prog=f"{PLAYLIST_COMMAND_NAME} {PLAYLIST_DOWNLOAD_SUBCOMMAND}",
+        description="Show all the songs from a playlist in Spotify"
+    )
+
+    parser.add_argument(
+        "--playlist_id",
+        action="store",
+        help="The Id of the playlist to show",
+        required=True
+    )
+
+    parser.add_argument(
+        "--show-url",
+        action="store_true",
+        help="If the song urls should be shown when listing",
+        required=False,
+        default=False
+    )
+
+    parser.add_argument(
+        "--show-artists",
+        action="store_true",
+        help="If the artists should be shown when listing",
+        required=False,
+        default=False
+    )
+
+    return parser
+
+
 def list_playlists(args: List[str], sptfy: Sptfy) -> None:
     parser = get_playlist_list_parser()
     list_args = parser.parse_args(args)
 
     playlists_no_songs = sptfy.get_all_playlists_no_songs()
-    longest_length = get_longest_title_length(playlists_no_songs)
+    longest_length = get_longest_string([playlist.name for playlist in playlists_no_songs])
 
     for playlist in playlists_no_songs:
-        print(f"{playlist.name:>{longest_length}}\t", end="")
+        print(f"{playlist.name:>{longest_length}}", end="")
         if list_args.show_id:
-            print(f"{playlist.id}", end="")
+            print(f"\t{playlist.id}", end="")
+        print()
+
+
+def show_playlist(args: List[str], sptfy: Sptfy) -> None:
+    parser = get_playlist_show_parser()
+    show_args = parser.parse_args(args)
+
+    if show_args.playlist_id is None or show_args.playlist_id.strip() == "":
+        print("ERROR: Invalid playlist id, cannot be None or empty!")
+
+    playlist_id = show_args.playlist_id.strip()
+    if not sptfy.playlist_exists(playlist_id):
+        print(f"ERROR: Playlist Id could not be found!")
+        exit(1)
+
+    songs = sptfy.get_playlist_content(playlist_id)
+    longest_song_name = get_longest_string([song.name for song in songs])
+    longest_artists = get_longest_string([','.join(song.artists) for song in songs])
+    longest_url = get_longest_string([song.spotify_url for song in songs])
+    for song in songs:
+        print(f"{song.name:<{longest_song_name}}", end="")
+        if show_args.show_artists:
+            print(f"\t{','.join(song.artists):<{longest_artists}}", end="")
+        if show_args.show_url:
+            print(f"\t{song.spotify_url:<{longest_url}}", end="")
+
         print()
 
 
@@ -154,7 +211,9 @@ def get_playlist_command_usage():
 PLAYLIST_COMMAND_NAME = "playlist"
 PLAYLIST_LIST_SUBCOMMAND = "list"
 PLAYLIST_DOWNLOAD_SUBCOMMAND = "download"
+PLAYLIST_SHOW_SUBCOMMAND = "show"
 PLAYLIST_COMMAND_SUBCOMMANDS = {
     PLAYLIST_LIST_SUBCOMMAND: list_playlists,
     PLAYLIST_DOWNLOAD_SUBCOMMAND: download_playlists,
+    PLAYLIST_SHOW_SUBCOMMAND: show_playlist,
 }
