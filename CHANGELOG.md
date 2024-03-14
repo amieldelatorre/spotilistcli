@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.0.1] - 2024-03-14
+## [0.0.2] - 2024-03-14
 
 ### Added
 - New command to list songs in a playlist
@@ -17,4 +17,4 @@ N/A
 N/A
 
 
-[0.0.1]: https://github.com/amieldelatorre/spotilistcli/compare/0.0.1...0.0.2
+[0.0.2]: https://github.com/amieldelatorre/spotilistcli/compare/0.0.1...0.0.2
