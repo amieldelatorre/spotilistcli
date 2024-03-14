@@ -27,7 +27,7 @@ def get_required_environment_variables() -> (str, str, str):
         missing_environment_variables.append(spotify_redirect_uri_env_variable_str)
 
     if len(missing_environment_variables) > 0:
-        print(f"The following environment variable(s) are missing:")
+        print(f"ERROR: The following environment variable(s) are missing:")
         for env_var in missing_environment_variables:
             print(f"\t- {env_var}")
         exit(1)
