@@ -1,8 +1,7 @@
-import os
 import sys
 from sptfy import Sptfy
-from dotenv import load_dotenv
 from commands import get_usage, top_level_command_args
+from helpers import get_required_environment_variables
 
 
 def main():
@@ -10,15 +9,12 @@ def main():
         print(get_usage())
         exit(1)
 
-    load_dotenv()
-    SPOTIFY_CLIENT_ID = os.getenv('SPOTIFY_CLIENT_ID')
-    SPOTIFY_CLIENT_SECRET = os.getenv('SPOTIFY_CLIENT_SECRET')
-    SPOTIFY_REDIRECT_URI = os.getenv('SPOTIFY_REDIRECT_URI')
+    spotify_client_id, spotify_client_secret, spotify_redirect_url = get_required_environment_variables()
 
     sptfy = Sptfy(
-        spotify_client_id=SPOTIFY_CLIENT_ID,
-        spotify_client_secret=SPOTIFY_CLIENT_SECRET,
-        spotify_redirect_uri=SPOTIFY_REDIRECT_URI,
+        spotify_client_id=spotify_client_id,
+        spotify_client_secret=spotify_client_secret,
+        spotify_redirect_uri=spotify_redirect_url,
     )
 
     command = sys.argv[1]
