@@ -1,19 +1,21 @@
 # Changelog
 
-## [0.0.4] - 2024-03-15
+## [0.0.5] - 2024-03-15
 
 ### Added
-- Flag for the download command to show progress
+- Added a command to show user top artists or tracks
+- Added user-top-read scope
+- Added new methods for getting the top artists or tracks
+- Dataclass for Artists
 
 ### Fixed
 N/A
 
 ### Changed
-- Filename template for date format is now YYYY-MM-DD
-- Will print how many was completed at the end of download 
+- Moved the get longest string function to the helper folder
 
 ### Removed
 N/A
 
 
-[0.0.4]: https://github.com/amieldelatorre/spotilistcli/compare/0.0.3...0.0.4
+[0.0.5]: https://github.com/amieldelatorre/spotilistcli/compare/0.0.4...0.0.5

@@ -1,9 +1,11 @@
 from .playlist import *
 from .auth import *
+from .user_top import *
 
 top_level_command_args = {
     AUTH_COMMAND_NAME: auth_command,
-    PLAYLIST_COMMAND_NAME: playlist_command
+    PLAYLIST_COMMAND_NAME: playlist_command,
+    USER_TOP_COMMAND_NAME: user_top_command
 }
 
 

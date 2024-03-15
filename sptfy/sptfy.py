@@ -9,12 +9,24 @@ from log import logger
 
 
 @dataclass
+class Artist:
+    name: str
+
+    def to_json(self) -> str:
+        return json.dumps(
+            self,
+            default=lambda o: o.__dict__,
+            sort_keys=True
+        )
+
+
+@dataclass
 class Song:
     name: str
     artists: List[str]
     spotify_url: str
 
-    def to_json(self):
+    def to_json(self) -> str:
         return json.dumps(
             self,
             default=lambda o: o.__dict__,
@@ -32,7 +44,7 @@ class PlaylistNoSongs:
     total: int
     external_url: str
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"{self.name}"
 
 
@@ -80,7 +92,7 @@ class Sptfy:
             client_id=spotify_client_id,
             client_secret=spotify_client_secret,
             redirect_uri=spotify_redirect_uri,
-            scope="playlist-read-private,playlist-read-collaborative,user-library-read"
+            scope="playlist-read-private,playlist-read-collaborative,user-library-read,user-top-read"
         )
 
         self.spotify = spotipy.Spotify(
@@ -196,3 +208,28 @@ class Sptfy:
         except:
             print(f"ERROR: Something went wrong!")
             exit(1)
+
+    def get_user_top_artists(self, limit=10, offset=0, time_range="short_term") -> List[Artist]:
+        query = self.spotify.current_user_top_artists(limit=limit, offset=offset, time_range=time_range)
+        artists: List[Artist] = [Artist(name=artist["name"]) for artist in query["items"]]
+        return artists
+
+    def get_user_top_tracks(self, limit=10, offset=0, time_range="short_term") -> List[Song]:
+        query = self.spotify.current_user_top_tracks(limit=limit, offset=offset, time_range=time_range)
+        songs = []
+
+        def get_top_tracks_artists(spotify_item: Dict) -> List[str]:
+            artists = []
+            for artist in spotify_item["artists"]:
+                artists.append(artist["name"])
+            return artists
+
+        for item in query["items"]:
+            song = Song(
+                name=item["name"],
+                artists=get_top_tracks_artists(item),
+                spotify_url="spotify_url"
+            )
+            songs.append(song)
+
+        return songs

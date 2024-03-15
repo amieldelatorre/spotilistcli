@@ -9,6 +9,7 @@ from sptfy import Sptfy, PlaylistNoSongs, PlaylistWithSongs, Song
 from itertools import repeat
 from helpers import get_obj_dict
 from log import logger
+from helpers import get_longest_string
 
 
 def playlist_command(original_args: List[str], sptfy: Sptfy) -> None:
@@ -31,15 +32,6 @@ def playlist_command(original_args: List[str], sptfy: Sptfy) -> None:
         args=original_args[1:],
         sptfy=sptfy
     )
-
-
-def get_longest_string(strings: List[str]) -> int:
-    curr_longest_len = 0
-    for string in strings:
-        if len(string) > curr_longest_len:
-            curr_longest_len = len(string)
-
-    return curr_longest_len
 
 
 def get_filename(sptfy: Sptfy) -> str:

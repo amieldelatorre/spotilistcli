@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from typing import Dict
+from typing import Dict, List
 
 
 def get_obj_dict(obj) -> Dict:
@@ -33,3 +33,12 @@ def get_required_environment_variables() -> (str, str, str):
         exit(1)
 
     return spotify_client_id, spotify_client_secret, spotify_redirect_url
+
+
+def get_longest_string(strings: List[str]) -> int:
+    curr_longest_len = 0
+    for string in strings:
+        if len(string) > curr_longest_len:
+            curr_longest_len = len(string)
+
+    return curr_longest_len
