@@ -1,21 +1,18 @@
 # Changelog
 
-## [0.0.5] - 2024-03-15
+## [0.0.6] - 2024-03-xx
 
 ### Added
-- Added a command to show user top artists or tracks
-- Added user-top-read scope
-- Added new methods for getting the top artists or tracks
-- Dataclass for Artists
+- Change the working directory when the script is run. Working directory should now be the script directory
 
 ### Fixed
 N/A
 
 ### Changed
-- Moved the get longest string function to the helper folder
+N/A
 
 ### Removed
 N/A
 
 
-[0.0.5]: https://github.com/amieldelatorre/spotilistcli/compare/0.0.4...0.0.5
+[0.0.6]: https://github.com/amieldelatorre/spotilistcli/compare/0.0.5...0.0.6

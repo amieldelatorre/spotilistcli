@@ -1,5 +1,7 @@
+import os
 import sys
 from sptfy import Sptfy
+from pathlib import Path
 from commands import get_usage, top_level_command_args
 from helpers import get_required_environment_variables
 
@@ -36,4 +38,7 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    main_script_path = Path(os.path.realpath(__file__))
+    parent_dir = main_script_path.parent.absolute()
+    os.chdir(parent_dir)
     main()
