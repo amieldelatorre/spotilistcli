@@ -5,6 +5,7 @@
 ### Added
 - Import exit from sys
 - Add instructions on how to build
+- Makefile for cleaning, setting up environment and building
 
 ### Fixed
 N/A
@@ -18,4 +19,4 @@ N/A
 N/A
 
 
-[0.0.6]: https://github.com/amieldelatorre/spotilistcli/compare/0.0.6...0.0.7
+[0.0.7]: https://github.com/amieldelatorre/spotilistcli/compare/0.0.6...0.0.7

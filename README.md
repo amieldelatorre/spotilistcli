@@ -21,7 +21,7 @@ The `SPOTILISTCLI_ENVIRONMENT` should be set to `development` or `production`. T
 Run these commands in your terminal at the root directory of the cloned .
 ```shell
 python -m venv .venv
-source ./venv/bin/activate
+source ./.venv/bin/activate
 pip install -r requirements.txt
 python3 app.py help
 # The `SPOTILISTCLI_ENVIRONMENT` should be set to `development`
@@ -30,7 +30,7 @@ python3 app.py help
 ## Building an executable / binary
 ```shell
 python -m venv .venv
-source ./venv/bin/activate
+source ./.venv/bin/activate
 pip install -r requirements.txt
 pip install pyinstaller
 pyinstaller app.py --onefile --name spotilistcli
