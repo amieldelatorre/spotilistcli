@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.0.6] - 2024-03-xx
+## [0.0.6] - 2024-03-22
 
 ### Added
 - Change the working directory when the script is run. Working directory should now be the script directory
