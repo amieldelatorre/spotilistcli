@@ -4,12 +4,15 @@
 
 ### Added
 - Import exit from sys
+- Add instructions on how to build
 
 ### Fixed
 N/A
 
 ### Changed
-N/A
+- Changed how the working directory is set based on the `SPOTILISTCLI_ENVIRONMENT` environment variable
+  - It will be the path of the executable when set to `production`
+  - OR it will be the path of the app.py file when set to anything else
 
 ### Removed
 N/A

@@ -13,13 +13,28 @@ Small CLI tool to get playlist information from Spotify, written in Python.
 SPOTIFY_CLIENT_ID=YOUR_CLIENT_ID
 SPOTIFY_CLIENT_SECRET=YOUR_CLIENT_SECRET
 SPOTIFY_REDIRECT_URI=http://localhost:3000/callback
+SPOTILISTCLI_ENVIRONMENT=development|production
 ```
+The `SPOTILISTCLI_ENVIRONMENT` should be set to `development` or `production`. This will change how the working directory is retrieved.
 
-## To run
+## Running
 Run these commands in your terminal at the root directory of the cloned .
 ```shell
 python -m venv .venv
 source ./venv/bin/activate
 pip install -r requirements.txt
 python3 app.py help
+# The `SPOTILISTCLI_ENVIRONMENT` should be set to `development`
+```
+
+## Building an executable / binary
+```shell
+python -m venv .venv
+source ./venv/bin/activate
+pip install -r requirements.txt
+pip install pyinstaller
+pyinstaller app.py --onefile --name spotilistcli
+# Then move the .env file to the dist/ directory or one of it's parent directories
+# The `SPOTILISTCLI_ENVIRONMENT` should be set to `production`
+spotilistcli help
 ```

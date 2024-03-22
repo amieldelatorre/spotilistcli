@@ -12,8 +12,6 @@ def main() -> None:
         print(get_usage())
         exit(1)
 
-    spotify_client_id, spotify_client_secret, spotify_redirect_url = get_required_environment_variables()
-
     sptfy = Sptfy(
         spotify_client_id=spotify_client_id,
         spotify_client_secret=spotify_client_secret,
@@ -39,7 +37,15 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main_script_path = Path(os.path.realpath(__file__))
-    parent_dir = main_script_path.parent.absolute()
+    spotify_client_id, spotify_client_secret, spotify_redirect_url = get_required_environment_variables()
+    environment = os.environ.get("SPOTILISTCLI_ENVIRONMENT", "production")
+
+    if environment == "production":
+        executable_path = Path(sys.executable)
+        parent_dir = executable_path.parent.absolute()
+    else:
+        main_script_path = Path(os.path.realpath(__file__))
+        parent_dir = main_script_path.parent.absolute()
     os.chdir(parent_dir)
+
     main()
