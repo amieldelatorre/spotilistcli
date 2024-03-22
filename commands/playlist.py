@@ -146,7 +146,7 @@ def get_playlist_download_parser() -> ArgumentParser:
 
 def get_playlist_show_parser() -> ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog=f"{PLAYLIST_COMMAND_NAME} {PLAYLIST_DOWNLOAD_SUBCOMMAND}",
+        prog=f"{PLAYLIST_COMMAND_NAME} {PLAYLIST_SHOW_SUBCOMMAND}",
         description="Show all the songs from a playlist in Spotify"
     )
 
