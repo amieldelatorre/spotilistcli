@@ -9,23 +9,32 @@ from sptfy import Sptfy, PlaylistNoSongs, PlaylistWithSongs, Song
 from itertools import repeat
 from helpers import get_obj_dict
 from log import logger
-from helpers import get_longest_string
+from helpers import get_longest_string, get_command_usage
 
 
 def playlist_command(original_args: List[str], sptfy: Sptfy) -> None:
     if len(original_args) < 1:
-        print(get_playlist_command_usage())
+        print(get_command_usage(
+            command=PLAYLIST_COMMAND_NAME,
+            subcommands=PLAYLIST_COMMAND_SUBCOMMANDS
+        ))
         exit(1)
 
     subcommand = original_args[0]
 
     if subcommand == "help":
-        print(get_playlist_command_usage())
+        print(get_command_usage(
+            command=PLAYLIST_COMMAND_NAME,
+            subcommands=PLAYLIST_COMMAND_SUBCOMMANDS
+        ))
         exit(0)
 
     subcommand_function: Optional[Callable] = PLAYLIST_COMMAND_SUBCOMMANDS.get(subcommand, None)
     if subcommand_function is None:
-        print(f"Unknown subcommand '{subcommand}', {get_playlist_command_usage()}")
+        print(f"Unknown subcommand '{subcommand}', {get_command_usage(
+            command=PLAYLIST_COMMAND_NAME,
+            subcommands=PLAYLIST_COMMAND_SUBCOMMANDS
+        )}")
         exit(1)
 
     subcommand_function(
@@ -213,11 +222,6 @@ def get_playlist_with_songs(playlist: PlaylistNoSongs, sptfy: Sptfy) -> Playlist
         songs=songs
     )
     return playlist_with_songs
-
-
-def get_playlist_command_usage() -> str:
-    command_names = list(PLAYLIST_COMMAND_SUBCOMMANDS.keys())
-    return f"usage: spotiList {PLAYLIST_COMMAND_NAME} {{help,{','.join(command_names)}}}"
 
 
 PLAYLIST_COMMAND_NAME = "playlist"

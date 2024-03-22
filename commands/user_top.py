@@ -1,22 +1,31 @@
 import argparse
 from typing import List, Optional, Callable
 from sptfy import Sptfy
-from helpers import get_longest_string
+from helpers import get_longest_string, get_command_usage
 
 
 def user_top_command(original_args: List[str], sptfy: Sptfy) -> None:
     if len(original_args) < 1:
-        print(get_user_top_command_usage())
+        print(get_command_usage(
+            command=USER_TOP_COMMAND_NAME,
+            subcommands=USER_TOP_COMMAND_SUBCOMMANDS
+        ))
         exit(1)
 
     subcommand = original_args[0]
     if subcommand == "help":
-        print(get_user_top_command_usage())
+        print(get_command_usage(
+            command=USER_TOP_COMMAND_NAME,
+            subcommands=USER_TOP_COMMAND_SUBCOMMANDS
+        ))
         exit(0)
 
     subcommand_function: Optional[Callable] = USER_TOP_COMMAND_SUBCOMMANDS.get(subcommand, None)
     if subcommand_function is None:
-        print(f"Unknown subcommand '{subcommand}', {get_user_top_command_usage()}")
+        print(f"Unknown subcommand '{subcommand}', {get_command_usage(
+            command=USER_TOP_COMMAND_NAME,
+            subcommands=USER_TOP_COMMAND_SUBCOMMANDS
+        )}")
         exit(1)
 
     subcommand_function(
@@ -122,11 +131,6 @@ def get_user_top_args_errors(args: argparse.Namespace) -> List[str]:
         errors.append(f"ERROR: time-range provided is not a valid value of {'|'.join(VALID_TIME_RANGE)}")
 
     return errors
-
-
-def get_user_top_command_usage() -> str:
-    command_names = list(USER_TOP_COMMAND_SUBCOMMANDS.keys())
-    return f"usage: spotilist {USER_TOP_COMMAND_NAME} {{help,{','.join(command_names)}}}"
 
 
 VALID_TIME_RANGE = ["short_term", "medium_term", "long_term"]

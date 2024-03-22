@@ -11,7 +11,7 @@
 N/A
 
 ### Changed
-N/A
+- `playlist` and `user-top` top level commands also use the new function for getting command usage
 
 ### Removed
 N/A
