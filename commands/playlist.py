@@ -151,7 +151,7 @@ def get_playlist_show_parser() -> ArgumentParser:
     )
 
     parser.add_argument(
-        "--playlist_id",
+        "--playlist-id",
         action="store",
         help="The Id of the playlist to show",
         required=True

@@ -9,6 +9,23 @@ from log import logger
 
 
 @dataclass
+class User:
+    name: str
+    id: str
+    url: str
+
+    def to_json(self) -> str:
+        return json.dumps(
+            self,
+            default=lambda o: o.__dict__,
+            sort_keys=True
+        )
+
+    def __repr__(self):
+        return f"{self.name}"
+
+
+@dataclass
 class Artist:
     name: str
 
@@ -233,3 +250,14 @@ class Sptfy:
             songs.append(song)
 
         return songs
+
+    def get_current_user_info(self) -> User:
+        user_data: Dict = self.spotify.current_user()
+
+        user: User = User(
+            name=user_data["display_name"],
+            id=user_data["id"],
+            url=user_data["external_urls"]["spotify"]
+        )
+
+        return user

@@ -9,6 +9,7 @@
 - Create executables for windows amd64 and linux amd64 when pushing tag
 - Separate function for getting the cache file path
 - Decorator function for checking if the user is logged in
+- Command for getting current user
 
 ### Fixed
 N/A
@@ -19,6 +20,8 @@ N/A
   - OR it will be the path of the app.py file when set to anything else
 - Wrapping the auth logout command with the check logged in decorator function
 - Wrap playlist and user-top top level commands in the login required decorator function
+- Changing flag for playlist show playlist-id to be more consistent
+  - From underscore to hyphen
 
 ### Removed
 N/A
