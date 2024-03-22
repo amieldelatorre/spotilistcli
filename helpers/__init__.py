@@ -68,6 +68,7 @@ def login_required(func) -> Callable:
             func(*args, **kwargs)
         else:
             print("Not currently logged in!")
+            print("Please log in with: `spotilist auth login`")
             exit(1)
 
     return wrapper

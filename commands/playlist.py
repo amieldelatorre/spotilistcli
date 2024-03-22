@@ -10,9 +10,10 @@ from sptfy import Sptfy, PlaylistNoSongs, PlaylistWithSongs, Song
 from itertools import repeat
 from helpers import get_obj_dict
 from log import logger
-from helpers import get_longest_string, get_command_usage
+from helpers import get_longest_string, get_command_usage, login_required
 
 
+@login_required
 def playlist_command(original_args: List[str], sptfy: Sptfy) -> None:
     if len(original_args) < 1:
         print(get_command_usage(

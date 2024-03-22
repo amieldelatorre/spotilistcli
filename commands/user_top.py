@@ -2,9 +2,10 @@ import argparse
 from sys import exit
 from typing import List, Optional, Callable
 from sptfy import Sptfy
-from helpers import get_longest_string, get_command_usage
+from helpers import get_longest_string, get_command_usage, login_required
 
 
+@login_required
 def user_top_command(original_args: List[str], sptfy: Sptfy) -> None:
     if len(original_args) < 1:
         print(get_command_usage(

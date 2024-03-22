@@ -18,6 +18,7 @@ N/A
   - It will be the path of the executable when set to `production`
   - OR it will be the path of the app.py file when set to anything else
 - Wrapping the auth logout command with the check logged in decorator function
+- Wrap playlist and user-top top level commands in the login required decorator function
 
 ### Removed
 N/A
