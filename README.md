@@ -17,6 +17,9 @@ SPOTILISTCLI_ENVIRONMENT=development|production
 ```
 The `SPOTILISTCLI_ENVIRONMENT` should be set to `development` or `production`. This will change how the working directory is retrieved.
 
+## Downloading the executable
+The latest executables can be found here: https://github.com/amieldelatorre/spotilistcli/releases/latest
+
 ## Running
 Run these commands in your terminal at the root directory of the cloned .
 ```shell
