@@ -6,6 +6,7 @@
 - Import exit from sys
 - Add instructions on how to build
 - Makefile for cleaning, setting up environment and building
+- Create executables for windows amd64 and linux amd64 when pushing tag
 
 ### Fixed
 N/A
