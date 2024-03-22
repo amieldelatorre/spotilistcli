@@ -4,6 +4,8 @@
 
 ### Added
 - Change the working directory when the script is run. Working directory should now be the script directory
+- Add command for auth login and logout
+- New function for getting command usage for top level commands (i.e. `spotilistcli auth help`)
 
 ### Fixed
 N/A

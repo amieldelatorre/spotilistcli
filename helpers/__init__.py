@@ -42,3 +42,8 @@ def get_longest_string(strings: List[str]) -> int:
             curr_longest_len = len(string)
 
     return curr_longest_len
+
+
+def get_command_usage(command: str, subcommands: Dict) -> str:
+    command_names = list(subcommands.keys())
+    return f"usage: spotiList {command} {{help,{','.join(command_names)}}}"
