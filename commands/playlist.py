@@ -2,6 +2,7 @@ import argparse
 import concurrent.futures
 import json
 import time
+from sys import exit
 from datetime import datetime
 from argparse import ArgumentParser
 from typing import List, Callable, Optional

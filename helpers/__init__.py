@@ -1,4 +1,5 @@
 import os
+from sys import exit
 from dotenv import load_dotenv
 from typing import Dict, List
 

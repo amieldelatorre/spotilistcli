@@ -1,5 +1,6 @@
 import os
 import sys
+from sys import exit
 from sptfy import Sptfy
 from pathlib import Path
 from commands import get_usage, top_level_command_args

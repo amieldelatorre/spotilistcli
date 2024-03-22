@@ -1,6 +1,6 @@
 import spotipy
 import json
-
+from sys import exit
 from spotipy import SpotifyException
 from spotipy.oauth2 import SpotifyOAuth
 from dataclasses import dataclass

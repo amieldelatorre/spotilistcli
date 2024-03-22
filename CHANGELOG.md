@@ -1,20 +1,18 @@
 # Changelog
 
-## [0.0.6] - 2024-03-22
+## [0.0.7] - 2024-03-xx
 
 ### Added
-- Change the working directory when the script is run. Working directory should now be the script directory
-- Add command for auth login and logout
-- New function for getting command usage for top level commands (i.e. `spotilistcli auth help`)
+- Import exit from sys
 
 ### Fixed
 N/A
 
 ### Changed
-- `playlist` and `user-top` top level commands also use the new function for getting command usage
+N/A
 
 ### Removed
 N/A
 
 
-[0.0.6]: https://github.com/amieldelatorre/spotilistcli/compare/0.0.5...0.0.6
+[0.0.6]: https://github.com/amieldelatorre/spotilistcli/compare/0.0.6...0.0.7
