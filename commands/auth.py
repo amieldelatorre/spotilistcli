@@ -3,7 +3,7 @@ from sys import exit
 from pathlib import Path
 from typing import List, Optional, Callable
 from sptfy import Sptfy
-from helpers import get_command_usage
+from helpers import get_command_usage, login_required, get_cache_file_path
 
 
 def auth_command(original_args: List[str], sptfy: Sptfy) -> None:
@@ -42,17 +42,11 @@ def login(args: List[str], sptfy: Sptfy) -> None:
     print("Login successful!")
 
 
+@login_required
 def logout(args: List[str], sptfy: Sptfy) -> None:
-    # Depends on app.py changing the working directory to the main script's directory
-    cache_filename = ".cache"
-    main_script_path = Path(os.getcwd())
-    cache_filepath = os.path.join(main_script_path, cache_filename)
-
-    if os.path.exists(cache_filepath):
-        os.remove(cache_filepath)
-        print("Logout successful!")
-    else:
-        print("Not currently logged in!")
+    cache_filepath = get_cache_file_path()
+    os.remove(cache_filepath)
+    print("Logout successful!")
 
 
 AUTH_COMMAND_NAME = "auth"

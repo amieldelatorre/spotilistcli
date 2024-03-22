@@ -1,7 +1,8 @@
 import os
+from pathlib import Path
 from sys import exit
 from dotenv import load_dotenv
-from typing import Dict, List
+from typing import Dict, List, Callable
 
 
 def get_obj_dict(obj) -> Dict:
@@ -48,3 +49,25 @@ def get_longest_string(strings: List[str]) -> int:
 def get_command_usage(command: str, subcommands: Dict) -> str:
     command_names = list(subcommands.keys())
     return f"usage: spotiList {command} {{help,{','.join(command_names)}}}"
+
+
+def get_cache_file_path() -> str:
+    # Depends on app.py changing the working directory to the main script's directory
+    cache_filename = ".cache"
+    working_directory = Path(os.getcwd())
+    cache_filepath = os.path.join(working_directory, cache_filename)
+
+    return cache_filepath
+
+
+def login_required(func) -> Callable:
+    def wrapper(*args, **kwargs) -> None:
+        cache_filepath = get_cache_file_path()
+
+        if os.path.exists(cache_filepath):
+            func(*args, **kwargs)
+        else:
+            print("Not currently logged in!")
+            exit(1)
+
+    return wrapper
