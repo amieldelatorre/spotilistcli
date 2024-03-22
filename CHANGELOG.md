@@ -4,6 +4,7 @@
 
 ### Added
 - Instructions on README to download executable
+- Add GNU GENERAL PUBLIC LICENSE Version 3 License
 
 ### Fixed
 N/A
