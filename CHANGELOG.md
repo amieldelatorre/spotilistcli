@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.0.7] - 2024-03-xx
+## [0.0.7] - 2024-03-23
 
 ### Added
 - Import exit from sys
