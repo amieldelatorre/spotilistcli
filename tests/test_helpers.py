@@ -72,3 +72,69 @@ def test_get_required_environment_variables(monkeypatch, env_vars_dict, exit_exp
     else:
         result = helpers.get_required_environment_variables()
         assert expected_result == result
+
+
+def test_get_longest_string():
+    strings = ["abcdefgh", "a", "abc", "ab", "abcdefghij", "abcde", "abcdef"]
+    expected_length = 10
+    result = helpers.get_longest_string(strings)
+    assert result == expected_length
+
+
+def test_command_usage():
+    command = "command"
+    subcommands = {
+        "sumbcommand1": None,
+        "sumbcommand2": None,
+        "sumbcommand3": None,
+        "sumbcommand4": None
+    }
+
+    expected = "usage: spotiList command {help,sumbcommand1,sumbcommand2,sumbcommand3,sumbcommand4}"
+    result = helpers.get_command_usage(
+        command=command,
+        subcommands=subcommands
+    )
+
+    assert expected == result
+
+
+@pytest.mark.parametrize("cache_file_exists, expected_exit_code", [
+    (True, 0),
+    (False, 1)
+])
+def test_login_required(monkeypatch, cache_file_exists, expected_exit_code):
+    monkeypatch.setattr("os.path.exists", lambda _: cache_file_exists)
+
+    @helpers.login_required
+    def dummy():
+        return "dummy"
+
+    if cache_file_exists:
+        assert dummy() == "dummy"
+    else:
+        with pytest.raises(SystemExit) as wrapper_exit:
+            dummy()
+            assert wrapper_exit.type == SystemExit
+            assert wrapper_exit.value.code == expected_exit_code
+
+
+def test_get_cache_file_path():
+    result = helpers.get_cache_file_path()
+    assert result.endswith(".cache")
+
+
+def test_get_env_file_path():
+    result = helpers.get_env_file_path()
+    assert result.endswith(".env")
+
+
+def test_get_obj_dict():
+    expected = {
+        "spotify_client_id": "something",
+        "spotify_client_secret": "something",
+        "helpers.SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR": "something"
+    }
+    env_vars = helpers.EnvironmentVariables("something", "something", "something")
+
+    assert helpers.get_obj_dict(env_vars) == expected

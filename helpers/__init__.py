@@ -119,7 +119,7 @@ def login_required(func) -> Callable:
         cache_filepath = get_cache_file_path()
 
         if os.path.exists(cache_filepath):
-            func(*args, **kwargs)
+            return func(*args, **kwargs)
         else:
             print("Not currently logged in!")
             print("Please log in with: `spotilist auth login`")
