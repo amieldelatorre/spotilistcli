@@ -133,7 +133,7 @@ def test_get_obj_dict():
     expected = {
         "spotify_client_id": "something",
         "spotify_client_secret": "something",
-        "helpers.SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR": "something"
+        "spotify_redirect_uri": "something"
     }
     env_vars = helpers.EnvironmentVariables("something", "something", "something")
 

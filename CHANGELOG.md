@@ -4,12 +4,15 @@
 
 ### Added
 - Catch errors with OAuth
+- Tests
+- Workflow to run tests
 
 ### Fixed
 N/A
 
 ### Changed
 - Separated the retrieval of parent directory to a different function
+- Minor refactoring
 
 ### Removed
 N/A
