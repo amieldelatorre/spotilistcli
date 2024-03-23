@@ -1,5 +1,5 @@
 import argparse
-from sys import exit
+import sys
 from typing import List, Optional, Callable
 from sptfy import Sptfy
 from helpers import get_longest_string, get_command_usage, login_required
@@ -12,7 +12,7 @@ def user_top_command(original_args: List[str], sptfy: Sptfy) -> None:
             command=USER_TOP_COMMAND_NAME,
             subcommands=USER_TOP_COMMAND_SUBCOMMANDS
         ))
-        exit(1)
+        sys.exit(1)
 
     subcommand = original_args[0]
     if subcommand == "help":
@@ -20,7 +20,7 @@ def user_top_command(original_args: List[str], sptfy: Sptfy) -> None:
             command=USER_TOP_COMMAND_NAME,
             subcommands=USER_TOP_COMMAND_SUBCOMMANDS
         ))
-        exit(0)
+        sys.exit(0)
 
     subcommand_function: Optional[Callable] = USER_TOP_COMMAND_SUBCOMMANDS.get(subcommand, None)
     if subcommand_function is None:
@@ -28,7 +28,7 @@ def user_top_command(original_args: List[str], sptfy: Sptfy) -> None:
             command=USER_TOP_COMMAND_NAME,
             subcommands=USER_TOP_COMMAND_SUBCOMMANDS
         )}")
-        exit(1)
+        sys.exit(1)
 
     subcommand_function(
         args=original_args[1:],
@@ -44,7 +44,7 @@ def top_artists_subcommand(args: List[str], sptfy: Sptfy) -> None:
     if len(arg_errors) > 0:
         for err in arg_errors:
             print(err)
-        exit(1)
+        sys.exit(1)
 
     artists = sptfy.get_user_top_artists(
         limit=top_artists_args.limit,
@@ -65,7 +65,7 @@ def top_tracks_subcommand(args: List[str], sptfy: Sptfy) -> None:
     if len(arg_errors) > 0:
         for err in arg_errors:
             print(err)
-        exit(1)
+        sys.exit(1)
 
     songs = sptfy.get_user_top_tracks(
         limit=top_tracks_args.limit,

@@ -2,7 +2,7 @@ import argparse
 import concurrent.futures
 import json
 import time
-from sys import exit
+import sys
 from datetime import datetime
 from argparse import ArgumentParser
 from typing import List, Callable, Optional
@@ -20,7 +20,7 @@ def playlist_command(original_args: List[str], sptfy: Sptfy) -> None:
             command=PLAYLIST_COMMAND_NAME,
             subcommands=PLAYLIST_COMMAND_SUBCOMMANDS
         ))
-        exit(1)
+        sys.exit(1)
 
     subcommand = original_args[0]
 
@@ -29,7 +29,7 @@ def playlist_command(original_args: List[str], sptfy: Sptfy) -> None:
             command=PLAYLIST_COMMAND_NAME,
             subcommands=PLAYLIST_COMMAND_SUBCOMMANDS
         ))
-        exit(0)
+        sys.exit(0)
 
     subcommand_function: Optional[Callable] = PLAYLIST_COMMAND_SUBCOMMANDS.get(subcommand, None)
     if subcommand_function is None:
@@ -37,7 +37,7 @@ def playlist_command(original_args: List[str], sptfy: Sptfy) -> None:
             command=PLAYLIST_COMMAND_NAME,
             subcommands=PLAYLIST_COMMAND_SUBCOMMANDS
         )}")
-        exit(1)
+        sys.exit(1)
 
     subcommand_function(
         args=original_args[1:],
@@ -62,10 +62,10 @@ def download_playlists(args: List[str], sptfy: Sptfy) -> None:
         filename = get_filename(sptfy)
     elif download_args.filename.strip() == "":
         print(f"ERROR: Filename cannot be blank or null!")
-        exit(1)
+        sys.exit(1)
     elif not download_args.filename.strip().endswith('.json'):
         print(f"ERROR: Filename must end with '.json'")
-        exit(1)
+        sys.exit(1)
     else:
         filename = download_args.filename
 
@@ -201,7 +201,7 @@ def show_playlist(args: List[str], sptfy: Sptfy) -> None:
     playlist_id = show_args.playlist_id.strip()
     if not sptfy.playlist_exists(playlist_id):
         print(f"ERROR: Playlist Id could not be found!")
-        exit(1)
+        sys.exit(1)
 
     songs = sptfy.get_playlist_content(playlist_id)
     longest_song_name = get_longest_string([song.name for song in songs])

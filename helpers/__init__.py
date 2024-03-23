@@ -3,7 +3,6 @@ import getpass
 import sys
 import __main__
 from pathlib import Path
-from sys import exit
 from dotenv import load_dotenv
 from typing import Dict, List, Callable
 from dataclasses import dataclass
@@ -28,7 +27,7 @@ def get_obj_dict(obj) -> Dict:
 def null_or_empty(response: str, env_var_name) -> None:
     if response is None or response == "":
         print(f"ERROR: '{env_var_name}' cannot be null or empty!")
-        exit(1)
+        sys.exit(1)
 
 
 def get_required_environment_variables_as_input() -> EnvironmentVariables:
@@ -70,7 +69,7 @@ def get_required_environment_variables() -> EnvironmentVariables:
         for env_var in missing_environment_variables:
             print(f"\t- {env_var}")
         print("Please run: spotilist configure")
-        exit(1)
+        sys.exit(1)
 
     env_vars = EnvironmentVariables(
         spotify_client_id=spotify_client_id,
@@ -113,7 +112,7 @@ def login_required(func) -> Callable:
         else:
             print("Not currently logged in!")
             print("Please log in with: `spotilist auth login`")
-            exit(1)
+            sys.exit(1)
 
     return wrapper
 

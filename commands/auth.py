@@ -1,9 +1,10 @@
 import os
 import argparse
-from sys import exit
+import sys
 from typing import List, Optional, Callable
 from sptfy import Sptfy
 from helpers import get_command_usage, login_required, get_cache_file_path
+from spotipy.oauth2 import SpotifyOauthError
 
 
 def auth_command(original_args: List[str], sptfy: Sptfy) -> None:
@@ -12,7 +13,7 @@ def auth_command(original_args: List[str], sptfy: Sptfy) -> None:
             command=AUTH_COMMAND_NAME,
             subcommands=AUTH_COMMAND_SUBCOMMANDS
         ))
-        exit(1)
+        sys.exit(1)
 
     subcommand = original_args[0]
 
@@ -21,7 +22,7 @@ def auth_command(original_args: List[str], sptfy: Sptfy) -> None:
             command=AUTH_COMMAND_NAME,
             subcommands=AUTH_COMMAND_SUBCOMMANDS
         ))
-        exit(0)
+        sys.exit(0)
 
     subcommand_function: Optional[Callable] = AUTH_COMMAND_SUBCOMMANDS.get(subcommand, None)
     if subcommand_function is None:
@@ -29,7 +30,7 @@ def auth_command(original_args: List[str], sptfy: Sptfy) -> None:
             command=AUTH_COMMAND_NAME, 
             subcommands=AUTH_COMMAND_SUBCOMMANDS
         )}")
-        exit(1)
+        sys.exit(1)
 
     subcommand_function(
         args=original_args[1:],

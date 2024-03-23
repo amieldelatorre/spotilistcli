@@ -1,6 +1,6 @@
 import spotipy
 import json
-from sys import exit
+import sys
 from spotipy import SpotifyException
 from spotipy.oauth2 import SpotifyOAuth
 from dataclasses import dataclass
@@ -224,7 +224,7 @@ class Sptfy:
                 return False
         except:
             print(f"ERROR: Something went wrong!")
-            exit(1)
+            sys.exit(1)
 
     def get_user_top_artists(self, limit=10, offset=0, time_range="short_term") -> List[Artist]:
         query = self.spotify.current_user_top_artists(limit=limit, offset=offset, time_range=time_range)
