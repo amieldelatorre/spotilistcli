@@ -6,6 +6,8 @@
 - Catch errors with OAuth
 - Tests
 - Workflow to run tests
+- Logging
+- Time taken decorator function
 
 ### Fixed
 N/A
@@ -13,6 +15,7 @@ N/A
 ### Changed
 - Separated the retrieval of parent directory to a different function
 - Minor refactoring
+- Using a decorator function for time taken now
 
 ### Removed
 N/A

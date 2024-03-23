@@ -5,6 +5,7 @@ from commands import get_usage, top_level_command_args
 from helpers import get_required_environment_variables, get_parent_dir
 from commands import configure
 from spotipy.oauth2 import SpotifyOauthError
+from log import logger
 
 
 def main() -> None:
@@ -47,5 +48,7 @@ if __name__ == "__main__":
     try:
         main()
     except SpotifyOauthError as e:
+        logger.error(f"SpotifyOauthError {e.error}")
+        logger.error(f"{e.error_description}")
         print("ERROR: check if the credentials in your .env file is valid!")
         sys.exit(1)
