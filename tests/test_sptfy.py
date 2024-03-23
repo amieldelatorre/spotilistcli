@@ -6,7 +6,9 @@ def test_get_artists():
     with open("tests/files/test_get_artists_spotify_url_input_playlist.json.test", "r") as file:
         data = json.load(file)
 
-    expected_results = [['string'], ['string', 'string', 'string'], []]
+    expected_results = [
+        ['artist1'], ["artist2"], ["artist3"], ["artist4", "artist5", "artist6", "artist7", "artist8"], []
+    ]
     expected_num_processed = len(expected_results)
 
     num_processed = 0
@@ -23,8 +25,12 @@ def test_get_spotify_url():
     with open("tests/files/test_get_artists_spotify_url_input_playlist.json.test", "r") as file:
         data = json.load(file)
 
-    expected_result = ["string1", "string2", "string3"]
-    expected_num_processed = 3
+    expected_result = [
+        "https://example.invalid1", "https://example.invalid2", "https://example.invalid3",
+        "https://example.invalid4", "https://example.invalid5"
+
+    ]
+    expected_num_processed = len(expected_result)
 
     num_processed = 0
     for index, item in enumerate(data["items"]):
