@@ -1,5 +1,7 @@
 import os
 import getpass
+import sys
+import __main__
 from pathlib import Path
 from sys import exit
 from dotenv import load_dotenv
@@ -123,3 +125,16 @@ def get_env_file_path() -> str:
     env_filepath = os.path.join(working_directory, env_filename)
 
     return env_filepath
+
+
+def get_parent_dir() -> Path:
+    # Get parent dir and switch the working directory
+    # When run as an executable, the working directory is a temp folder,
+    # using this we can get the folder of the actual file
+    if getattr(sys, 'frozen', False):
+        executable_path = Path(sys.executable)
+        parent_dir = executable_path.parent.absolute()
+    else:
+        main_script_path = Path(os.path.realpath(__main__.__file__))
+        parent_dir = main_script_path.parent.absolute()
+    return parent_dir
