@@ -1,16 +1,17 @@
 # Changelog
 
-## [0.0.9] - 2024-03-XX
+## [0.0.9] - 2024-03-23
 
 ### Added
 - Instructions on README to download executable
 - Add GNU GENERAL PUBLIC LICENSE Version 3 License
+- New command to configure variables
 
 ### Fixed
 N/A
 
 ### Changed
-N/A
+- Default environment is development
 
 ### Removed
 N/A

@@ -1,7 +1,7 @@
 # SpotilistCLI
 Small CLI tool to get playlist information from Spotify, written in Python.
 
-## Prerequisits
+## Prerequisites
 1. Clone the repository
 2. Create a developer account at https://developer.spotify.com/
 3. Create a new app
@@ -17,8 +17,14 @@ SPOTILISTCLI_ENVIRONMENT=development|production
 ```
 The `SPOTILISTCLI_ENVIRONMENT` should be set to `development` or `production`. This will change how the working directory is retrieved.
 
+> When run as a python project use `development` and when run as an executable use `production`.
+
+OR, once the executable has been downloaded or the project has been setup with the requirements installed, you can run `spotilist configure` to create the `.env` file interactively.
+
 ## Downloading the executable
 The latest executables can be found here: https://github.com/amieldelatorre/spotilistcli/releases/latest
+
+Set the `SPOTILISTCLI_ENVIRONMENT` to `production`.
 
 ## Running
 Run these commands in your terminal at the root directory of the cloned .

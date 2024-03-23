@@ -4,7 +4,8 @@ from sys import exit
 from sptfy import Sptfy
 from pathlib import Path
 from commands import get_usage, top_level_command_args
-from helpers import get_required_environment_variables
+from helpers import get_required_environment_variables, ENVIRONMENT_ENV_VARIABLE_STR
+from commands import configure
 
 
 def main() -> None:
@@ -12,18 +13,22 @@ def main() -> None:
         print(get_usage())
         exit(1)
 
-    sptfy = Sptfy(
-        spotify_client_id=spotify_client_id,
-        spotify_client_secret=spotify_client_secret,
-        spotify_redirect_uri=spotify_redirect_url,
-    )
-
     command = sys.argv[1]
     following_args = sys.argv[2:]
 
     if command == "help":
         print(get_usage())
         exit(0)
+    elif command == configure.CONFIGURE_COMMAND_NAME:
+        configure.configure_command()
+        exit(0)
+
+    spotify_client_id, spotify_client_secret, spotify_redirect_url = get_required_environment_variables()
+    sptfy = Sptfy(
+        spotify_client_id=spotify_client_id,
+        spotify_client_secret=spotify_client_secret,
+        spotify_redirect_uri=spotify_redirect_url,
+    )
 
     command_function = top_level_command_args.get(command, None)
     if command_function is None:
@@ -37,8 +42,7 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    spotify_client_id, spotify_client_secret, spotify_redirect_url = get_required_environment_variables()
-    environment = os.environ.get("SPOTILISTCLI_ENVIRONMENT", "production")
+    environment = os.environ.get(f"{ENVIRONMENT_ENV_VARIABLE_STR}", "development")
 
     if environment == "production":
         executable_path = Path(sys.executable)

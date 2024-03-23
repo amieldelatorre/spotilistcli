@@ -5,28 +5,30 @@ from dotenv import load_dotenv
 from typing import Dict, List, Callable
 
 
+SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR = "SPOTIFY_CLIENT_ID"
+SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR = "SPOTIFY_CLIENT_SECRET"
+SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR = "SPOTIFY_REDIRECT_URI"
+ENVIRONMENT_ENV_VARIABLE_STR = "SPOTILISTCLI_ENVIRONMENT"
+
+
 def get_obj_dict(obj) -> Dict:
     return obj.__dict__
 
 
 def get_required_environment_variables() -> (str, str, str):
-    spotify_client_id_env_variable_str = "SPOTIFY_CLIENT_ID"
-    spotify_client_secret_env_variable_str = "SPOTIFY_CLIENT_SECRET"
-    spotify_redirect_uri_env_variable_str = "SPOTIFY_REDIRECT_URI"
-
     load_dotenv()
 
-    spotify_client_id = os.getenv(spotify_client_id_env_variable_str, default=None)
-    spotify_client_secret = os.getenv(spotify_client_secret_env_variable_str, default=None)
-    spotify_redirect_url = os.getenv(spotify_redirect_uri_env_variable_str, default=None)
+    spotify_client_id = os.getenv(SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR, default=None)
+    spotify_client_secret = os.getenv(SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR, default=None)
+    spotify_redirect_url = os.getenv(SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR, default=None)
 
     missing_environment_variables = []
     if spotify_client_id is None:
-        missing_environment_variables.append(spotify_client_id_env_variable_str)
+        missing_environment_variables.append(SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR)
     if spotify_client_secret is None:
-        missing_environment_variables.append(spotify_client_secret_env_variable_str)
+        missing_environment_variables.append(SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR)
     if spotify_redirect_url is None:
-        missing_environment_variables.append(spotify_redirect_uri_env_variable_str)
+        missing_environment_variables.append(SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR)
 
     if len(missing_environment_variables) > 0:
         print(f"ERROR: The following environment variable(s) are missing:")
@@ -72,3 +74,12 @@ def login_required(func) -> Callable:
             exit(1)
 
     return wrapper
+
+
+def get_env_file_path() -> str:
+    # Depends on app.py changing the working directory to the main script's directory
+    env_filename = ".env"
+    working_directory = Path(os.getcwd())
+    env_filepath = os.path.join(working_directory, env_filename)
+
+    return env_filepath
