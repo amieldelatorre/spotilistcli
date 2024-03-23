@@ -19,6 +19,12 @@ class EnvironmentVariables:
     spotify_client_secret: str
     spotify_redirect_uri: str
 
+    def __eq__(self, other):
+        return type(self) is type(other) and \
+            self.spotify_client_id == other.spotify_client_id and \
+            self.spotify_client_secret == other.spotify_client_secret and \
+            self.spotify_redirect_uri == other.spotify_redirect_uri
+
 
 def get_obj_dict(obj) -> Dict:
     return obj.__dict__
