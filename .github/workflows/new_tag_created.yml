@@ -6,6 +6,9 @@ on:
       - "**"
 
 jobs:
+  test-on-tag:
+    uses: ./.github/workflows/test.yml
+
   create-release-draft:
     runs-on: ubuntu-latest
     permissions:
