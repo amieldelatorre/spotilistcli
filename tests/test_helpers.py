@@ -33,3 +33,42 @@ def test_get_required_environment_variables_as_input(monkeypatch, getpass_list, 
     else:
         result = helpers.get_required_environment_variables_as_input()
         assert expected_result == result
+
+
+@pytest.mark.parametrize("env_vars_dict, exit_expected, expected_exit_code, expected_result", [
+    ({
+        helpers.SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR: "",
+        helpers.SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR: "something",
+        helpers.SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR: "something"
+     }, True, 1, None),
+
+    ({
+        helpers.SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR: "something",
+        helpers.SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR: "",
+        helpers.SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR: "something"
+    }, True, 1, None),
+
+    ({
+        helpers.SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR: "something",
+        helpers.SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR: "something",
+        helpers.SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR: ""
+    }, True, 1, None),
+
+    ({
+        helpers.SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR: "something",
+        helpers.SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR: "something",
+        helpers.SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR: "something"
+    }, False, 0, helpers.EnvironmentVariables("something", "something", "something")),
+])
+def test_get_required_environment_variables(monkeypatch, env_vars_dict, exit_expected, expected_exit_code,
+                                            expected_result):
+    for key in env_vars_dict.keys():
+        monkeypatch.setenv(key, env_vars_dict[key])
+    if exit_expected:
+        with pytest.raises(SystemExit) as wrapper_exit:
+            helpers.get_required_environment_variables()
+        assert wrapper_exit.type == SystemExit
+        assert wrapper_exit.value.code == expected_exit_code
+    else:
+        result = helpers.get_required_environment_variables()
+        assert expected_result == result

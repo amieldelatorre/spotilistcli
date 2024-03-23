@@ -1,3 +1,4 @@
+import json
 import os
 import getpass
 import sys
@@ -67,11 +68,11 @@ def get_required_environment_variables() -> EnvironmentVariables:
     spotify_redirect_uri = os.getenv(SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR, default=None)
 
     missing_environment_variables = []
-    if spotify_client_id is None:
+    if spotify_client_id is None or spotify_client_id.strip() == "":
         missing_environment_variables.append(SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR)
-    if spotify_client_secret is None:
+    if spotify_client_secret is None or spotify_client_secret.strip() == "":
         missing_environment_variables.append(SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR)
-    if spotify_redirect_uri is None:
+    if spotify_redirect_uri is None or spotify_redirect_uri.strip() == "":
         missing_environment_variables.append(SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR)
 
     if len(missing_environment_variables) > 0:
