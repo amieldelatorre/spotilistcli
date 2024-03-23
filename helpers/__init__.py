@@ -24,21 +24,25 @@ def get_obj_dict(obj) -> Dict:
     return obj.__dict__
 
 
-def null_or_empty(response: str, env_var_name) -> None:
+def null_or_empty(response: str, env_var_name) -> bool:
     if response is None or response == "":
         print(f"ERROR: '{env_var_name}' cannot be null or empty!")
-        sys.exit(1)
+        return True
+    return False
 
 
 def get_required_environment_variables_as_input() -> EnvironmentVariables:
     spotify_client_id = getpass.getpass(f"{SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR}: ").strip()
-    null_or_empty(spotify_client_id, SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR)
+    if null_or_empty(spotify_client_id, SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR):
+        sys.exit(1)
 
     spotify_client_secret = getpass.getpass(f"{SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR}: ").strip()
-    null_or_empty(spotify_client_secret, SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR)
+    if null_or_empty(spotify_client_secret, SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR):
+        sys.exit(1)
 
     spotify_redirect_uri = input(f"{SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR}: ").strip()
-    null_or_empty(spotify_redirect_uri, SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR)
+    if null_or_empty(spotify_redirect_uri, SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR):
+        sys.exit(1)
 
     env_vars = EnvironmentVariables(
         spotify_client_id=spotify_client_id,
