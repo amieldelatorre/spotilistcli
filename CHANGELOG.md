@@ -11,10 +11,10 @@
 N/A
 
 ### Changed
-- Default environment is development
+N/A
 
 ### Removed
-N/A
+- Removed use of environments
 
 
 [0.0.9]: https://github.com/amieldelatorre/spotilistcli/compare/0.0.8...0.0.9
