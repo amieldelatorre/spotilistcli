@@ -3,7 +3,7 @@
 ## [0.0.10] - 2024-03-XX
 
 ### Added
-N/A
+- Catch errors with OAuth
 
 ### Fixed
 N/A

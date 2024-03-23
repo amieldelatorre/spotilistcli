@@ -4,7 +4,6 @@ import sys
 from typing import List, Optional, Callable
 from sptfy import Sptfy
 from helpers import get_command_usage, login_required, get_cache_file_path
-from spotipy.oauth2 import SpotifyOauthError
 
 
 def auth_command(original_args: List[str], sptfy: Sptfy) -> None:
@@ -39,8 +38,17 @@ def auth_command(original_args: List[str], sptfy: Sptfy) -> None:
 
 
 def login(args: List[str], sptfy: Sptfy) -> None:
-    sptfy.auth()
-    print("Login successful!")
+    cache_filepath = get_cache_file_path()
+
+    login_result = sptfy.auth()
+    if login_result:
+        print("Login successful!")
+    else:
+        print("ERROR: Problems logging in.")
+        if os.path.exists(cache_filepath):
+            print(f"Please delete {cache_filepath} and try again.")
+        print(f"\nIf problem persists check your .env file.")
+        sys.exit(1)
 
 
 @login_required

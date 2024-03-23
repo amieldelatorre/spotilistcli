@@ -4,6 +4,7 @@ from sptfy import Sptfy
 from commands import get_usage, top_level_command_args
 from helpers import get_required_environment_variables, get_parent_dir
 from commands import configure
+from spotipy.oauth2 import SpotifyOauthError
 
 
 def main() -> None:
@@ -43,4 +44,8 @@ if __name__ == "__main__":
     parent_dir = get_parent_dir()
     os.chdir(parent_dir)
 
-    main()
+    try:
+        main()
+    except SpotifyOauthError as e:
+        print("ERROR: check if the credentials in your .env file is valid!")
+        sys.exit(1)
