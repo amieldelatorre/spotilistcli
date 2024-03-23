@@ -127,7 +127,7 @@ def login_required(func) -> Callable:
         else:
             logger.debug(f"{cache_filepath} does not exist")
             print("Not currently logged in!")
-            print("Please log in with: `spotilist auth login`")
+            print("Please log in with: spotilist auth login")
             sys.exit(1)
 
     return wrapper
