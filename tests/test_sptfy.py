@@ -1,5 +1,18 @@
 import json
+import spotipy
+import pytest
 import sptfy
+import helpers
+
+
+@pytest.fixture
+def sptfy_mock():
+    sptfy_obj = sptfy.Sptfy(
+        spotify_client_id="something",
+        spotify_client_secret="something_secret",
+        spotify_redirect_uri="something"
+    )
+    return sptfy_obj
 
 
 def test_get_artists():
@@ -40,3 +53,16 @@ def test_get_spotify_url():
         num_processed += 1
 
     assert num_processed == expected_num_processed
+
+
+def test_get_all_playlists_no_songs(monkeypatch, sptfy_mock):
+    with open("tests/files/sptfy_current_user_playlists_queries.json.test", "r") as file:
+        data = json.load(file)
+    data_iter = iter(data)
+
+    monkeypatch.setattr(spotipy.Spotify, "current_user_playlists", lambda self, limit, offset: next(data_iter))
+    playlists = sptfy_mock.get_all_playlists_no_songs()
+
+    for playlist in playlists:
+        assert type(playlist) is sptfy.PlaylistNoSongs
+    assert len(playlists) == 118
