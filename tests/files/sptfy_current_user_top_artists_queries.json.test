@@ -1,0 +1,359 @@
+{
+    "items": [
+        {
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "followers": {
+                "href": null,
+                "total": 1234567890
+            },
+            "genres": [
+                "r&b"
+            ],
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                }
+            ],
+            "name": "Artist",
+            "popularity": 100,
+            "type": "artist",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "followers": {
+                "href": null,
+                "total": 1234567890
+            },
+            "genres": [
+                "r&b"
+            ],
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                }
+            ],
+            "name": "Artist",
+            "popularity": 100,
+            "type": "artist",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "followers": {
+                "href": null,
+                "total": 1234567890
+            },
+            "genres": [
+                "r&b"
+            ],
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                }
+            ],
+            "name": "Artist",
+            "popularity": 100,
+            "type": "artist",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "followers": {
+                "href": null,
+                "total": 1234567890
+            },
+            "genres": [
+                "r&b"
+            ],
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                }
+            ],
+            "name": "Artist",
+            "popularity": 100,
+            "type": "artist",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "followers": {
+                "href": null,
+                "total": 1234567890
+            },
+            "genres": [
+                "r&b"
+            ],
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                }
+            ],
+            "name": "Artist",
+            "popularity": 100,
+            "type": "artist",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "followers": {
+                "href": null,
+                "total": 1234567890
+            },
+            "genres": [
+                "r&b"
+            ],
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                }
+            ],
+            "name": "Artist",
+            "popularity": 100,
+            "type": "artist",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "followers": {
+                "href": null,
+                "total": 1234567890
+            },
+            "genres": [
+                "r&b"
+            ],
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                }
+            ],
+            "name": "Artist",
+            "popularity": 100,
+            "type": "artist",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "followers": {
+                "href": null,
+                "total": 1234567890
+            },
+            "genres": [
+                "r&b"
+            ],
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                }
+            ],
+            "name": "Artist",
+            "popularity": 100,
+            "type": "artist",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "followers": {
+                "href": null,
+                "total": 1234567890
+            },
+            "genres": [
+                "r&b"
+            ],
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                }
+            ],
+            "name": "Artist",
+            "popularity": 100,
+            "type": "artist",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "followers": {
+                "href": null,
+                "total": 1234567890
+            },
+            "genres": [
+                "r&b"
+            ],
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                },
+                {
+                    "height": 400,
+                    "url": "https://example.invalid",
+                    "width": 640
+                }
+            ],
+            "name": "Artist",
+            "popularity": 100,
+            "type": "artist",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        }
+    ],
+    "total": 127,
+    "limit": 10,
+    "href": "https://example.invalid",
+    "next": "https://example.invalid",
+    "previous": null
+}

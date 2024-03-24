@@ -1,0 +1,310 @@
+{
+    "href": "https://example.invalid",
+    "limit": 10,
+    "offset": 0,
+    "total": 1415,
+    "items": [
+        {
+            "album": {
+                "album_type": "ALBUM"
+            },
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://example.invalid"
+                    },
+                    "href": "https://example.invalid",
+                    "id": "somethingAb1234Af9D9Cb",
+                    "name": "Artist",
+                    "type": "artist",
+                    "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+                }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 222222,
+            "explicit": false,
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "name": "Song Name",
+            "popularity": 100,
+            "type": "track",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        },
+        {
+            "album": {
+                "album_type": "ALBUM"
+            },
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://example.invalid"
+                    },
+                    "href": "https://example.invalid",
+                    "id": "somethingAb1234Af9D9Cb",
+                    "name": "Artist",
+                    "type": "artist",
+                    "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+                }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 222222,
+            "explicit": false,
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "name": "Song Name",
+            "popularity": 100,
+            "type": "track",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        },
+        {
+            "album": {
+                "album_type": "ALBUM"
+            },
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://example.invalid"
+                    },
+                    "href": "https://example.invalid",
+                    "id": "somethingAb1234Af9D9Cb",
+                    "name": "Artist",
+                    "type": "artist",
+                    "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+                }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 222222,
+            "explicit": false,
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "name": "Song Name",
+            "popularity": 100,
+            "type": "track",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        },
+        {
+            "album": {
+                "album_type": "ALBUM"
+            },
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://example.invalid"
+                    },
+                    "href": "https://example.invalid",
+                    "id": "somethingAb1234Af9D9Cb",
+                    "name": "Artist",
+                    "type": "artist",
+                    "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+                }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 222222,
+            "explicit": false,
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "name": "Song Name",
+            "popularity": 100,
+            "type": "track",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        },
+        {
+            "album": {
+                "album_type": "ALBUM"
+            },
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://example.invalid"
+                    },
+                    "href": "https://example.invalid",
+                    "id": "somethingAb1234Af9D9Cb",
+                    "name": "Artist",
+                    "type": "artist",
+                    "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+                }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 222222,
+            "explicit": false,
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "name": "Song Name",
+            "popularity": 100,
+            "type": "track",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        },
+        {
+            "album": {
+                "album_type": "ALBUM"
+            },
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://example.invalid"
+                    },
+                    "href": "https://example.invalid",
+                    "id": "somethingAb1234Af9D9Cb",
+                    "name": "Artist",
+                    "type": "artist",
+                    "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+                }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 222222,
+            "explicit": false,
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "name": "Song Name",
+            "popularity": 100,
+            "type": "track",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        },
+        {
+            "album": {
+                "album_type": "ALBUM"
+            },
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://example.invalid"
+                    },
+                    "href": "https://example.invalid",
+                    "id": "somethingAb1234Af9D9Cb",
+                    "name": "Artist",
+                    "type": "artist",
+                    "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+                }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 222222,
+            "explicit": false,
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "name": "Song Name",
+            "popularity": 100,
+            "type": "track",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        },
+        {
+            "album": {
+                "album_type": "ALBUM"
+            },
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://example.invalid"
+                    },
+                    "href": "https://example.invalid",
+                    "id": "somethingAb1234Af9D9Cb",
+                    "name": "Artist",
+                    "type": "artist",
+                    "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+                }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 222222,
+            "explicit": false,
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "name": "Song Name",
+            "popularity": 100,
+            "type": "track",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        },
+        {
+            "album": {
+                "album_type": "ALBUM"
+            },
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://example.invalid"
+                    },
+                    "href": "https://example.invalid",
+                    "id": "somethingAb1234Af9D9Cb",
+                    "name": "Artist",
+                    "type": "artist",
+                    "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+                }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 222222,
+            "explicit": false,
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "name": "Song Name",
+            "popularity": 100,
+            "type": "track",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        },
+        {
+            "album": {
+                "album_type": "ALBUM"
+            },
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://example.invalid"
+                    },
+                    "href": "https://example.invalid",
+                    "id": "somethingAb1234Af9D9Cb",
+                    "name": "Artist",
+                    "type": "artist",
+                    "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+                }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 222222,
+            "explicit": false,
+            "external_urls": {
+                "spotify": "https://example.invalid"
+            },
+            "href": "https://example.invalid",
+            "id": "somethingAb1234Af9D9Cb",
+            "name": "Song Name",
+            "popularity": 100,
+            "type": "track",
+            "uri": "spotify:artist:somethingAb1234Af9D9Cb"
+        }
+    ],
+    "next": "https://example.invalid",
+    "previous": null
+}

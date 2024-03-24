@@ -223,6 +223,10 @@ class Sptfy:
         except SpotifyException as e:
             if e.http_status == 400:
                 return False
+            else:
+                logger.debug(e.msg)
+                print(f"ERROR: Something went wrong!")
+                sys.exit(1)
         except:
             print(f"ERROR: Something went wrong!")
             sys.exit(1)
