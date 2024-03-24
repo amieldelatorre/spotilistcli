@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Create and upload executable
+      - name: Runs tests
         run: |
           python -m venv .venv
           source ./.venv/bin/activate
