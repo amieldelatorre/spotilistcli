@@ -1,5 +1,6 @@
 import helpers
 import pytest
+from unittest.mock import mock_open, patch, call
 
 
 @pytest.mark.parametrize("response, env_var_name, expected_result", [
@@ -138,3 +139,24 @@ def test_get_obj_dict():
     env_vars = helpers.EnvironmentVariables("something", "something", "something")
 
     assert helpers.get_obj_dict(env_vars) == expected
+
+
+def test_environment_variables_class_write_to_file():
+    filepath = "test_file.path"
+    env_vars = helpers.EnvironmentVariables(
+        spotify_client_id="spotify_client_id",
+        spotify_client_secret="spotify_client_secret",
+        spotify_redirect_uri="spotify_redirect_uri"
+    )
+    calls = [
+        call(f"{helpers.SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR}=spotify_client_id\n"),
+        call(f"{helpers.SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR}=spotify_client_secret\n"),
+        call(f"{helpers.SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR}=spotify_redirect_uri\n")
+    ]
+
+    with patch("builtins.open", mock_open()) as mock:
+        env_vars.write_to_file(filepath=filepath)
+        mock.assert_called_once()
+        write_mocked = mock()
+        assert write_mocked.write.call_count == 3
+        write_mocked.write.assert_has_calls(calls)

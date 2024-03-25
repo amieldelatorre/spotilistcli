@@ -19,12 +19,7 @@ def configure_command() -> None:
 
     logger.debug(f"{env_filepath} does not exist, continuing and retrieving as input")
     env_vars = get_required_environment_variables_as_input()
-    logger.debug(f"Writing retrieved variables to {env_filepath}")
-    with open(env_filepath, "w") as file:
-        file.write(f"{SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR}={env_vars.spotify_client_id}\n")
-        file.write(f"{SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR}={env_vars.spotify_client_secret}\n")
-        file.write(f"{SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR}={env_vars.spotify_redirect_uri}\n")
-
+    env_vars.write_to_file(env_filepath)
     print(f"\nConfiguration successful! .env has been populated at {env_filepath}.")
     print("Login with: spotilistcli auth login")
 

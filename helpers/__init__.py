@@ -27,6 +27,13 @@ class EnvironmentVariables:
             self.spotify_client_secret == other.spotify_client_secret and \
             self.spotify_redirect_uri == other.spotify_redirect_uri
 
+    def write_to_file(self, filepath):
+        logger.debug(f"Writing environment variables to {filepath}")
+        with open(filepath, "w") as file:
+            file.write(f"{SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR}={self.spotify_client_id}\n")
+            file.write(f"{SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR}={self.spotify_client_secret}\n")
+            file.write(f"{SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR}={self.spotify_redirect_uri}\n")
+
 
 def get_obj_dict(obj) -> Dict:
     return obj.__dict__
