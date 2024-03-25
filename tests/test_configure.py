@@ -26,8 +26,8 @@ def test_configure_command(
     if exit_expected:
         with pytest.raises(SystemExit) as wrapper_exit:
             configure.configure_command()
-            assert wrapper_exit.type == SystemExit
-            assert wrapper_exit.value.code == expected_exit_code
+        assert wrapper_exit.type == SystemExit
+        assert wrapper_exit.value.code == expected_exit_code
     else:
         calls = [
             call(f"{helpers.SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR}={getpass_list[0]}\n"),

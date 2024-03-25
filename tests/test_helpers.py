@@ -29,8 +29,8 @@ def test_get_required_environment_variables_as_input(monkeypatch, getpass_list, 
     if exit_expected:
         with pytest.raises(SystemExit) as wrapper_exit:
             helpers.get_required_environment_variables_as_input()
-            assert wrapper_exit.type == SystemExit
-            assert wrapper_exit.value.code == expected_exit_code
+        assert wrapper_exit.type == SystemExit
+        assert wrapper_exit.value.code == expected_exit_code
     else:
         result = helpers.get_required_environment_variables_as_input()
         assert expected_result == result
@@ -116,8 +116,8 @@ def test_login_required(monkeypatch, cache_file_exists, expected_exit_code):
     else:
         with pytest.raises(SystemExit) as wrapper_exit:
             dummy()
-            assert wrapper_exit.type == SystemExit
-            assert wrapper_exit.value.code == expected_exit_code
+        assert wrapper_exit.type == SystemExit
+        assert wrapper_exit.value.code == expected_exit_code
 
 
 def test_get_cache_file_path():
