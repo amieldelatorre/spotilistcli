@@ -124,7 +124,8 @@ def get_user_top_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--time-range",
         action="store",
-        help=f"Time frame to compute for the data. Can be the follow {'|'.join(VALID_TIME_RANGE)}",
+        help=f"Time frame to compute for the data",
+        choices=VALID_TIME_RANGE,
         required=False,
         default=VALID_TIME_RANGE[0]
     )
@@ -151,9 +152,6 @@ def get_user_top_args_errors(args: argparse.Namespace) -> List[str]:
             errors.append("ERROR: offset provided is not a positive integer")
     elif not args.offset.isdigit():
         errors.append("ERROR: offset provided is not a positive integer")
-
-    if args.time_range not in VALID_TIME_RANGE:
-        errors.append(f"ERROR: time-range provided is not a valid value of {'|'.join(VALID_TIME_RANGE)}")
 
     return errors
 

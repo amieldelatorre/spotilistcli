@@ -35,7 +35,7 @@ def test_user_top_command(monkeypatch, capfd, sptfy_mock, args_list, exit_expect
             with open("tests/files/sptfy_current_user_top_artists_queries.json.test", "r") as file:
                 data = json.load(file)
                 monkeypatch.setattr(
-                    spotipy.Spotify, "current_user_top_tracks",
+                    spotipy.Spotify, "current_user_top_artists",
                     lambda self, limit, offset, time_range: data
                 )
                 user_top.top_artists_subcommand(args_list[1:], sptfy_mock)
@@ -62,6 +62,9 @@ def test_user_top_command(monkeypatch, capfd, sptfy_mock, args_list, exit_expect
     (["--limit", "0"], True, 1),
     (["--limit", "-1"], True, 1),
     (["--offset", "-1"], True, 1),
+    (["--time-range", "short"], True, 2),
+    (["--time--range", "medium_terms"], True, 2),
+    (["--time-range", "short_term"], False, 0),
     (["--offset", "0"], False, 1),
     ([], False, 0),
 ])
@@ -76,7 +79,7 @@ def test_top_artists_subcommand(monkeypatch, capfd, sptfy_mock, args_list, exit_
         assert exit_wrapper.value.code == expected_exit_code
     else:
         monkeypatch.setattr(
-            spotipy.Spotify, "current_user_top_tracks",
+            spotipy.Spotify, "current_user_top_artists",
             lambda self, limit, offset, time_range: data
         )
         user_top.top_artists_subcommand(args_list, sptfy_mock)
@@ -92,6 +95,9 @@ def test_top_artists_subcommand(monkeypatch, capfd, sptfy_mock, args_list, exit_
     (["--limit", "0"], True, 1),
     (["--limit", "-1"], True, 1),
     (["--offset", "-1"], True, 1),
+    (["--time-range", "short"], True, 2),
+    (["--time--range", "medium_terms"], True, 2),
+    (["--time-range", "short_term"], False, 0),
     (["--offset", "0"], False, 1),
     ([], False, 0),
 ])
