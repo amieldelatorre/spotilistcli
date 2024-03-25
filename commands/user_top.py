@@ -137,15 +137,17 @@ def get_user_top_args_errors(args: argparse.Namespace) -> List[str]:
     errors = []
 
     # Validate limit
-    if type(args.limit) is int:
-        if args.limit <= 0:
-            errors.append("ERROR: limit provided is not a positive integer greater than 0")
+    if type(args.limit) is int or args.limit.isdigit():
+        limit = int(args.limit)
+        if limit <= 0 or limit >= 51:
+            errors.append("ERROR: limit provided is not a positive integer greater than 0 and less than or equal to 50")
     elif not args.limit.isdigit():
         errors.append("ERROR: limit provided is not a positive integer greater than 0")
 
-    # Validate limit
-    if type(args.offset) is int:
-        if args.offset < 0:
+    # Validate offset
+    if type(args.offset) is int or args.offset.isdigit():
+        offset = int(args.offset)
+        if offset < 0:
             errors.append("ERROR: offset provided is not a positive integer")
     elif not args.offset.isdigit():
         errors.append("ERROR: offset provided is not a positive integer")
