@@ -78,24 +78,13 @@ def download_playlists(args: List[str], sptfy: Sptfy) -> None:
     playlists_no_songs = sptfy.get_all_playlists_no_songs()
     logger.info(f'Number of playlists found: {len(playlists_no_songs)}')
 
-    count = 0
     num_playlists = len(playlists_no_songs) + 1  # There is a +1 for liked songs
-    playlists = []
-
-    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
-        logger.debug(f"Retrieve playlists with their songs")
-        tasks = executor.map(get_playlist_with_songs, playlists_no_songs, repeat(sptfy))
-        for task in tasks:
-            playlists.append(task)
-            count += 1
-            if download_args.show_progress:
-                print(f"{count}/{num_playlists} completed")
-
-    logger.debug(f"Retrieve liked songs")
-    liked_songs = sptfy.get_saved_tracks_as_playlist()
-    playlists.append(liked_songs)
-    count += 1
-    print(f"{count}/{num_playlists} completed")
+    playlists = get_playlists_with_songs(
+        num_playlists=num_playlists,
+        playlists_no_songs=playlists_no_songs,
+        sptfy=sptfy,
+        show_progress=download_args.show_progress
+    )
 
     with open(filename, 'w') as file:
         logger.info(f"Writing to file '{filename}' in the local directory")
@@ -243,6 +232,29 @@ def get_playlist_with_songs(playlist: PlaylistNoSongs, sptfy: Sptfy) -> Playlist
         songs=songs
     )
     return playlist_with_songs
+
+
+def get_playlists_with_songs(num_playlists: int, playlists_no_songs: List[PlaylistNoSongs], sptfy: Sptfy,
+                             show_progress: True) -> List[PlaylistWithSongs]:
+    count = 0
+    playlists = []
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+        logger.debug(f"Retrieve playlists with their songs")
+        tasks = executor.map(get_playlist_with_songs, playlists_no_songs, repeat(sptfy))
+        for task in tasks:
+            playlists.append(task)
+            count += 1
+            if show_progress:
+                print(f"{count}/{num_playlists} completed")
+
+    logger.debug(f"Retrieve liked songs")
+    liked_songs = sptfy.get_saved_tracks_as_playlist()
+    playlists.append(liked_songs)
+    count += 1
+    print(f"{count}/{num_playlists} completed")
+
+    return playlists
 
 
 PLAYLIST_COMMAND_NAME = "playlist"
