@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.0.10] - 2024-03-XX
+## [0.0.10] - 2024-04-03
 
 ### Added
 - Catch errors with OAuth
