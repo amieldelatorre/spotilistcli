@@ -1,0 +1,2510 @@
+[
+    {
+        "href": "https://example.invalid",
+        "items": [
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 347
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 4
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 4858
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 895
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 30
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 400
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 100
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": "#ffffff",
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 50
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 352
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 50
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 96
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 100
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 4
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": "#FFFFFf",
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 150
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 42
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 0
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 100
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 109
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": "#ffffff",
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 60
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 173
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 94
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 46
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 10
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 586
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 277
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": "#ffffff",
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 155
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 176
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 172
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 78
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 49
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 74
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 65
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": "#FFFFFF",
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 51
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": "#ffffff",
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 100
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": "#ffffff",
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 75
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": true,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 33
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 11
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 414
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 50
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 50
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 50
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 18
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 69
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 306
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 34
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 241
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 20
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 251
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 0
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 2
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            }
+        ],
+        "limit": 50,
+        "next": "https://example.invalid",
+        "offset": 0,
+        "previous": null,
+        "total": 118
+    },
+    {
+        "href": "https://example.invalid",
+        "items": [
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 2
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 0
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 0
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 0
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 1
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 68
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 0
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 0
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 0
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 100
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 268
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 366
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 13
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 175
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 27
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 9988
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 500
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 268
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 68
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 36
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 167
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 292
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 124
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 180
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 100
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 100
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 100
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 231
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 474
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 3
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 100
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 21
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 10
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 10
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 286
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 1594
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 122
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 19
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 3
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 17
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 60
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 73
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 208
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 24
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 64
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 180
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 14
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 28
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 292
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 15
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            }
+        ],
+        "limit": 50,
+        "next": "https://example.invalid",
+        "offset": 50,
+        "previous": "https://example.invalid",
+        "total": 118
+    },
+    {
+        "href": "https://example.invalid",
+        "items": [
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 17
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 7
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 16
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 7
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": "#ffffff",
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 50
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 15
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 9
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 16
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 29
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 11
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 8
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 34
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 15
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 17
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 38
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 24
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 14
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            },
+            {
+                "collaborative": false,
+                "description": "",
+                "external_urls": {
+                    "spotify": "https://example.invalid"
+                },
+                "href": "https://example.invalid",
+                "id": "somethingAb1234Af9D9Cb",
+                "images": [],
+                "name": "Playlist Name",
+                "owner": {},
+                "primary_color": null,
+                "public": true,
+                "snapshot_id": "something",
+                "tracks": {
+                    "href": "https://example.invalid",
+                    "total": 7
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:somethingAb1234Af9D9Cb"
+            }
+        ],
+        "limit": 50,
+        "next": null,
+        "offset": 100,
+        "previous": "https://example.invalid",
+        "total": 118
+    }
+]

@@ -1,6 +1,6 @@
 import spotipy
 import json
-from sys import exit
+import sys
 from spotipy import SpotifyException
 from spotipy.oauth2 import SpotifyOAuth
 from dataclasses import dataclass
@@ -116,8 +116,9 @@ class Sptfy:
             auth_manager=auth_manager
         )
 
-    def auth(self) -> None:
+    def auth(self) -> bool:
         self.spotify.current_user()
+        return True
 
     def get_all_playlists_no_songs(self, limit=50, offset=0) -> List[PlaylistNoSongs]:
         logger.info(f"Retrieving all playlists")
@@ -222,9 +223,13 @@ class Sptfy:
         except SpotifyException as e:
             if e.http_status == 400:
                 return False
+            else:
+                logger.debug(e.msg)
+                print(f"ERROR: Something went wrong!")
+                sys.exit(1)
         except:
             print(f"ERROR: Something went wrong!")
-            exit(1)
+            sys.exit(1)
 
     def get_user_top_artists(self, limit=10, offset=0, time_range="short_term") -> List[Artist]:
         query = self.spotify.current_user_top_artists(limit=limit, offset=offset, time_range=time_range)

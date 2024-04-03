@@ -1,0 +1,77 @@
+{
+  "next": null,
+  "items": [
+  {
+        "track": {
+            "artists": [
+                {
+                    "name": "artist1"
+                }
+            ],
+            "external_urls": {
+                "spotify": "https://example.invalid1"
+            },
+            "name": "track1"
+        }
+    },
+    {
+        "track": {
+            "artists": [
+                {
+                    "name": "artist2"
+                }
+            ],
+            "external_urls": {
+                "spotify": "https://example.invalid2"
+            },
+            "name": "track2"
+        }
+    },
+    {
+        "track": {
+            "artists": [
+                {
+                    "name": "artist3"
+                }
+            ],
+            "external_urls": {
+                "spotify": "https://example.invalid3"
+            },
+            "name": "track3"
+        }
+    },
+    {
+        "track": {
+            "artists": [
+                {
+                    "name": "artist4"
+                },
+                {
+                    "name": "artist5"
+                },
+                {
+                    "name": "artist6"
+                },
+                {
+                    "name": "artist7"
+                },
+                {
+                    "name": "artist8"
+                }
+            ],
+            "external_urls": {
+                "spotify": "https://example.invalid4"
+            },
+            "name": "track4"
+        }
+    },
+    {
+      "track": {
+        "external_urls": {
+          "spotify": "https://example.invalid5"
+        },
+        "name": "track5"
+      }
+    }
+  ]
+}

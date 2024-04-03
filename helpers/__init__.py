@@ -1,10 +1,13 @@
 import os
 import getpass
+import sys
+import __main__
+import time
 from pathlib import Path
-from sys import exit
 from dotenv import load_dotenv
 from typing import Dict, List, Callable
 from dataclasses import dataclass
+from log import logger
 
 
 SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR = "SPOTIFY_CLIENT_ID"
@@ -18,26 +21,44 @@ class EnvironmentVariables:
     spotify_client_secret: str
     spotify_redirect_uri: str
 
+    def __eq__(self, other):
+        return type(self) is type(other) and \
+            self.spotify_client_id == other.spotify_client_id and \
+            self.spotify_client_secret == other.spotify_client_secret and \
+            self.spotify_redirect_uri == other.spotify_redirect_uri
+
+    def write_to_file(self, filepath):
+        logger.debug(f"Writing environment variables to {filepath}")
+        with open(filepath, "w") as file:
+            file.write(f"{SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR}={self.spotify_client_id}\n")
+            file.write(f"{SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR}={self.spotify_client_secret}\n")
+            file.write(f"{SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR}={self.spotify_redirect_uri}\n")
+
 
 def get_obj_dict(obj) -> Dict:
     return obj.__dict__
 
 
-def null_or_empty(response: str, env_var_name) -> None:
+def null_or_empty(response: str, env_var_name) -> bool:
     if response is None or response == "":
         print(f"ERROR: '{env_var_name}' cannot be null or empty!")
-        exit(1)
+        return True
+    return False
 
 
 def get_required_environment_variables_as_input() -> EnvironmentVariables:
+    logger.debug(f"Retrieving required environment variables as input")
     spotify_client_id = getpass.getpass(f"{SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR}: ").strip()
-    null_or_empty(spotify_client_id, SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR)
+    if null_or_empty(spotify_client_id, SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR):
+        sys.exit(1)
 
     spotify_client_secret = getpass.getpass(f"{SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR}: ").strip()
-    null_or_empty(spotify_client_secret, SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR)
+    if null_or_empty(spotify_client_secret, SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR):
+        sys.exit(1)
 
     spotify_redirect_uri = input(f"{SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR}: ").strip()
-    null_or_empty(spotify_redirect_uri, SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR)
+    if null_or_empty(spotify_redirect_uri, SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR):
+        sys.exit(1)
 
     env_vars = EnvironmentVariables(
         spotify_client_id=spotify_client_id,
@@ -49,6 +70,7 @@ def get_required_environment_variables_as_input() -> EnvironmentVariables:
 
 
 def get_required_environment_variables() -> EnvironmentVariables:
+    logger.debug(f"Retrieving required environment variables")
     load_dotenv()
 
     spotify_client_id = os.getenv(SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR, default=None)
@@ -56,11 +78,11 @@ def get_required_environment_variables() -> EnvironmentVariables:
     spotify_redirect_uri = os.getenv(SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR, default=None)
 
     missing_environment_variables = []
-    if spotify_client_id is None:
+    if spotify_client_id is None or spotify_client_id.strip() == "":
         missing_environment_variables.append(SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR)
-    if spotify_client_secret is None:
+    if spotify_client_secret is None or spotify_client_secret.strip() == "":
         missing_environment_variables.append(SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR)
-    if spotify_redirect_uri is None:
+    if spotify_redirect_uri is None or spotify_redirect_uri.strip() == "":
         missing_environment_variables.append(SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR)
 
     if len(missing_environment_variables) > 0:
@@ -68,7 +90,7 @@ def get_required_environment_variables() -> EnvironmentVariables:
         for env_var in missing_environment_variables:
             print(f"\t- {env_var}")
         print("Please run: spotilist configure")
-        exit(1)
+        sys.exit(1)
 
     env_vars = EnvironmentVariables(
         spotify_client_id=spotify_client_id,
@@ -107,11 +129,13 @@ def login_required(func) -> Callable:
         cache_filepath = get_cache_file_path()
 
         if os.path.exists(cache_filepath):
-            func(*args, **kwargs)
+            logger.debug(f"{cache_filepath} exists and going to function")
+            return func(*args, **kwargs)
         else:
+            logger.debug(f"{cache_filepath} does not exist")
             print("Not currently logged in!")
-            print("Please log in with: `spotilist auth login`")
-            exit(1)
+            print("Please log in with: spotilist auth login")
+            sys.exit(1)
 
     return wrapper
 
@@ -123,3 +147,27 @@ def get_env_file_path() -> str:
     env_filepath = os.path.join(working_directory, env_filename)
 
     return env_filepath
+
+
+def get_parent_dir() -> Path:
+    # Get parent dir and switch the working directory
+    # When run as an executable, the working directory is a temp folder,
+    # using this we can get the folder of the actual file
+    if getattr(sys, 'frozen', False):
+        executable_path = Path(sys.executable)
+        parent_dir = executable_path.parent.absolute()
+    else:
+        main_script_path = Path(os.path.realpath(__main__.__file__))
+        parent_dir = main_script_path.parent.absolute()
+    return parent_dir
+
+
+def time_taken(func) -> Callable:
+    def wrapper(*args, **kwargs) -> None:
+        start = time.time()
+        func(*args, **kwargs)
+        end = time.time()
+        duration = end - start
+        logger.info(f"Time taken: {round(duration, 2)} seconds")
+
+    return wrapper

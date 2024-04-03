@@ -1,43 +1,45 @@
 import argparse
 import concurrent.futures
 import json
-import time
-from sys import exit
+import sys
 from datetime import datetime
 from argparse import ArgumentParser
 from typing import List, Callable, Optional
 from sptfy import Sptfy, PlaylistNoSongs, PlaylistWithSongs, Song
 from itertools import repeat
-from helpers import get_obj_dict
+from helpers import get_obj_dict, time_taken
 from log import logger
 from helpers import get_longest_string, get_command_usage, login_required
 
 
 @login_required
 def playlist_command(original_args: List[str], sptfy: Sptfy) -> None:
+    logger.debug("'playlist' command invoked")
     if len(original_args) < 1:
         print(get_command_usage(
             command=PLAYLIST_COMMAND_NAME,
             subcommands=PLAYLIST_COMMAND_SUBCOMMANDS
         ))
-        exit(1)
+        sys.exit(1)
 
     subcommand = original_args[0]
 
     if subcommand == "help":
+        logger.debug("'playlist' help command invoked")
         print(get_command_usage(
             command=PLAYLIST_COMMAND_NAME,
             subcommands=PLAYLIST_COMMAND_SUBCOMMANDS
         ))
-        exit(0)
+        sys.exit(0)
 
     subcommand_function: Optional[Callable] = PLAYLIST_COMMAND_SUBCOMMANDS.get(subcommand, None)
     if subcommand_function is None:
+        logger.debug(f"'playlist' '{subcommand}' subcommand not found")
         print(f"Unknown subcommand '{subcommand}', {get_command_usage(
             command=PLAYLIST_COMMAND_NAME,
             subcommands=PLAYLIST_COMMAND_SUBCOMMANDS
         )}")
-        exit(1)
+        sys.exit(1)
 
     subcommand_function(
         args=original_args[1:],
@@ -52,53 +54,43 @@ def get_filename(sptfy: Sptfy) -> str:
     return filename
 
 
+@time_taken
 def download_playlists(args: List[str], sptfy: Sptfy) -> None:
+    logger.debug(f"'playlist' 'download' subcommand invoked")
     parser = get_playlist_download_parser()
     download_args = parser.parse_args(args)
 
-    start = time.time()
-
+    logger.debug(f"Retrieve or validate filename")
     if download_args.filename is None:
         filename = get_filename(sptfy)
     elif download_args.filename.strip() == "":
         print(f"ERROR: Filename cannot be blank or null!")
-        exit(1)
+        sys.exit(1)
     elif not download_args.filename.strip().endswith('.json'):
         print(f"ERROR: Filename must end with '.json'")
-        exit(1)
+        sys.exit(1)
     else:
         filename = download_args.filename
 
     print(f"The filename will be {filename}")
 
+    logger.debug(f"Retrieve list of playlists without songs")
     playlists_no_songs = sptfy.get_all_playlists_no_songs()
     logger.info(f'Number of playlists found: {len(playlists_no_songs)}')
 
-    count = 0
     num_playlists = len(playlists_no_songs) + 1  # There is a +1 for liked songs
-    playlists = []
-
-    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
-        tasks = executor.map(get_playlist_with_songs, playlists_no_songs, repeat(sptfy))
-        for task in tasks:
-            playlists.append(task)
-            count += 1
-            if download_args.show_progress:
-                print(f"{count}/{num_playlists} completed")
-
-    liked_songs = sptfy.get_saved_tracks_as_playlist()
-    playlists.append(liked_songs)
-    count += 1
-    print(f"{count}/{num_playlists} completed")
+    playlists = get_playlists_with_songs(
+        num_playlists=num_playlists,
+        playlists_no_songs=playlists_no_songs,
+        sptfy=sptfy,
+        show_progress=download_args.show_progress
+    )
 
     with open(filename, 'w') as file:
         logger.info(f"Writing to file '{filename}' in the local directory")
         file.write(json.dumps(playlists, default=get_obj_dict))
         logger.info(f"Number of playlists processed: {len(playlists)} (There is a +1 for liked songs)")
 
-    end = time.time()
-    time_taken = end - start
-    logger.info(f"Time taken: {round(time_taken, 2)} seconds")
     print("Finished!")
 
 
@@ -176,14 +168,19 @@ def get_playlist_show_parser() -> ArgumentParser:
     return parser
 
 
+@time_taken
 def list_playlists(args: List[str], sptfy: Sptfy) -> None:
     parser = get_playlist_list_parser()
     list_args = parser.parse_args(args)
 
+    logger.debug(f"Retrieve playlist names")
     playlists_no_songs = sptfy.get_all_playlists_no_songs()
     longest_playlist_name = get_longest_string([playlist.name for playlist in playlists_no_songs])
     longest_playlist_id = get_longest_string([playlist.id for playlist in playlists_no_songs])
 
+    logger.debug(f"Showing playlist names")
+    if list_args.show_id:
+        logger.debug(f"Showing playlist Ids")
     for playlist in playlists_no_songs:
         print(f"{playlist.name:<{longest_playlist_name}}", end="")
         if list_args.show_id:
@@ -191,6 +188,7 @@ def list_playlists(args: List[str], sptfy: Sptfy) -> None:
         print()
 
 
+@time_taken
 def show_playlist(args: List[str], sptfy: Sptfy) -> None:
     parser = get_playlist_show_parser()
     show_args = parser.parse_args(args)
@@ -198,15 +196,24 @@ def show_playlist(args: List[str], sptfy: Sptfy) -> None:
     if show_args.playlist_id is None or show_args.playlist_id.strip() == "":
         print("ERROR: Invalid playlist id, cannot be None or empty!")
 
+    logger.debug(f"Validate playlist id")
     playlist_id = show_args.playlist_id.strip()
     if not sptfy.playlist_exists(playlist_id):
         print(f"ERROR: Playlist Id could not be found!")
-        exit(1)
+        sys.exit(1)
 
+    logger.debug(f"Retrieve playlist")
     songs = sptfy.get_playlist_content(playlist_id)
     longest_song_name = get_longest_string([song.name for song in songs])
     longest_artists = get_longest_string([','.join(song.artists) for song in songs])
     longest_url = get_longest_string([song.spotify_url for song in songs])
+
+    logger.debug(f"Showing playlist contents")
+    if show_args.show_artists:
+        logger.debug(f"Showing song artists")
+    if show_args.show_url:
+        logger.debug(f"Showing song urls")
+
     for song in songs:
         print(f"{song.name:<{longest_song_name}}", end="")
         if show_args.show_artists:
@@ -218,12 +225,36 @@ def show_playlist(args: List[str], sptfy: Sptfy) -> None:
 
 
 def get_playlist_with_songs(playlist: PlaylistNoSongs, sptfy: Sptfy) -> PlaylistWithSongs:
+    logger.debug(f"Retrieve song for playlist")
     songs: List[Song] = sptfy.get_playlist_content(playlist_id=playlist.id)
     playlist_with_songs = PlaylistWithSongs(
         playlist=playlist,
         songs=songs
     )
     return playlist_with_songs
+
+
+def get_playlists_with_songs(num_playlists: int, playlists_no_songs: List[PlaylistNoSongs], sptfy: Sptfy,
+                             show_progress: True) -> List[PlaylistWithSongs]:
+    count = 0
+    playlists = []
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+        logger.debug(f"Retrieve playlists with their songs")
+        tasks = executor.map(get_playlist_with_songs, playlists_no_songs, repeat(sptfy))
+        for task in tasks:
+            playlists.append(task)
+            count += 1
+            if show_progress:
+                print(f"{count}/{num_playlists} completed")
+
+    logger.debug(f"Retrieve liked songs")
+    liked_songs = sptfy.get_saved_tracks_as_playlist()
+    playlists.append(liked_songs)
+    count += 1
+    print(f"{count}/{num_playlists} completed")
+
+    return playlists
 
 
 PLAYLIST_COMMAND_NAME = "playlist"

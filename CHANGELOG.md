@@ -1,20 +1,24 @@
 # Changelog
 
-## [0.0.9] - 2024-03-23
+## [0.0.10] - 2024-04-03
 
 ### Added
-- Instructions on README to download executable
-- Add GNU GENERAL PUBLIC LICENSE Version 3 License
-- New command to configure variables
+- Catch errors with OAuth
+- Tests
+- Workflow to run tests
+- Logging
+- Time taken decorator function
 
 ### Fixed
 N/A
 
 ### Changed
-N/A
+- Separated the retrieval of parent directory to a different function
+- Minor refactoring
+- Using a decorator function for time taken now
 
 ### Removed
-- Removed use of environments
+N/A
 
 
-[0.0.9]: https://github.com/amieldelatorre/spotilistcli/compare/0.0.8...0.0.9
+[0.0.10]: https://github.com/amieldelatorre/spotilistcli/compare/0.0.9...0.0.10
