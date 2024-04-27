@@ -1,24 +1,19 @@
 # Changelog
 
-## [0.0.10] - 2024-04-03
+## [0.0.11] - 2024-04-27
 
 ### Added
-- Catch errors with OAuth
-- Tests
-- Workflow to run tests
-- Logging
-- Time taken decorator function
+- Add executable build for macos
 
 ### Fixed
 N/A
 
 ### Changed
-- Separated the retrieval of parent directory to a different function
-- Minor refactoring
-- Using a decorator function for time taken now
+- Name of build jobs
+- Dependency on test for build jobs for new tag
 
 ### Removed
 N/A
 
 
-[0.0.10]: https://github.com/amieldelatorre/spotilistcli/compare/0.0.9...0.0.10
+[0.0.11]: https://github.com/amieldelatorre/spotilistcli/compare/0.0.10...0.0.11
