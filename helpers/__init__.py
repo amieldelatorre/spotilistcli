@@ -28,7 +28,9 @@ class EnvironmentVariables:
             self.spotify_redirect_uri == other.spotify_redirect_uri
 
     def write_to_file(self, filepath):
-        logger.debug(f"Writing environment variables to {filepath}")
+        logger.debug(f"Writing environment variables to {filepath}, creating directory if it does not exist")
+
+        os.makedirs(os.path.dirname(filepath), exist_ok=True)
         with open(filepath, "w") as file:
             file.write(f"{SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR}={self.spotify_client_id}\n")
             file.write(f"{SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR}={self.spotify_client_secret}\n")
@@ -71,7 +73,7 @@ def get_required_environment_variables_as_input() -> EnvironmentVariables:
 
 def get_required_environment_variables() -> EnvironmentVariables:
     logger.debug(f"Retrieving required environment variables")
-    load_dotenv()
+    load_dotenv(dotenv_path=get_env_file_path())
 
     spotify_client_id = os.getenv(SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR, default=None)
     spotify_client_secret = os.getenv(SPOTIFY_CLIENT_SECRET_ENV_VARIABLE_STR, default=None)
@@ -89,7 +91,7 @@ def get_required_environment_variables() -> EnvironmentVariables:
         print(f"ERROR: The following environment variable(s) are missing:")
         for env_var in missing_environment_variables:
             print(f"\t- {env_var}")
-        print("Please run: spotilist configure")
+        print("Please run: spotilistcli configure")
         sys.exit(1)
 
     env_vars = EnvironmentVariables(
@@ -112,16 +114,14 @@ def get_longest_string(strings: List[str]) -> int:
 
 def get_command_usage(command: str, subcommands: Dict) -> str:
     command_names = list(subcommands.keys())
-    return f"usage: spotiList {command} {{help,{','.join(command_names)}}}"
+    return f"usage: spotilistcli {command} {{help,{','.join(command_names)}}}"
 
 
 def get_cache_file_path() -> str:
-    # Depends on app.py changing the working directory to the main script's directory
-    cache_filename = ".cache"
-    working_directory = Path(os.getcwd())
-    cache_filepath = os.path.join(working_directory, cache_filename)
+    cache_filepath = os.path.join(str(Path.home()), ".config", "spotilistcli", ".cache")
+    cache_abs_filepath = os.path.abspath(cache_filepath)
 
-    return cache_filepath
+    return cache_abs_filepath
 
 
 def login_required(func) -> Callable:
@@ -134,19 +134,17 @@ def login_required(func) -> Callable:
         else:
             logger.debug(f"{cache_filepath} does not exist")
             print("Not currently logged in!")
-            print("Please log in with: spotilist auth login")
+            print("Please log in with: spotilistcli auth login")
             sys.exit(1)
 
     return wrapper
 
 
 def get_env_file_path() -> str:
-    # Depends on app.py changing the working directory to the main script's directory
-    env_filename = ".env"
-    working_directory = Path(os.getcwd())
-    env_filepath = os.path.join(working_directory, env_filename)
+    env_filepath = os.path.join(str(Path.home()), ".config", "spotilistcli", ".env")
+    env_abs_filepath = os.path.abspath(env_filepath)
 
-    return env_filepath
+    return env_abs_filepath
 
 
 def get_parent_dir() -> Path:

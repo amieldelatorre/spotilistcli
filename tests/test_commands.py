@@ -9,4 +9,4 @@ def test_get_usage(monkeypatch):
     })
 
     result = commands.get_usage()
-    assert result == "usage: spotiList {help,configure,something1,something2,something3}"
+    assert result == "usage: spotilistcli {help,configure,something1,something2,something3}"

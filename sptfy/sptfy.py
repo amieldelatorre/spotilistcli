@@ -2,10 +2,11 @@ import spotipy
 import json
 import sys
 from spotipy import SpotifyException
-from spotipy.oauth2 import SpotifyOAuth
+from spotipy.oauth2 import SpotifyOAuth, CacheFileHandler
 from dataclasses import dataclass
 from typing import List, Dict
 from log import logger
+from helpers import get_cache_file_path
 
 
 @dataclass
@@ -104,12 +105,15 @@ def get_spotify_url(song: Dict) -> str:
 class Sptfy:
     def __init__(self, spotify_client_id, spotify_client_secret, spotify_redirect_uri):
         logger.info(f"Authenticating with spotify")
+        cache_file_handler = CacheFileHandler(cache_path=get_cache_file_path())
+
         auth_manager = SpotifyOAuth(
             open_browser=True,
             client_id=spotify_client_id,
             client_secret=spotify_client_secret,
             redirect_uri=spotify_redirect_uri,
-            scope="playlist-read-private,playlist-read-collaborative,user-library-read,user-top-read"
+            scope="playlist-read-private,playlist-read-collaborative,user-library-read,user-top-read",
+            cache_handler=cache_file_handler
         )
 
         self.spotify = spotipy.Spotify(

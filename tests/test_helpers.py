@@ -91,7 +91,7 @@ def test_command_usage():
         "sumbcommand4": None
     }
 
-    expected = "usage: spotiList command {help,sumbcommand1,sumbcommand2,sumbcommand3,sumbcommand4}"
+    expected = "usage: spotilistcli command {help,sumbcommand1,sumbcommand2,sumbcommand3,sumbcommand4}"
     result = helpers.get_command_usage(
         command=command,
         subcommands=subcommands
@@ -142,7 +142,7 @@ def test_get_obj_dict():
 
 
 def test_environment_variables_class_write_to_file():
-    filepath = "test_file.path"
+    filepath = "sptfy_temp/test_file.path"
     env_vars = helpers.EnvironmentVariables(
         spotify_client_id="spotify_client_id",
         spotify_client_secret="spotify_client_secret",
