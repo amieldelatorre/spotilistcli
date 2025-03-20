@@ -26,4 +26,6 @@ jobs:
           python -m venv .venv
           source ./.venv/bin/activate
           pip install -r requirements.txt
-          python -m pytest -v
+          coverage run -m pytest -v --junitxml=./test_results.xml
+          echo "# Test Coverage" >> $GITHUB_STEP_SUMMARY
+          coverage report --format=markdown >> $GITHUB_STEP_SUMMARY

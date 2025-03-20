@@ -91,7 +91,7 @@ def test_get_playlist_with_songs(monkeypatch, sptfy_mock):
         id="somethingAb1234Af9D9Cb",
         name="A Playlist",
         total=347,
-        external_url="https://example.invalid"
+        spotify_playlist_url="https://example.invalid"
     )
 
     actual = playlist.get_playlist_with_songs(playlist_no_song, sptfy_mock)
@@ -220,7 +220,7 @@ def patch_get_playlist_with_songs(monkeypatch):
         id="somethingAb1234Af9D9Cb",
         name="A Playlist",
         total=2,
-        external_url="https://example.invalid"
+        spotify_playlist_url="https://example.invalid"
     )
 
     songs = [
