@@ -60,7 +60,7 @@ class PlaylistNoSongs:
     id: str
     name: str
     total: int
-    external_url: str
+    spotify_playlist_url: str
 
     def __repr__(self) -> str:
         return f"{self.name}"
@@ -74,7 +74,7 @@ class PlaylistWithSongs(PlaylistNoSongs):
         self.id = playlist.id
         self.name = playlist.name
         self.total = playlist.total
-        self.external_url = playlist.external_url
+        self.spotify_playlist_url = playlist.spotify_playlist_url
         self.songs = songs
 
     def to_json(self) -> str:
@@ -138,7 +138,7 @@ class Sptfy:
                     id=item['id'],
                     name=item['name'],
                     total=item['tracks']['total'],
-                    external_url=item['external_urls']['spotify']
+                    spotify_playlist_url=item['external_urls']['spotify']
                 )
                 playlists.append(playlist)
             if query['next'] is not None:
@@ -210,7 +210,7 @@ class Sptfy:
                 id="liked_songs",
                 name="Liked Songs",
                 total=len(songs),
-                external_url="None"
+                spotify_playlist_url="None"
             ),
             songs=songs
         )
