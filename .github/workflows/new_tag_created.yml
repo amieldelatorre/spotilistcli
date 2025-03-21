@@ -80,7 +80,7 @@ jobs:
           pip install -r requirements.txt
           pip install pyinstaller
           pyinstaller --hidden-import http.server --hidden-import commands.playlist --add-data=commands:commands --onedir --name spotilistcli app.py
-          Compress-Archive -Path dist\spotilistcli.exe -DestinationPath dist\spotilistcli_windows_amd64.zip
+          Compress-Archive -Path dist\spotilistcli -DestinationPath dist\spotilistcli_windows_amd64.zip
           gh release upload "$env:TAG" --clobber dist\spotilistcli_windows_amd64.zip
 
 
