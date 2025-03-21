@@ -227,12 +227,14 @@ def patch_get_playlist_with_songs(monkeypatch):
         sptfy.Song(
             name="A Song",
             artists=["Artist"],
-            spotify_url="https://example.invalid"
+            spotify_url="https://example.invalid",
+            youtube_url=None
         ),
         sptfy.Song(
             name="A Song",
             artists=["Artist", "Artist2"],
-            spotify_url="https://example.invalid"
+            spotify_url="https://example.invalid",
+            youtube_url=None
         )
     ]
     playlist_with_songs = sptfy.PlaylistWithSongs(

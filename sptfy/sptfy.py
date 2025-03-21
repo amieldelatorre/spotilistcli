@@ -4,7 +4,7 @@ import sys
 from spotipy import SpotifyException
 from spotipy.oauth2 import SpotifyOAuth, CacheFileHandler
 from dataclasses import dataclass
-from typing import List, Dict
+from typing import List, Dict, Optional
 from log import logger
 from helpers import get_cache_file_path
 
@@ -43,6 +43,7 @@ class Song:
     name: str
     artists: List[str]
     spotify_url: str
+    youtube_url: Optional[str]
 
     def to_json(self) -> str:
         return json.dumps(
@@ -167,7 +168,8 @@ class Sptfy:
                 song = Song(
                     name=item["track"]["name"],
                     artists=artists,
-                    spotify_url=spotify_url
+                    spotify_url=spotify_url,
+                    youtube_url=None
                 )
                 songs.append(song)
 
@@ -196,7 +198,8 @@ class Sptfy:
                 song = Song(
                     name=item["track"]["name"],
                     artists=artists,
-                    spotify_url=spotify_url
+                    spotify_url=spotify_url,
+                    youtube_url=None
                 )
                 songs.append(song)
 
@@ -254,7 +257,8 @@ class Sptfy:
             song = Song(
                 name=item["name"],
                 artists=get_top_tracks_artists(item),
-                spotify_url="spotify_url"
+                spotify_url="spotify_url",
+                youtube_url=None
             )
             songs.append(song)
 
