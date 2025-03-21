@@ -15,4 +15,4 @@ setup-env:
 build: setup-env
 	source ./.venv/bin/activate
 	pip install pyinstaller
-	pyinstaller app.py --onefile --name spotilistcli
+	pyinstaller --hidden-import http.server --hidden-import commands.playlist --add-data=commands:commands --onedir --name spotilistcli app.py
