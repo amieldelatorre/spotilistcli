@@ -1,20 +1,20 @@
 # Changelog
 
-## [0.0.12] - 2024-04-28
+## [0.1.0] - 2024-05-21
 
 ### Added
-N/A
+- Optional flag to add youtube urls to songs when downloading playlists
+- `youtube_url` and `youtube_url_validated` fields
+    - `youtube_url_validated`: means that the youtube url points to the same song as the spotify song
 
 ### Fixed
 N/A
 
 ### Changed
-- Fix inconsistent naming
-- Store .cache credentials in ~/.config/spotilistcli
-- Store .env in ~/.config/spotilistcli
+N/A
 
 ### Removed
 N/A
 
 
-[0.0.12]: https://github.com/amieldelatorre/spotilistcli/compare/0.0.11...0.0.12
+[0.1.0]: https://github.com/amieldelatorre/spotilistcli/compare/0.0.14...0.1.0
