@@ -1,9 +1,11 @@
+import threading
 import pytest
 import tempfile
 import sptfy
 import spotipy
 import json
 import os
+import ytmusic
 from datetime import datetime
 from commands import playlist
 
@@ -19,6 +21,12 @@ def sptfy_mock():
         spotify_redirect_uri="something"
     )
     return sptfy_obj
+
+
+@pytest.fixture()
+def ytm_mock():
+    ytm_obj = ytmusic.YTM()
+    return ytm_obj
 
 
 @pytest.fixture
@@ -227,12 +235,14 @@ def patch_get_playlist_with_songs(monkeypatch):
         sptfy.Song(
             name="A Song",
             artists=["Artist"],
-            spotify_url="https://example.invalid"
+            spotify_url="https://example.invalid",
+            youtube_url=None
         ),
         sptfy.Song(
             name="A Song",
             artists=["Artist", "Artist2"],
-            spotify_url="https://example.invalid"
+            spotify_url="https://example.invalid",
+            youtube_url=None
         )
     ]
     playlist_with_songs = sptfy.PlaylistWithSongs(
@@ -275,3 +285,99 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
 
     assert actual == expected
 
+
+@pytest.mark.parametrize("test_case", [
+    {
+        "playlist": sptfy.PlaylistWithSongs(playlist=sptfy.PlaylistNoSongs(
+            id="1234",
+            name="a playlist",
+            total=4,
+            spotify_playlist_url="https://example.invalid"
+        ), songs=[
+            sptfy.Song(
+                name="A Song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url=None
+            ),
+            sptfy.Song(
+                name="A Song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url=None
+            ),
+            sptfy.Song(
+                name="A Song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url=None
+            ),
+            sptfy.Song(
+                name="A Song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url=None
+            ),
+        ]),
+        "expected": sptfy.PlaylistWithSongs(playlist=sptfy.PlaylistNoSongs(
+            id="1234",
+            name="a playlist",
+            total=4,
+            spotify_playlist_url="https://example.invalid"
+        ), songs=[
+            sptfy.Song(
+                name="A Song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url="https://music.youtube.com/watch?v=wxyz"
+            ),
+            sptfy.Song(
+                name="A Song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url="https://music.youtube.com/watch?v=wxyz"
+            ),
+            sptfy.Song(
+                name="A Song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url="https://music.youtube.com/watch?v=wxyz"
+            ),
+            sptfy.Song(
+                name="A Song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url="https://music.youtube.com/watch?v=wxyz"
+            ),
+        ]),
+    }
+])
+def test_add_youtube_url_to_songs(monkeypatch, ytm_mock, test_case):
+    playlist_input = test_case["playlist"]
+    expected = test_case["expected"]
+    monkeypatch.setattr(ytmusic.YTM, "get_youtube_url", lambda self, song: "https://music.youtube.com/watch?v=wxyz")
+    monkeypatch.setattr(threading.Event, "is_set", lambda self: False)
+    event = threading.Event()
+    playlist.add_youtube_url_to_songs(playlist_input, ytm_mock, event)
+
+    assert playlist_input == expected
+
+
+def test_download_playlists_with_youtube_url(monkeypatch, sptfy_mock,
+                            patch_get_all_playlists_no_songs, patch_get_playlist_with_songs,
+                            patch_get_saved_tracks_as_playlist):
+    tmpdir = tempfile.mkdtemp()
+    temp_file = os.path.join(tmpdir, "test.json")
+    args_list = ["--filename", temp_file, "--with-youtube-url"]
+
+    monkeypatch.setattr(ytmusic.YTM, "get_youtube_url", lambda self, song: "https://music.youtube.com/watch?v=wxyz")
+
+    playlist.download_playlists(args_list, sptfy_mock)
+
+    with open(temp_file) as file:
+        actual = json.load(file)
+
+    with open("tests/files/expected_download_playlist_with_youtube_url.json.test") as file:
+        expected = json.load(file)
+
+    assert actual == expected

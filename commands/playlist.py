@@ -1,11 +1,14 @@
 import argparse
 import concurrent.futures
 import json
+import signal
 import sys
+import threading
 from datetime import datetime
 from argparse import ArgumentParser
 from typing import List, Callable, Optional
 from sptfy import Sptfy, PlaylistNoSongs, PlaylistWithSongs, Song
+from ytmusic import YTM
 from itertools import repeat
 from helpers import get_obj_dict, time_taken
 from log import logger
@@ -86,6 +89,9 @@ def download_playlists(args: List[str], sptfy: Sptfy) -> None:
         show_progress=download_args.show_progress
     )
 
+    if download_args.with_youtube_url:
+        modify_playlists_with_songs_youtube_url(playlists, download_args.show_progress)
+
     with open(filename, 'w') as file:
         logger.info(f"Writing to file '{filename}' in the local directory")
         file.write(json.dumps(playlists, default=get_obj_dict))
@@ -129,6 +135,14 @@ def get_playlist_download_parser() -> ArgumentParser:
         "--show-progress",
         action="store_true",
         help="Show how many have been completed out of the total amount",
+        required=False,
+        default=False
+    )
+
+    parser.add_argument(
+        "--with-youtube-url",
+        action="store_true",
+        help="Find and search for the Youtube Music URL",
         required=False,
         default=False
     )
@@ -246,15 +260,52 @@ def get_playlists_with_songs(num_playlists: int, playlists_no_songs: List[Playli
             playlists.append(task)
             count += 1
             if show_progress:
-                print(f"{count}/{num_playlists} completed")
+                print(f"Downloaded playlists: {count}/{num_playlists} completed")
 
     logger.debug(f"Retrieve liked songs")
     liked_songs = sptfy.get_saved_tracks_as_playlist()
     playlists.append(liked_songs)
     count += 1
-    print(f"{count}/{num_playlists} completed")
+    print(f"Downloaded playlists: {count}/{num_playlists} completed")
 
     return playlists
+
+
+def modify_playlists_with_songs_youtube_url(playlists: List[PlaylistWithSongs], show_progress: bool):
+    logger.debug("Adding youtube urls to songs")
+
+    interrupt_event = threading.Event()
+    def signal_handler(signum, frame):
+        logger.warning("Interrupt signal received, processing may be incomplete")
+        interrupt_event.set()
+
+    signal.signal(signal.SIGINT, signal_handler)
+    signal.signal(signal.SIGTERM, signal_handler)
+
+    count = 0
+    num_playlists = len(playlists)
+    ytm = YTM()
+    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as executor:
+        logger.debug(f"Retrieve playlists with their songs")
+        tasks = executor.map(add_youtube_url_to_songs, playlists, repeat(ytm), repeat(interrupt_event))
+        try:
+            for task in tasks:
+                count += 1
+                if show_progress:
+                    print(f"Added Youtube URL for playlists' songs: {count}/{num_playlists} completed")
+        except KeyboardInterrupt:
+            interrupt_event.set()
+        finally:
+            return
+
+
+def add_youtube_url_to_songs(playlist: PlaylistWithSongs, ytm: YTM, interrupt_event: threading.Event):
+    logger.debug(f"add youtube urls for playlist '{playlist.id}'")
+    for song in playlist.songs:
+        if interrupt_event.is_set():
+            logger.warning(f"interrupted playlist '{playlist.name}")
+            return playlist
+        song.youtube_url = ytm.get_youtube_url(song)
 
 
 PLAYLIST_COMMAND_NAME = "playlist"

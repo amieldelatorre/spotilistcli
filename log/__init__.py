@@ -7,4 +7,4 @@ log_format = logging.Formatter("%(asctime)s %(levelname)s %(message)s", "%Y-%m-%
 handler.setFormatter(log_format)
 logger.addHandler(handler)
 
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.WARNING)
