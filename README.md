@@ -18,7 +18,15 @@ SPOTIFY_REDIRECT_URI=http://localhost:3000/callback
 OR, once the executable has been downloaded or the project has been setup with the requirements installed, you can run `spotilistcli configure` to create the `.env` file interactively.
 
 ## Downloading the executable
-The latest executables can be found here: https://github.com/amieldelatorre/spotilistcli/releases/latest
+The latest executables can be found here: https://github.com/amieldelatorre/spotilistcli/releases/latest. After downloading and unpacking, create a shortcut (Windows) or soft links (linux/macos).
+
+```bash
+# Example of adding a symbolic link to the /usr/local/bin directory
+ln -s /full/path/to/file/spotilistcli/spotilistcli /usr/local/bin/spotilistcli
+# spotilistcli/spotilistcli (directory/actual executable)
+```
+
+The first run of the package may be slow as it will unpack the bundled dependencies, however, subsequent runs will be faster.
 
 ## Running
 Run these commands in your terminal at the root directory of the cloned .
@@ -35,7 +43,6 @@ python -m venv .venv
 source ./.venv/bin/activate
 pip install -r requirements.txt
 pip install pyinstaller
-pyinstaller --hidden-import http.server --hidden-import commands.playlist --add-data=commands:commands --onefile --name spotilistcli app.py
-# Then move the .env file to the dist/ directory or one of it's parent directories
+pyinstaller --hidden-import http.server --hidden-import commands.playlist --add-data=commands:commands --onedir --name spotilistcli app.py
 spotilistcli help
 ```
