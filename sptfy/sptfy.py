@@ -44,6 +44,7 @@ class Song:
     artists: List[str]
     spotify_url: str
     youtube_url: Optional[str] = None
+    youtube_url_validated: bool = False
 
     def to_json(self) -> str:
         return json.dumps(
