@@ -43,7 +43,7 @@ class Song:
     name: str
     artists: List[str]
     spotify_url: str
-    youtube_url: Optional[str]
+    youtube_url: Optional[str] = None
 
     def to_json(self) -> str:
         return json.dumps(
