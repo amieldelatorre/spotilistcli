@@ -90,7 +90,9 @@ def download_playlists(args: List[str], sptfy: Sptfy) -> None:
     )
 
     if download_args.with_youtube_url:
-        modify_playlists_with_songs_youtube_url(playlists, download_args.show_progress)
+        modify_playlists_with_songs_youtube_url(playlists, download_args.show_progress,
+                                                download_args.with_youtube_url_cache_from,
+                                                download_args.with_youtube_url_cache_unvalidated)
 
     with open(filename, 'w') as file:
         logger.info(f"Writing to file '{filename}' in the local directory")
@@ -143,6 +145,22 @@ def get_playlist_download_parser() -> ArgumentParser:
         "--with-youtube-url",
         action="store_true",
         help="Find and search for the Youtube Music URL",
+        required=False,
+        default=False
+    )
+
+    parser.add_argument(
+        "--with-youtube-url-cache-from",
+        action="store",
+        help="Preload the cache with Youtube URLs from a previously generated file. Null entries will be skipped and not loaded. Only takes effect when the `--with-youtube-url` flag is used.",
+        required=False,
+        default=None
+    )
+
+    parser.add_argument(
+        "--with-youtube-url-cache-unvalidated",
+        action="store_true",
+        help="Use unvalidated Youtube URLs from previously generated file. Only takes effect when the `--with-youtube-url-cache-from` flag is used.",
         required=False,
         default=False
     )
@@ -271,8 +289,13 @@ def get_playlists_with_songs(num_playlists: int, playlists_no_songs: List[Playli
     return playlists
 
 
-def modify_playlists_with_songs_youtube_url(playlists: List[PlaylistWithSongs], show_progress: bool):
+def modify_playlists_with_songs_youtube_url(playlists: List[PlaylistWithSongs], show_progress: bool,
+                                            youtube_url_cache_file: Optional[str],
+                                            use_unvalidated_url_from_youtube_url_cache: bool):
     logger.debug("Adding youtube urls to songs")
+    ytm = YTM()
+    if youtube_url_cache_file is not None:
+        preload_youtube_url_cache(ytm, youtube_url_cache_file, use_unvalidated_url_from_youtube_url_cache)
 
     interrupt_event = threading.Event()
     def signal_handler(signum, frame):
@@ -284,7 +307,6 @@ def modify_playlists_with_songs_youtube_url(playlists: List[PlaylistWithSongs], 
 
     count = 0
     num_playlists = len(playlists)
-    ytm = YTM()
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as executor:
         logger.debug(f"Retrieve playlists with their songs")
         tasks = executor.map(add_youtube_url_to_songs, playlists, repeat(ytm), repeat(interrupt_event))
@@ -306,6 +328,42 @@ def add_youtube_url_to_songs(playlist: PlaylistWithSongs, ytm: YTM, interrupt_ev
             logger.warning(f"interrupted playlist '{playlist.name}")
             return playlist
         song.youtube_url = ytm.get_youtube_url(song)
+
+
+def preload_youtube_url_cache(ytm: YTM, filename: str, use_unvalidated_url: bool):
+    print("Preloading youtube url cache")
+    if use_unvalidated_url:
+        print("`--with-youtube-url-cache-unvalidated` flag used, adding unvalidated URLs to cache")
+    try:
+        with open(filename, "r") as f:
+            data = json.load(f)
+        songs = []
+        for item in data:
+            item_songs = item["songs"]
+            for item_song in item_songs:
+                song_name = item_song["name"]
+                song_artists = item_song["artists"]
+                song_spotify_url = item_song["spotify_url"]
+                song_youtube_url = item_song["youtube_url"]
+                song_youtube_url_validated = item_song["youtube_url_validated"]
+
+                songs.append(Song(
+                    name=song_name,
+                    artists=song_artists,
+                    spotify_url=song_spotify_url,
+                    youtube_url=song_youtube_url,
+                    youtube_url_validated=song_youtube_url_validated
+                ))
+
+        for song in songs:
+            if song.youtube_url is None:
+                continue
+            if song.youtube_url_validated or use_unvalidated_url:
+                ytm.add_to_cache(song.spotify_url, song.youtube_url)
+
+    except FileNotFoundError:
+        logger.error(f"file: {filename} could not be found")
+        sys.exit(1)
 
 
 PLAYLIST_COMMAND_NAME = "playlist"

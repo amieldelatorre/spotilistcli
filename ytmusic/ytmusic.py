@@ -36,3 +36,6 @@ class YTM:
             return None
 
         return f"https://music.youtube.com/watch?v={top_result["videoId"]}"
+
+    def add_to_cache(self, spotify_url: str, youtube_url: str) -> None:
+        self.cache[spotify_url] = youtube_url

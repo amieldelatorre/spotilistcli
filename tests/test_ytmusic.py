@@ -121,3 +121,15 @@ def test_get_youtube_url(monkeypatch, ytm_mock, test_case):
 
     assert calls == expected_num_calls_to_search
     assert actual == expected_value
+
+
+def test_add_to_cache(ytm_mock):
+    input_spotify_url = "https://example.invalid"
+    input_youtube_url = "https://music.youtube.com/watch?v=wxyz"
+    expected = {
+        input_spotify_url: input_youtube_url
+    }
+
+    ytm_mock.add_to_cache(input_spotify_url, input_youtube_url)
+
+    assert ytm_mock.cache == expected

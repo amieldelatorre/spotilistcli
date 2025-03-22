@@ -1,12 +1,11 @@
 # Changelog
 
-## [0.1.0] - 2024-05-21
+## [0.1.1] - 2024-05-22
 
 ### Added
-- Optional flag to add youtube urls to songs when downloading playlists
-- `youtube_url` and `youtube_url_validated` fields
-    - `youtube_url_validated`: means that the youtube url points to the same song as the spotify song
-
+- Optional flag to add preload youtube urls
+  - `--with-youtube-url-cache-from <filename>`: reads a file that was previously generated to preload the youtube url cache
+  - `--with-youtube-url-cache-unvalidated`: include unvalidated urls to the cache
 ### Fixed
 N/A
 
@@ -17,4 +16,4 @@ N/A
 N/A
 
 
-[0.1.0]: https://github.com/amieldelatorre/spotilistcli/compare/0.0.14...0.1.0
+[0.1.1]: https://github.com/amieldelatorre/spotilistcli/compare/0.1.0...0.1.1

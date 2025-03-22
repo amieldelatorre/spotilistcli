@@ -381,3 +381,85 @@ def test_download_playlists_with_youtube_url(monkeypatch, sptfy_mock,
         expected = json.load(file)
 
     assert actual == expected
+
+
+def test_download_playlists_with_youtube_url_with_youtube_url_cache(monkeypatch, sptfy_mock,
+                            patch_get_all_playlists_no_songs, patch_get_playlist_with_songs,
+                            patch_get_saved_tracks_as_playlist):
+    tmpdir = tempfile.mkdtemp()
+    temp_file = os.path.join(tmpdir, "test.json")
+    args_list = ["--filename", temp_file,
+                 "--with-youtube-url",
+                 "--with-youtube-url-cache-from", "tests/files/preload_youtube_url_cache.json.test",
+                 "--with-youtube-url-cache-unvalidated"]
+
+
+    calls_to_ytm_search_youtube_music = 0
+    def mocked_func(name, artists):
+        nonlocal calls_to_ytm_search_youtube_music
+        calls_to_ytm_search_youtube_music += 1
+        return "https://music.youtube.com/watch?v=123"
+
+    monkeypatch.setattr(ytmusic.YTM, "search_youtube_music", mocked_func)
+
+    playlist.download_playlists(args_list, sptfy_mock)
+
+    with open(temp_file) as file:
+        actual = json.load(file)
+
+    with open("tests/files/expected_download_playlist_with_youtube_url.json.test") as file:
+        expected = json.load(file)
+
+    assert actual == expected
+    assert calls_to_ytm_search_youtube_music == 0
+
+
+def test_download_playlists_with_youtube_url_with_preloaded_cache(monkeypatch, sptfy_mock,
+                            patch_get_all_playlists_no_songs, patch_get_playlist_with_songs,
+                            patch_get_saved_tracks_as_playlist):
+    tmpdir = tempfile.mkdtemp()
+    temp_file = os.path.join(tmpdir, "test.json")
+    args_list = ["--filename", temp_file, "--with-youtube-url"]
+
+    monkeypatch.setattr(ytmusic.YTM, "get_youtube_url", lambda self, song: "https://music.youtube.com/watch?v=wxyz")
+
+    playlist.download_playlists(args_list, sptfy_mock)
+
+    with open(temp_file) as file:
+        actual = json.load(file)
+
+    with open("tests/files/expected_download_playlist_with_youtube_url.json.test") as file:
+        expected = json.load(file)
+
+    assert actual == expected
+
+
+def test_preload_youtube_url_cache_file_not_found(ytm_mock):
+    test_case = "doesn't exist"
+    expected_exit_code = 1
+
+    with pytest.raises(SystemExit) as exit_wrapper:
+        playlist.preload_youtube_url_cache(ytm_mock, test_case, False)
+    assert exit_wrapper.type == SystemExit
+    assert exit_wrapper.value.code == expected_exit_code
+
+
+def test_preload_youtube_url_cache(ytm_mock):
+    test_case = "tests/files/preload_youtube_url_cache.json.test"
+    expected = {
+        "https://example.invalid": "https://music.youtube.com/watch?v=wxyz",
+    }
+
+    playlist.preload_youtube_url_cache(ytm_mock, test_case, False)
+    assert ytm_mock.cache == expected
+
+
+def test_preload_youtube_url_cache_with_unvalidated_urls(ytm_mock):
+    test_case = "tests/files/preload_youtube_url_cache.json.test"
+    expected = {
+        "https://example.invalid": "https://music.youtube.com/watch?v=wxyz",
+        "https://example2.invalid": "https://music.youtube.com/watch?v=1234",
+    }
+
+    playlist.preload_youtube_url_cache(ytm_mock, test_case, True)
+    assert ytm_mock.cache == expected
