@@ -23,6 +23,13 @@ jobs:
 
       - name: Runs tests
         run: |
+          mkdir -p ~/.config/spotilistcli
+          cat << EOF > ~/.config/spotilistcli/.env
+          SPOTIFY_CLIENT_ID=abcd
+          SPOTIFY_CLIENT_SECRET=abcd
+          SPOTIFY_REDIRECT_URI=http://127.0.0.1:3000/callback
+          EOF
+          
           python -m venv .venv
           source ./.venv/bin/activate
           pip install -r requirements.txt

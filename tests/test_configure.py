@@ -1,8 +1,8 @@
 import pytest
-
 import helpers
-from commands import configure
+import commands
 from unittest.mock import mock_open, patch, call
+from click.testing import CliRunner
 
 
 @pytest.mark.parametrize("getpass_list, input_list, exit_expected, expected_exit_code, path_exists", [
@@ -18,16 +18,15 @@ def test_configure_command(
         monkeypatch, getpass_list, input_list, exit_expected, expected_exit_code, path_exists):
     getpass_iter = iter(getpass_list)
     input_iter = iter(input_list)
+    runner = CliRunner()
 
     monkeypatch.setattr("os.path.exists", lambda filepath: path_exists)
     monkeypatch.setattr("getpass.getpass", lambda _: next(getpass_iter))
     monkeypatch.setattr("builtins.input", lambda _: next(input_iter))
 
     if exit_expected:
-        with pytest.raises(SystemExit) as wrapper_exit:
-            configure.configure_command()
-        assert wrapper_exit.type == SystemExit
-        assert wrapper_exit.value.code == expected_exit_code
+        result = runner.invoke(commands.configure.configure)
+        assert result.exit_code == expected_exit_code
     else:
         calls = [
             call(f"{helpers.SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR}={getpass_list[0]}\n"),
@@ -40,7 +39,7 @@ def test_configure_command(
             calls.append(call(f"{helpers.SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR}={input_list[1]}\n"))
 
         with patch("builtins.open", mock_open()) as mock:
-            configure.configure_command()
+            result = runner.invoke(commands.configure.configure)
             mock.assert_called_once()
             write_mocked = mock()
             assert write_mocked.write.call_count == 3

@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from typing import Dict, List, Callable
 from dataclasses import dataclass
 from log import logger
+from functools import wraps
 
 
 SPOTIFY_CLIENT_ID_ENV_VARIABLE_STR = "SPOTIFY_CLIENT_ID"
@@ -125,6 +126,7 @@ def get_cache_file_path() -> str:
 
 
 def login_required(func) -> Callable:
+    @wraps(func)
     def wrapper(*args, **kwargs) -> None:
         cache_filepath = get_cache_file_path()
 
@@ -161,6 +163,7 @@ def get_parent_dir() -> Path:
 
 
 def time_taken(func) -> Callable:
+    @wraps(func)
     def wrapper(*args, **kwargs) -> None:
         start = time.time()
         func(*args, **kwargs)
