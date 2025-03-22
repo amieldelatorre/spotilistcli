@@ -29,7 +29,7 @@ def test_user_top_command(monkeypatch, sptfy_mock, args_list, exit_expected, exp
 
     monkeypatch.setattr("os.path.exists", lambda filepath: True)
     if exit_expected:
-        result = runner.invoke(commands.user_top, args_list)
+        result = runner.invoke(commands.user_top.user_top, args_list)
         assert result.exit_code == expected_exit_code
     else:
         if args_list[0] == "artists":
@@ -39,7 +39,7 @@ def test_user_top_command(monkeypatch, sptfy_mock, args_list, exit_expected, exp
                     spotipy.Spotify, "current_user_top_artists",
                     lambda self, limit, offset, time_range: data
                 )
-                result = runner.invoke(commands.user_top, args_list)
+                result = runner.invoke(commands.user_top.user_top, args_list)
                 num_lines = len(result.stdout.split("\n"))
                 assert num_lines == 11
         else:
@@ -49,7 +49,7 @@ def test_user_top_command(monkeypatch, sptfy_mock, args_list, exit_expected, exp
                     spotipy.Spotify, "current_user_top_tracks",
                     lambda self, limit, offset, time_range: data
                 )
-                result = runner.invoke(commands.user_top, args_list)
+                result = runner.invoke(commands.user_top.user_top, args_list)
                 num_lines = len(result.stdout.split("\n"))
                 assert num_lines == 11
 
@@ -74,14 +74,14 @@ def test_top_artists_subcommand(monkeypatch, sptfy_mock, args_list, exit_expecte
         data = json.load(file)
 
     if exit_expected:
-        result = runner.invoke(commands.artists, args_list)
+        result = runner.invoke(commands.user_top.artists, args_list)
         assert result.exit_code == expected_exit_code
     else:
         monkeypatch.setattr(
             spotipy.Spotify, "current_user_top_artists",
             lambda self, limit, offset, time_range: data
         )
-        result = runner.invoke(commands.artists, args_list)
+        result = runner.invoke(commands.user_top.artists, args_list)
         num_lines = len(result.stdout.split("\n"))
         assert num_lines == 11
 
@@ -106,13 +106,13 @@ def test_top_tracks_subcommand(monkeypatch, sptfy_mock, args_list, exit_expected
         data = json.load(file)
 
     if exit_expected:
-        result = runner.invoke(commands.tracks, args_list)
+        result = runner.invoke(commands.user_top.tracks, args_list)
         assert result.exit_code == expected_exit_code
     else:
         monkeypatch.setattr(
             spotipy.Spotify, "current_user_top_tracks",
             lambda self, limit, offset, time_range: data
         )
-        result = runner.invoke(commands.tracks, args_list)
+        result = runner.invoke(commands.user_top.tracks, args_list)
         num_lines = len(result.stdout.split("\n"))
         assert num_lines == 11

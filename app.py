@@ -2,8 +2,7 @@ import os
 import sys
 import click
 import commands
-from sptfy import Sptfy
-from helpers import get_required_environment_variables, get_parent_dir
+from helpers import get_parent_dir
 from spotipy.oauth2 import SpotifyOauthError
 from log import logger
 
@@ -15,10 +14,10 @@ def main():
 
 
 if __name__ == "__main__":
-    main.add_command(commands.auth)
-    main.add_command(commands.configure)
-    main.add_command(commands.playlist)
-    main.add_command(commands.user_top)
+    main.add_command(commands.auth.auth)
+    main.add_command(commands.configure.configure)
+    main.add_command(commands.playlist.playlist)
+    main.add_command(commands.user_top.user_top)
     
     parent_dir = get_parent_dir()
     os.chdir(parent_dir)

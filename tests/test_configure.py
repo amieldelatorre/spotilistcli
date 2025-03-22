@@ -1,6 +1,6 @@
 import pytest
 import helpers
-from commands.configure import configure
+import commands
 from unittest.mock import mock_open, patch, call
 from click.testing import CliRunner
 
@@ -25,7 +25,7 @@ def test_configure_command(
     monkeypatch.setattr("builtins.input", lambda _: next(input_iter))
 
     if exit_expected:
-        result = runner.invoke(configure)
+        result = runner.invoke(commands.configure.configure)
         assert result.exit_code == expected_exit_code
     else:
         calls = [
@@ -39,7 +39,7 @@ def test_configure_command(
             calls.append(call(f"{helpers.SPOTIFY_REDIRECT_URI_ENV_VARIABLE_STR}={input_list[1]}\n"))
 
         with patch("builtins.open", mock_open()) as mock:
-            result = runner.invoke(configure)
+            result = runner.invoke(commands.configure.configure)
             mock.assert_called_once()
             write_mocked = mock()
             assert write_mocked.write.call_count == 3

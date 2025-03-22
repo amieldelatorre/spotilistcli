@@ -1,8 +1,8 @@
 import click
+import commands.playlist.download
+import commands.playlist.show
+import commands.playlist.list
 from helpers import login_required
-from .download import download
-from .show import show
-from .list import list
 
 
 @click.group(help="Playlist information")
@@ -11,6 +11,6 @@ def playlist():
     pass
 
 
-playlist.add_command(download)
-playlist.add_command(show)
-playlist.add_command(list)
+playlist.add_command(download.download)
+playlist.add_command(show.show)
+playlist.add_command(list.list)

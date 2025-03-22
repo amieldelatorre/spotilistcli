@@ -11,9 +11,7 @@ import os
 import ytmusic
 from datetime import datetime
 import commands
-from commands import playlist
-from commands.playlist.download import get_filename, preload_youtube_url_cache, add_youtube_url_to_songs, \
-    get_playlist_with_songs
+from commands.playlist.download import get_filename, get_playlist_with_songs
 
 FROZEN_TIME = datetime(2024, 4, 3, 21, 2, 0)
 
@@ -167,10 +165,10 @@ def test_show_playlist(monkeypatch, capfd, sptfy_mock,
         lambda self, playlist_id: playlist_found
     )
     if exit_expected:
-        result = runner.invoke(commands.show, args_list)
+        result = runner.invoke(commands.playlist.show.show, args_list)
         assert result.exit_code == expected_exit_code
     else:
-        result = runner.invoke(commands.show, args_list)
+        result = runner.invoke(commands.playlist.show.show, args_list)
         num_lines = len(result.stdout.split("\n"))
         assert num_lines == 151
         for expected_output in expected_outputs:
@@ -196,7 +194,7 @@ def test_list_playlists(monkeypatch, capfd, sptfy_mock, args_list, expected_outp
 
     monkeypatch.setattr(spotipy.Spotify, "current_user_playlists", lambda self, limit, offset: next(data_iter))
 
-    result = runner.invoke(commands.list, args_list)
+    result = runner.invoke(commands.playlist.list.list, args_list)
     num_lines = len(result.stdout.split("\n"))
     assert num_lines == 119
     for expected_output in expected_outputs:
@@ -204,12 +202,11 @@ def test_list_playlists(monkeypatch, capfd, sptfy_mock, args_list, expected_outp
 
 
 def test_download_playlists_fail_filename(sptfy_mock):
+    runner = CliRunner()
     args_list = ["--filename", "does_not_end_in_dot_json"]
 
-    with pytest.raises(SystemExit) as exit_wrapper:
-        commands.download(args_list, sptfy_mock)
-    assert exit_wrapper.type == SystemExit
-    assert exit_wrapper.value.code == 1
+    result = runner.invoke(commands.playlist.download.download, args_list)
+    assert result.exit_code == 1
 
 
 @pytest.fixture
@@ -256,7 +253,7 @@ def patch_get_playlist_with_songs(monkeypatch):
     )
 
     monkeypatch.setattr(
-        commands.playlist, "get_playlist_with_songs",
+        commands.playlist.download, "get_playlist_with_songs",
         lambda playlist_with_no_song, sptfy_arg: playlist_with_songs
     )
 
@@ -276,11 +273,12 @@ def patch_get_saved_tracks_as_playlist(monkeypatch):
 def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                             patch_get_all_playlists_no_songs, patch_get_playlist_with_songs,
                             patch_get_saved_tracks_as_playlist):
+    runner = CliRunner()
     tmpdir = tempfile.mkdtemp()
     temp_file = os.path.join(tmpdir, "test.json")
     args_list = ["--filename", temp_file]
 
-    commands.download(args_list, sptfy_mock)
+    runner.invoke(commands.playlist.download.download, args_list)
 
     with open(temp_file) as file:
         actual = json.load(file)
@@ -363,7 +361,7 @@ def test_add_youtube_url_to_songs(monkeypatch, ytm_mock, test_case):
     monkeypatch.setattr(ytmusic.YTM, "get_youtube_url", lambda self, song: "https://music.youtube.com/watch?v=wxyz")
     monkeypatch.setattr(threading.Event, "is_set", lambda self: False)
     event = threading.Event()
-    add_youtube_url_to_songs(playlist_input, ytm_mock, event)
+    commands.playlist.download.add_youtube_url_to_songs(playlist_input, ytm_mock, event)
 
     assert playlist_input == expected
 
@@ -371,13 +369,14 @@ def test_add_youtube_url_to_songs(monkeypatch, ytm_mock, test_case):
 def test_download_playlists_with_youtube_url(monkeypatch, sptfy_mock,
                             patch_get_all_playlists_no_songs, patch_get_playlist_with_songs,
                             patch_get_saved_tracks_as_playlist):
+    runner = CliRunner()
     tmpdir = tempfile.mkdtemp()
     temp_file = os.path.join(tmpdir, "test.json")
     args_list = ["--filename", temp_file, "--with-youtube-url"]
 
     monkeypatch.setattr(ytmusic.YTM, "get_youtube_url", lambda self, song: "https://music.youtube.com/watch?v=wxyz")
 
-    commands.download(args_list, sptfy_mock)
+    runner.invoke(commands.playlist.download.download, args_list)
 
     with open(temp_file) as file:
         actual = json.load(file)
@@ -391,6 +390,7 @@ def test_download_playlists_with_youtube_url(monkeypatch, sptfy_mock,
 def test_download_playlists_with_youtube_url_with_youtube_url_cache(monkeypatch, sptfy_mock,
                             patch_get_all_playlists_no_songs, patch_get_playlist_with_songs,
                             patch_get_saved_tracks_as_playlist):
+    runner = CliRunner()
     tmpdir = tempfile.mkdtemp()
     temp_file = os.path.join(tmpdir, "test.json")
     args_list = ["--filename", temp_file,
@@ -407,7 +407,7 @@ def test_download_playlists_with_youtube_url_with_youtube_url_cache(monkeypatch,
 
     monkeypatch.setattr(ytmusic.YTM, "search_youtube_music", mocked_func)
 
-    commands.download(args_list, sptfy_mock)
+    runner.invoke(commands.playlist.download.download, args_list)
 
     with open(temp_file) as file:
         actual = json.load(file)
@@ -422,13 +422,14 @@ def test_download_playlists_with_youtube_url_with_youtube_url_cache(monkeypatch,
 def test_download_playlists_with_youtube_url_with_preloaded_cache(monkeypatch, sptfy_mock,
                             patch_get_all_playlists_no_songs, patch_get_playlist_with_songs,
                             patch_get_saved_tracks_as_playlist):
+    runner = CliRunner()
     tmpdir = tempfile.mkdtemp()
     temp_file = os.path.join(tmpdir, "test.json")
     args_list = ["--filename", temp_file, "--with-youtube-url"]
 
     monkeypatch.setattr(ytmusic.YTM, "get_youtube_url", lambda self, song: "https://music.youtube.com/watch?v=wxyz")
 
-    commands.download(args_list, sptfy_mock)
+    runner.invoke(commands.playlist.download.download, args_list)
 
     with open(temp_file) as file:
         actual = json.load(file)
@@ -444,7 +445,7 @@ def test_preload_youtube_url_cache_file_not_found(ytm_mock):
     expected_exit_code = 1
 
     with pytest.raises(SystemExit) as exit_wrapper:
-        preload_youtube_url_cache(ytm_mock, test_case, False)
+        commands.playlist.download.preload_youtube_url_cache(ytm_mock, test_case, False)
     assert exit_wrapper.type == SystemExit
     assert exit_wrapper.value.code == expected_exit_code
 
@@ -455,7 +456,7 @@ def test_preload_youtube_url_cache(ytm_mock):
         "https://example.invalid": "https://music.youtube.com/watch?v=wxyz",
     }
 
-    preload_youtube_url_cache(ytm_mock, test_case, False)
+    commands.playlist.download.preload_youtube_url_cache(ytm_mock, test_case, False)
     assert ytm_mock.cache == expected
 
 
@@ -466,5 +467,5 @@ def test_preload_youtube_url_cache_with_unvalidated_urls(ytm_mock):
         "https://example2.invalid": "https://music.youtube.com/watch?v=1234",
     }
 
-    preload_youtube_url_cache(ytm_mock, test_case, True)
+    commands.playlist.download.preload_youtube_url_cache(ytm_mock, test_case, True)
     assert ytm_mock.cache == expected

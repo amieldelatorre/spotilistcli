@@ -39,7 +39,7 @@ def download(filename: str, show_progress: bool, with_youtube_url: bool, with_yo
         sys.exit(0)
     elif not filename.strip().endswith('.json'):
         print(f"ERROR: Filename must end with '.json'")
-        sys.exit(0)
+        sys.exit(1)
     else:
         filename = filename
 
