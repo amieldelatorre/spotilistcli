@@ -1,19 +1,18 @@
 # Changelog
 
-## [0.1.1] - 2024-05-22
+## [0.2.0] - 2024-05-22
 
 ### Added
-- Optional flag to add preload youtube urls
-  - `--with-youtube-url-cache-from <filename>`: reads a file that was previously generated to preload the youtube url cache
-  - `--with-youtube-url-cache-unvalidated`: include unvalidated urls to the cache
+- Usage of click
+ 
 ### Fixed
 N/A
 
 ### Changed
-N/A
+- cli now relies on click
 
 ### Removed
 N/A
 
 
-[0.1.1]: https://github.com/amieldelatorre/spotilistcli/compare/0.1.0...0.1.1
+[0.2.0]: https://github.com/amieldelatorre/spotilistcli/compare/0.1.1...0.2.0
