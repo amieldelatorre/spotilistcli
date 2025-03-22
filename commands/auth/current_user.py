@@ -3,9 +3,10 @@ from sptfy import get_sptfy
 from helpers import login_required
 from log import logger
 
+
 @click.command
-@click.option("--show-id", default=False, help="Show the user's spotify Id")
-@click.option("--show-url", default=False, help="Show the user's spotify profile URL")
+@click.option("--show-id", default=False, is_flag=True, help="Show the user's spotify Id")
+@click.option("--show-url", default=False, is_flag=True, help="Show the user's spotify profile URL")
 @login_required
 def current_user(show_id, show_url) -> None:
     logger.debug(f"Retrieving current user public info")
