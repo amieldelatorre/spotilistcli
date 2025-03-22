@@ -283,7 +283,7 @@ class Sptfy:
 def get_sptfy():
     global spotify
     if spotify is None:
-        print("spotify is none")
+        # print("spotify is none")
         env_vars = get_required_environment_variables()
         sptfy = Sptfy(
             spotify_client_id=env_vars.spotify_client_id,
