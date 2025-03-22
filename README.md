@@ -6,13 +6,13 @@ Small CLI tool to get playlist information from Spotify, written in Python.
 2. Create a developer account at https://developer.spotify.com/
 3. Create a new app
 4. Set an app name and description
-5. Set the Redirect URI as `http://localhost:3000/callback`
+5. Set the Redirect URI as `http://127.0.0.1:3000/callback`
 6. Get the Client ID and Client Secret and put it in a `.env` file in `~/.config/spotilistcli`. The .env file should look like:
 
 ```Dotenv
 SPOTIFY_CLIENT_ID=YOUR_CLIENT_ID
 SPOTIFY_CLIENT_SECRET=YOUR_CLIENT_SECRET
-SPOTIFY_REDIRECT_URI=http://localhost:3000/callback
+SPOTIFY_REDIRECT_URI=http://127.0.0.1:3000/callback
 ```
 
 OR, once the executable has been downloaded or the project has been setup with the requirements installed, you can run `spotilistcli configure` to create the `.env` file interactively.

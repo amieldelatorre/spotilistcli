@@ -6,7 +6,10 @@ from spotipy.oauth2 import SpotifyOAuth, CacheFileHandler
 from dataclasses import dataclass
 from typing import List, Dict, Optional
 from log import logger
-from helpers import get_cache_file_path
+from helpers import get_cache_file_path, get_required_environment_variables
+
+
+spotify = None
 
 
 @dataclass
@@ -275,3 +278,18 @@ class Sptfy:
         )
 
         return user
+
+
+def get_sptfy():
+    global spotify
+    if spotify is None:
+        print("spotify is none")
+        env_vars = get_required_environment_variables()
+        sptfy = Sptfy(
+            spotify_client_id=env_vars.spotify_client_id,
+            spotify_client_secret=env_vars.spotify_client_secret,
+            spotify_redirect_uri=env_vars.spotify_redirect_uri,
+        )
+        spotify = sptfy
+        return sptfy
+    return spotify
