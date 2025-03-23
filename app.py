@@ -18,6 +18,7 @@ if __name__ == "__main__":
     main.add_command(commands.configure.configure)
     main.add_command(commands.playlist.playlist)
     main.add_command(commands.user_top.user_top)
+    main.add_command(commands.validate.validate)
     
     parent_dir = get_parent_dir()
     os.chdir(parent_dir)

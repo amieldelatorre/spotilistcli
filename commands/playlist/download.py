@@ -36,7 +36,7 @@ def download(filename: str, show_progress: bool, with_youtube_url: bool, with_yo
         filename = get_filename(sptfy)
     elif filename.strip() == "":
         print(f"ERROR: Filename cannot be blank or null!")
-        sys.exit(0)
+        sys.exit(1)
     elif not filename.strip().endswith('.json'):
         print(f"ERROR: Filename must end with '.json'")
         sys.exit(1)

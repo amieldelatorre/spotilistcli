@@ -1,0 +1,4577 @@
+[
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": null,
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example01.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=01",
+                "youtube_url_validated": true
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example02.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=02",
+                "youtube_url_validated": true
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example01.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=01",
+                "youtube_url_validated": true
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example02.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=02",
+                "youtube_url_validated": true
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example03.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=03",
+                "youtube_url_validated": true
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example01.invalid",
+                "youtube_url": "",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example01.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "somethingAb1234Af9D9Cb",
+        "name": "A Playlist",
+        "total": 2,
+        "spotify_playlist_url": "https://example.invalid",
+        "songs": [
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Song",
+                "artists": [
+                    "Artist",
+                    "Artist2"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    },
+    {
+        "id": "liked_songs",
+        "name": "Liked Songs",
+        "total": 150,
+        "spotify_playlist_url": "None",
+        "songs": [
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist",
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": "https://music.youtube.com/watch?v=wxyz",
+                "youtube_url_validated": false
+            }
+        ]
+    }
+]
