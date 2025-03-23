@@ -23,6 +23,7 @@ jobs:
 
       - name: Runs tests
         run: |
+          sudo apt-get install freeglut3-dev
           mkdir -p ~/.config/spotilistcli
           cat << EOF > ~/.config/spotilistcli/.env
           SPOTIFY_CLIENT_ID=abcd
@@ -35,7 +36,7 @@ jobs:
           pip install -r requirements.txt
           coverage run -m pytest -v --junitxml=./test_results.xml
           echo "# Test Coverage" >> $GITHUB_STEP_SUMMARY
-          coverage report --format=markdown >> $GITHUB_STEP_SUMMARY
+          coverage report -i --format=markdown >> $GITHUB_STEP_SUMMARY
 
       - name: Test build
         run: |
