@@ -23,6 +23,7 @@ jobs:
 
       - name: Runs tests
         run: |
+          sudo apt-get install freeglut3-dev
           mkdir -p ~/.config/spotilistcli
           cat << EOF > ~/.config/spotilistcli/.env
           SPOTIFY_CLIENT_ID=abcd
