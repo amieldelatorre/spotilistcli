@@ -55,7 +55,7 @@ def download(filename: str, show_progress: bool, with_youtube_url: bool, with_yo
     current_user_id = sptfy.get_user_id()
     playlists_no_songs = filter_playlists(current_user_id, playlists_no_songs, filter_owned)
 
-    num_playlists = len(playlists_no_songs) + 0  # There is a +1 for liked songs
+    num_playlists = len(playlists_no_songs) + 1  # There is a +1 for liked songs
     playlists = get_playlists_with_songs(
         num_playlists=num_playlists,
         playlists_no_songs=playlists_no_songs,
@@ -71,7 +71,7 @@ def download(filename: str, show_progress: bool, with_youtube_url: bool, with_yo
     with open(filename, 'w') as file:
         logger.info(f"Writing to file '{filename}' in the local directory")
         file.write(json.dumps(playlists, indent=4, default=get_obj_dict))
-        logger.info(f"Number of playlists processed: {len(playlists)} (There is a +0 for liked songs)")
+        logger.info(f"Number of playlists processed: {num_playlists} (There is a +1 for liked songs)")
 
     print("Finished!")
 
