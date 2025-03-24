@@ -11,7 +11,10 @@ import os
 import ytmusic
 from datetime import datetime
 import commands
+from commands.auth import current_user
 from commands.playlist.download import get_filename, get_playlist_with_songs
+from commands.playlist.shared import filter_playlists
+from sptfy import PlaylistNoSongs
 from ytmusic import YTMusicCache
 from tests_shared import patch_spotipy_me
 
@@ -521,3 +524,82 @@ def test_preload_youtube_url_cache_with_unvalidated_urls(ytm_mock):
 
     commands.playlist.download.preload_youtube_url_cache(ytm_mock, test_case, True)
     assert ytm_mock.cache == expected
+
+
+@pytest.mark.parametrize("test_case", [
+    {
+        "playlists": [
+            PlaylistNoSongs(
+                id="A Playlist",
+                name="A Playlist",
+                total=2,
+                spotify_playlist_url="https://example.invalid",
+                owner_spotify_id="111111111111"
+            ),
+            PlaylistNoSongs(
+                id="A Playlist",
+                name="A Playlist",
+                total=2,
+                spotify_playlist_url="https://example.invalid",
+                owner_spotify_id="222222222222"
+            ),
+        ],
+        "current_user_id": "111111111111",
+        "filter_owned": False,
+        "expected": [
+            PlaylistNoSongs(
+                id="A Playlist",
+                name="A Playlist",
+                total=2,
+                spotify_playlist_url="https://example.invalid",
+                owner_spotify_id="111111111111"
+            ),
+            PlaylistNoSongs(
+                id="A Playlist",
+                name="A Playlist",
+                total=2,
+                spotify_playlist_url="https://example.invalid",
+                owner_spotify_id="222222222222"
+            ),
+        ]
+    },
+    {
+        "playlists": [
+            PlaylistNoSongs(
+                id="A Playlist",
+                name="A Playlist",
+                total=2,
+                spotify_playlist_url="https://example.invalid",
+                owner_spotify_id="111111111111"
+            ),
+            PlaylistNoSongs(
+                id="A Playlist",
+                name="A Playlist",
+                total=2,
+                spotify_playlist_url="https://example.invalid",
+                owner_spotify_id="222222222222"
+            ),
+        ],
+        "current_user_id": "111111111111",
+        "filter_owned": True,
+        "expected": [
+            PlaylistNoSongs(
+                id="A Playlist",
+                name="A Playlist",
+                total=2,
+                spotify_playlist_url="https://example.invalid",
+                owner_spotify_id="111111111111"
+            ),
+        ]
+    }
+])
+def test_filter_playlists(test_case):
+    input_playlists = test_case["playlists"]
+    current_user_id = test_case["current_user_id"]
+    filter_owned = test_case["filter_owned"]
+    expected = test_case["expected"]
+
+    actual = filter_playlists(current_user_id, input_playlists, filter_owned)
+
+    assert actual == expected
+

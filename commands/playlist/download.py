@@ -6,6 +6,7 @@ import threading
 import click
 from itertools import repeat
 from typing import List, Optional
+from commands.playlist.shared import filter_playlists
 from helpers import time_taken, get_obj_dict
 from log import logger
 from sptfy import Sptfy, get_sptfy, PlaylistWithSongs, PlaylistNoSongs, Song
@@ -51,8 +52,8 @@ def download(filename: str, show_progress: bool, with_youtube_url: bool, with_yo
     playlists_no_songs = sptfy.get_all_playlists_no_songs()
     logger.info(f'Number of playlists found: {len(playlists_no_songs)}')
 
-    # current_user_id = sptfy.get_user_id()
-    # playlists_no_songs = filter_playlists(current_user_id, playlists_no_songs, filter_owned)
+    current_user_id = sptfy.get_user_id()
+    playlists_no_songs = filter_playlists(current_user_id, playlists_no_songs, filter_owned)
 
     num_playlists = len(playlists_no_songs) + 0  # There is a +1 for liked songs
     playlists = get_playlists_with_songs(
@@ -193,9 +194,3 @@ def preload_youtube_url_cache(ytm: YTM, filename: str, use_unvalidated_url: bool
     except FileNotFoundError:
         logger.error(f"file: {filename} could not be found")
         sys.exit(1)
-
-
-def filter_playlists(userId: str, playlists: List[PlaylistNoSongs], filter_owned: bool) -> List[PlaylistNoSongs]:
-    logger.debug("Filtering playlists")
-    filtered_playlists = [playlist for playlist in playlists if playlist.owner_spotify_id == userId]
-    return filtered_playlists
