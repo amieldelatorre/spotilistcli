@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.3.0] - 2024-05-23
+## [0.3.1] - 2024-05-24
 
 ### Added
-- Validate Youtube URLs with a UI
+N/A
  
 ### Fixed
-N/A
+- Import the Youtube URL validation status when preloading the cache
 
 ### Changed
 N/A
@@ -15,4 +15,4 @@ N/A
 N/A
 
 
-[0.3.0]: https://github.com/amieldelatorre/spotilistcli/compare/0.2.0...0.3.0
+[0.3.1]: https://github.com/amieldelatorre/spotilistcli/compare/0.3.0...0.3.1
