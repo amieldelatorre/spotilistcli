@@ -25,9 +25,11 @@ from ytmusic import YTM
 @click.option("--with-youtube-url-cache-unvalidated", default=False, is_flag=True,
               help="Use unvalidated Youtube URLs from previously generated file. Only takes effect when the "
                    "`--with-youtube-url-cache-from` flag is used.")
+@click.option("--filter-owned", default=False, is_flag=True,
+              help="Grab playlists that are owned. Filters are evaluated as `OR` conditions.")
 @time_taken
 def download(filename: str, show_progress: bool, with_youtube_url: bool, with_youtube_url_cache_from: str,
-             with_youtube_url_cache_unvalidated: bool) -> None:
+             with_youtube_url_cache_unvalidated: bool, filter_owned: bool) -> None:
     logger.debug(f"'playlist' 'download' subcommand invoked")
 
     sptfy = get_sptfy()
@@ -49,6 +51,9 @@ def download(filename: str, show_progress: bool, with_youtube_url: bool, with_yo
     playlists_no_songs = sptfy.get_all_playlists_no_songs()
     logger.info(f'Number of playlists found: {len(playlists_no_songs)}')
 
+    # current_user_id = sptfy.get_user_id()
+    # playlists_no_songs = filter_playlists(current_user_id, playlists_no_songs, filter_owned)
+
     num_playlists = len(playlists_no_songs) + 0  # There is a +1 for liked songs
     playlists = get_playlists_with_songs(
         num_playlists=num_playlists,
@@ -64,7 +69,7 @@ def download(filename: str, show_progress: bool, with_youtube_url: bool, with_yo
 
     with open(filename, 'w') as file:
         logger.info(f"Writing to file '{filename}' in the local directory")
-        file.write(json.dumps(playlists, default=get_obj_dict))
+        file.write(json.dumps(playlists, indent=4, default=get_obj_dict))
         logger.info(f"Number of playlists processed: {len(playlists)} (There is a +0 for liked songs)")
 
     print("Finished!")
@@ -188,3 +193,9 @@ def preload_youtube_url_cache(ytm: YTM, filename: str, use_unvalidated_url: bool
     except FileNotFoundError:
         logger.error(f"file: {filename} could not be found")
         sys.exit(1)
+
+
+def filter_playlists(userId: str, playlists: List[PlaylistNoSongs], filter_owned: bool) -> List[PlaylistNoSongs]:
+    logger.debug("Filtering playlists")
+    filtered_playlists = [playlist for playlist in playlists if playlist.owner_spotify_id == userId]
+    return filtered_playlists

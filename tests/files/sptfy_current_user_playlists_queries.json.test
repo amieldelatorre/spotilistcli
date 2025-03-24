@@ -12,7 +12,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -33,7 +35,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -54,7 +58,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -75,7 +81,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -96,7 +104,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -117,7 +127,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -138,7 +150,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -159,7 +173,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": "#ffffff",
                 "public": true,
                 "snapshot_id": "something",
@@ -180,7 +196,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -201,7 +219,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -222,7 +242,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -243,7 +265,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -264,7 +288,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -285,7 +311,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": "#FFFFFf",
                 "public": true,
                 "snapshot_id": "something",
@@ -306,7 +334,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -327,7 +357,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -348,7 +380,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -369,7 +403,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -390,7 +426,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": "#ffffff",
                 "public": true,
                 "snapshot_id": "something",
@@ -411,7 +449,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -432,7 +472,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -453,7 +495,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -474,7 +518,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -495,7 +541,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -516,7 +564,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -537,7 +587,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": "#ffffff",
                 "public": true,
                 "snapshot_id": "something",
@@ -558,7 +610,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -579,7 +633,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -600,7 +656,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -621,7 +679,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -642,7 +702,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -663,7 +725,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -684,7 +748,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": "#FFFFFF",
                 "public": true,
                 "snapshot_id": "something",
@@ -705,7 +771,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": "#ffffff",
                 "public": true,
                 "snapshot_id": "something",
@@ -726,7 +794,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": "#ffffff",
                 "public": true,
                 "snapshot_id": "something",
@@ -747,7 +817,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -768,7 +840,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -789,7 +863,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -810,7 +886,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -831,7 +909,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -852,7 +932,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -873,7 +955,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -894,7 +978,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -915,7 +1001,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -936,7 +1024,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -957,7 +1047,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -978,7 +1070,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -999,7 +1093,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1020,7 +1116,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1041,7 +1139,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1072,7 +1172,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1093,7 +1195,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1114,7 +1218,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1135,7 +1241,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1156,7 +1264,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1177,7 +1287,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1198,7 +1310,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1219,7 +1333,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1240,7 +1356,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1261,7 +1379,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1282,7 +1402,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1303,7 +1425,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1324,7 +1448,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1345,7 +1471,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1366,7 +1494,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1387,7 +1517,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1408,7 +1540,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1429,7 +1563,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1450,7 +1586,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1471,7 +1609,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1492,7 +1632,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1513,7 +1655,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1534,7 +1678,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1555,7 +1701,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1576,7 +1724,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1597,7 +1747,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1618,7 +1770,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1639,7 +1793,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1660,7 +1816,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1681,7 +1839,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1702,7 +1862,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1723,7 +1885,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1744,7 +1908,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1765,7 +1931,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1786,7 +1954,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1807,7 +1977,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1828,7 +2000,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1849,7 +2023,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1870,7 +2046,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1891,7 +2069,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1912,7 +2092,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1933,7 +2115,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1954,7 +2138,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1975,7 +2161,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -1996,7 +2184,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2017,7 +2207,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2038,7 +2230,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2059,7 +2253,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2080,7 +2276,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2101,7 +2299,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2132,7 +2332,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2153,7 +2355,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2174,7 +2378,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2195,7 +2401,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2216,7 +2424,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": "#ffffff",
                 "public": true,
                 "snapshot_id": "something",
@@ -2237,7 +2447,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2258,7 +2470,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2279,7 +2493,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2300,7 +2516,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2321,7 +2539,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2342,7 +2562,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2363,7 +2585,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2384,7 +2608,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2405,7 +2631,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2426,7 +2654,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2447,7 +2677,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2468,7 +2700,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",
@@ -2489,7 +2723,9 @@
                 "id": "somethingAb1234Af9D9Cb",
                 "images": [],
                 "name": "Playlist Name",
-                "owner": {},
+                "owner": {
+                    "id": "111111111111"
+                },
                 "primary_color": null,
                 "public": true,
                 "snapshot_id": "something",

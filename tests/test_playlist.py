@@ -18,7 +18,7 @@ FROZEN_TIME = datetime(2024, 4, 3, 21, 2, 0)
 
 
 @pytest.fixture
-def sptfy_mock():
+def sptfy_mock(monkeypatch):
     sptfy_obj = sptfy.Sptfy(
         spotify_client_id="something",
         spotify_client_secret="something_secret",
@@ -34,6 +34,46 @@ def ytm_mock():
 
 
 @pytest.fixture
+def patch_spotipy_me(monkeypatch):
+    expected_query_return = {
+        "display_name": "First Last",
+        "external_urls": {
+            "spotify": "https://example.invalid"
+        },
+        "href": "https://example.invalid",
+        "id": "111111111111",
+        "images": [
+            {
+                "url": "https://example.invalid",
+                "height": 299,
+                "width": 299
+            },
+            {
+                "url": "https://example.invalid",
+                "height": 299,
+                "width": 299
+            },
+            {
+                "url": "https://example.invalid",
+                "height": 299,
+                "width": 299
+            }
+        ],
+        "type": "user",
+        "uri": "spotify:user:111111111111",
+        "followers": {
+            "href": None,
+            "total": 221
+        }
+
+    }
+    monkeypatch.setattr(
+        spotipy.Spotify, "me",
+        lambda self: expected_query_return
+    )
+
+
+@pytest.fixture
 def patch_datetime_now(monkeypatch):
     class MockedDateTime(datetime):
         @classmethod
@@ -46,47 +86,10 @@ def patch_datetime_now(monkeypatch):
     )
 
 
-def test_get_filename(monkeypatch, sptfy_mock, patch_datetime_now):
-    expected_query_return = {
-        "display_name": "First Last",
-        "external_urls": {
-            "spotify": "https://example.invalid"
-        },
-        "href": "https://example.invalid",
-        "id": "01234567890",
-        "images": [
-            {
-                "url": "https://example.invalid",
-                "height": 300,
-                "width": 300
-            },
-            {
-                "url": "https://example.invalid",
-                "height": 300,
-                "width": 300
-            },
-            {
-                "url": "https://example.invalid",
-                "height": 300,
-                "width": 300
-            }
-        ],
-        "type": "user",
-        "uri": "spotify:user:01234567890",
-        "followers": {
-            "href": None,
-            "total": 222
-        }
-
-    }
-    monkeypatch.setattr(
-        spotipy.Spotify, "me",
-        lambda self: expected_query_return
-    )
-
+def test_get_filename(sptfy_mock, patch_datetime_now, patch_spotipy_me):
     actual = get_filename(sptfy_mock)
 
-    assert actual == "playlists-01234567890-2024_04_03T21_02_00.json"
+    assert actual == "playlists-111111111111-2024_04_03T21_02_00.json"
 
 
 def test_get_playlist_with_songs(monkeypatch, sptfy_mock):
@@ -103,7 +106,8 @@ def test_get_playlist_with_songs(monkeypatch, sptfy_mock):
         id="somethingAb1234Af9D9Cb",
         name="A Playlist",
         total=347,
-        spotify_playlist_url="https://example.invalid"
+        spotify_playlist_url="https://example.invalid",
+        owner_spotify_id="111111111111"
     )
 
     actual = get_playlist_with_songs(playlist_no_song, sptfy_mock)
@@ -231,7 +235,8 @@ def patch_get_playlist_with_songs(monkeypatch):
         id="somethingAb1234Af9D9Cb",
         name="A Playlist",
         total=2,
-        spotify_playlist_url="https://example.invalid"
+        spotify_playlist_url="https://example.invalid",
+        owner_spotify_id="111111111111"
     )
 
     songs = [
@@ -273,7 +278,7 @@ def patch_get_saved_tracks_as_playlist(monkeypatch):
 
 def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                             patch_get_all_playlists_no_songs, patch_get_playlist_with_songs,
-                            patch_get_saved_tracks_as_playlist):
+                            patch_get_saved_tracks_as_playlist, patch_spotipy_me):
     runner = CliRunner()
     tmpdir = tempfile.mkdtemp()
     temp_file = os.path.join(tmpdir, "test.json")
@@ -297,7 +302,8 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             id="1234",
             name="a playlist",
             total=4,
-            spotify_playlist_url="https://example.invalid"
+            spotify_playlist_url="https://example.invalid",
+            owner_spotify_id="111111111111"
         ), songs=[
             sptfy.Song(
                 name="A Song",
@@ -328,7 +334,8 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             id="1234",
             name="a playlist",
             total=4,
-            spotify_playlist_url="https://example.invalid"
+            spotify_playlist_url="https://example.invalid",
+            owner_spotify_id="111111111111"
         ), songs=[
             sptfy.Song(
                 name="A Song",
@@ -366,7 +373,8 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             id="1234",
             name="a playlist",
             total=4,
-            spotify_playlist_url="https://example.invalid"
+            spotify_playlist_url="https://example.invalid",
+            owner_spotify_id="111111111111"
         ), songs=[
             sptfy.Song(
                 name="A Song",
@@ -397,7 +405,8 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             id="1234",
             name="a playlist",
             total=4,
-            spotify_playlist_url="https://example.invalid"
+            spotify_playlist_url="https://example.invalid",
+            owner_spotify_id="111111111111"
         ), songs=[
             sptfy.Song(
                 name="A Song",
@@ -446,7 +455,7 @@ def test_add_youtube_url_to_songs(monkeypatch, ytm_mock, test_case):
 
 def test_download_playlists_with_youtube_url(monkeypatch, sptfy_mock,
                             patch_get_all_playlists_no_songs, patch_get_playlist_with_songs,
-                            patch_get_saved_tracks_as_playlist):
+                            patch_get_saved_tracks_as_playlist, patch_spotipy_me):
     runner = CliRunner()
     tmpdir = tempfile.mkdtemp()
     temp_file = os.path.join(tmpdir, "test.json")
@@ -470,7 +479,7 @@ def test_download_playlists_with_youtube_url(monkeypatch, sptfy_mock,
 
 def test_download_playlists_with_youtube_url_with_youtube_url_cache(monkeypatch, sptfy_mock,
                             patch_get_all_playlists_no_songs, patch_get_playlist_with_songs,
-                            patch_get_saved_tracks_as_playlist):
+                            patch_get_saved_tracks_as_playlist, patch_spotipy_me):
     runner = CliRunner()
     tmpdir = tempfile.mkdtemp()
     temp_file = os.path.join(tmpdir, "test.json")
@@ -502,7 +511,7 @@ def test_download_playlists_with_youtube_url_with_youtube_url_cache(monkeypatch,
 
 def test_download_playlists_with_youtube_url_with_preloaded_cache(monkeypatch, sptfy_mock,
                             patch_get_all_playlists_no_songs, patch_get_playlist_with_songs,
-                            patch_get_saved_tracks_as_playlist):
+                            patch_get_saved_tracks_as_playlist, patch_spotipy_me):
     runner = CliRunner()
     tmpdir = tempfile.mkdtemp()
     temp_file = os.path.join(tmpdir, "test.json")
