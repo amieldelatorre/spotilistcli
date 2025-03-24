@@ -154,7 +154,7 @@ def test_show_playlist(monkeypatch, capfd, sptfy_mock,
         ["Playlist Name\tsomethingAb1234Af9D9Cb"]
     ),
 ])
-def test_list_playlists(monkeypatch, capfd, sptfy_mock, args_list, expected_outputs):
+def test_list_playlists(monkeypatch, patch_spotipy_me, capfd, sptfy_mock, args_list, expected_outputs):
     runner = CliRunner()
 
     with open("tests/files/sptfy_current_user_playlists_queries.json.test", "r") as file:
