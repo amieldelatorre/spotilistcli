@@ -66,6 +66,7 @@ class PlaylistNoSongs:
     name: str
     total: int
     spotify_playlist_url: str
+    owner_spotify_id: str
 
     def __repr__(self) -> str:
         return f"{self.name}"
@@ -80,6 +81,7 @@ class PlaylistWithSongs(PlaylistNoSongs):
         self.name = playlist.name
         self.total = playlist.total
         self.spotify_playlist_url = playlist.spotify_playlist_url
+        self.owner_spotify_id = playlist.owner_spotify_id
         self.songs = songs
 
     def to_json(self) -> str:
@@ -143,7 +145,8 @@ class Sptfy:
                     id=item['id'],
                     name=item['name'],
                     total=item['tracks']['total'],
-                    spotify_playlist_url=item['external_urls']['spotify']
+                    spotify_playlist_url=item['external_urls']['spotify'],
+                    owner_spotify_id= item["owner"]["id"]
                 )
                 playlists.append(playlist)
             if query['next'] is not None:
@@ -186,6 +189,8 @@ class Sptfy:
     def get_saved_tracks_as_playlist(self, limit=20, offset=0) -> PlaylistWithSongs:
         logger.debug(f"Retrieving saved tracks for user")
 
+        user_id = self.get_user_id()
+
         songs = []
         while True:
             query = self.spotify.current_user_saved_tracks(
@@ -217,7 +222,8 @@ class Sptfy:
                 id="liked_songs",
                 name="Liked Songs",
                 total=len(songs),
-                spotify_playlist_url="None"
+                spotify_playlist_url="None",
+                owner_spotify_id=user_id
             ),
             songs=songs
         )

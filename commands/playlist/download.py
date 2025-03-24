@@ -6,6 +6,7 @@ import threading
 import click
 from itertools import repeat
 from typing import List, Optional
+from commands.playlist.shared import filter_playlists
 from helpers import time_taken, get_obj_dict
 from log import logger
 from sptfy import Sptfy, get_sptfy, PlaylistWithSongs, PlaylistNoSongs, Song
@@ -25,9 +26,11 @@ from ytmusic import YTM
 @click.option("--with-youtube-url-cache-unvalidated", default=False, is_flag=True,
               help="Use unvalidated Youtube URLs from previously generated file. Only takes effect when the "
                    "`--with-youtube-url-cache-from` flag is used.")
+@click.option("--filter-owned", default=False, is_flag=True,
+              help="Grab playlists that are owned. Filters are evaluated as `OR` conditions.")
 @time_taken
 def download(filename: str, show_progress: bool, with_youtube_url: bool, with_youtube_url_cache_from: str,
-             with_youtube_url_cache_unvalidated: bool) -> None:
+             with_youtube_url_cache_unvalidated: bool, filter_owned: bool) -> None:
     logger.debug(f"'playlist' 'download' subcommand invoked")
 
     sptfy = get_sptfy()
@@ -49,7 +52,10 @@ def download(filename: str, show_progress: bool, with_youtube_url: bool, with_yo
     playlists_no_songs = sptfy.get_all_playlists_no_songs()
     logger.info(f'Number of playlists found: {len(playlists_no_songs)}')
 
-    num_playlists = len(playlists_no_songs) + 0  # There is a +1 for liked songs
+    current_user_id = sptfy.get_user_id()
+    playlists_no_songs = filter_playlists(current_user_id, playlists_no_songs, filter_owned)
+
+    num_playlists = len(playlists_no_songs) + 1  # There is a +1 for liked songs
     playlists = get_playlists_with_songs(
         num_playlists=num_playlists,
         playlists_no_songs=playlists_no_songs,
@@ -64,8 +70,8 @@ def download(filename: str, show_progress: bool, with_youtube_url: bool, with_yo
 
     with open(filename, 'w') as file:
         logger.info(f"Writing to file '{filename}' in the local directory")
-        file.write(json.dumps(playlists, default=get_obj_dict))
-        logger.info(f"Number of playlists processed: {len(playlists)} (There is a +0 for liked songs)")
+        file.write(json.dumps(playlists, indent=4, default=get_obj_dict))
+        logger.info(f"Number of playlists processed: {num_playlists} (There is a +1 for liked songs)")
 
     print("Finished!")
 

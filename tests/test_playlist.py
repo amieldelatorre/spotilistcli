@@ -11,14 +11,18 @@ import os
 import ytmusic
 from datetime import datetime
 import commands
+from commands.auth import current_user
 from commands.playlist.download import get_filename, get_playlist_with_songs
+from commands.playlist.shared import filter_playlists
+from sptfy import PlaylistNoSongs
 from ytmusic import YTMusicCache
+from tests_shared import patch_spotipy_me
 
 FROZEN_TIME = datetime(2024, 4, 3, 21, 2, 0)
 
 
 @pytest.fixture
-def sptfy_mock():
+def sptfy_mock(monkeypatch):
     sptfy_obj = sptfy.Sptfy(
         spotify_client_id="something",
         spotify_client_secret="something_secret",
@@ -46,47 +50,10 @@ def patch_datetime_now(monkeypatch):
     )
 
 
-def test_get_filename(monkeypatch, sptfy_mock, patch_datetime_now):
-    expected_query_return = {
-        "display_name": "First Last",
-        "external_urls": {
-            "spotify": "https://example.invalid"
-        },
-        "href": "https://example.invalid",
-        "id": "01234567890",
-        "images": [
-            {
-                "url": "https://example.invalid",
-                "height": 300,
-                "width": 300
-            },
-            {
-                "url": "https://example.invalid",
-                "height": 300,
-                "width": 300
-            },
-            {
-                "url": "https://example.invalid",
-                "height": 300,
-                "width": 300
-            }
-        ],
-        "type": "user",
-        "uri": "spotify:user:01234567890",
-        "followers": {
-            "href": None,
-            "total": 222
-        }
-
-    }
-    monkeypatch.setattr(
-        spotipy.Spotify, "me",
-        lambda self: expected_query_return
-    )
-
+def test_get_filename(sptfy_mock, patch_datetime_now, patch_spotipy_me):
     actual = get_filename(sptfy_mock)
 
-    assert actual == "playlists-01234567890-2024_04_03T21_02_00.json"
+    assert actual == "playlists-111111111111-2024_04_03T21_02_00.json"
 
 
 def test_get_playlist_with_songs(monkeypatch, sptfy_mock):
@@ -103,7 +70,8 @@ def test_get_playlist_with_songs(monkeypatch, sptfy_mock):
         id="somethingAb1234Af9D9Cb",
         name="A Playlist",
         total=347,
-        spotify_playlist_url="https://example.invalid"
+        spotify_playlist_url="https://example.invalid",
+        owner_spotify_id="111111111111"
     )
 
     actual = get_playlist_with_songs(playlist_no_song, sptfy_mock)
@@ -186,7 +154,7 @@ def test_show_playlist(monkeypatch, capfd, sptfy_mock,
         ["Playlist Name\tsomethingAb1234Af9D9Cb"]
     ),
 ])
-def test_list_playlists(monkeypatch, capfd, sptfy_mock, args_list, expected_outputs):
+def test_list_playlists(monkeypatch, patch_spotipy_me, capfd, sptfy_mock, args_list, expected_outputs):
     runner = CliRunner()
 
     with open("tests/files/sptfy_current_user_playlists_queries.json.test", "r") as file:
@@ -231,7 +199,8 @@ def patch_get_playlist_with_songs(monkeypatch):
         id="somethingAb1234Af9D9Cb",
         name="A Playlist",
         total=2,
-        spotify_playlist_url="https://example.invalid"
+        spotify_playlist_url="https://example.invalid",
+        owner_spotify_id="111111111111"
     )
 
     songs = [
@@ -273,7 +242,7 @@ def patch_get_saved_tracks_as_playlist(monkeypatch):
 
 def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                             patch_get_all_playlists_no_songs, patch_get_playlist_with_songs,
-                            patch_get_saved_tracks_as_playlist):
+                            patch_get_saved_tracks_as_playlist, patch_spotipy_me):
     runner = CliRunner()
     tmpdir = tempfile.mkdtemp()
     temp_file = os.path.join(tmpdir, "test.json")
@@ -297,7 +266,8 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             id="1234",
             name="a playlist",
             total=4,
-            spotify_playlist_url="https://example.invalid"
+            spotify_playlist_url="https://example.invalid",
+            owner_spotify_id="111111111111"
         ), songs=[
             sptfy.Song(
                 name="A Song",
@@ -328,7 +298,8 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             id="1234",
             name="a playlist",
             total=4,
-            spotify_playlist_url="https://example.invalid"
+            spotify_playlist_url="https://example.invalid",
+            owner_spotify_id="111111111111"
         ), songs=[
             sptfy.Song(
                 name="A Song",
@@ -366,7 +337,8 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             id="1234",
             name="a playlist",
             total=4,
-            spotify_playlist_url="https://example.invalid"
+            spotify_playlist_url="https://example.invalid",
+            owner_spotify_id="111111111111"
         ), songs=[
             sptfy.Song(
                 name="A Song",
@@ -397,7 +369,8 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             id="1234",
             name="a playlist",
             total=4,
-            spotify_playlist_url="https://example.invalid"
+            spotify_playlist_url="https://example.invalid",
+            owner_spotify_id="111111111111"
         ), songs=[
             sptfy.Song(
                 name="A Song",
@@ -446,7 +419,7 @@ def test_add_youtube_url_to_songs(monkeypatch, ytm_mock, test_case):
 
 def test_download_playlists_with_youtube_url(monkeypatch, sptfy_mock,
                             patch_get_all_playlists_no_songs, patch_get_playlist_with_songs,
-                            patch_get_saved_tracks_as_playlist):
+                            patch_get_saved_tracks_as_playlist, patch_spotipy_me):
     runner = CliRunner()
     tmpdir = tempfile.mkdtemp()
     temp_file = os.path.join(tmpdir, "test.json")
@@ -470,7 +443,7 @@ def test_download_playlists_with_youtube_url(monkeypatch, sptfy_mock,
 
 def test_download_playlists_with_youtube_url_with_youtube_url_cache(monkeypatch, sptfy_mock,
                             patch_get_all_playlists_no_songs, patch_get_playlist_with_songs,
-                            patch_get_saved_tracks_as_playlist):
+                            patch_get_saved_tracks_as_playlist, patch_spotipy_me):
     runner = CliRunner()
     tmpdir = tempfile.mkdtemp()
     temp_file = os.path.join(tmpdir, "test.json")
@@ -502,7 +475,7 @@ def test_download_playlists_with_youtube_url_with_youtube_url_cache(monkeypatch,
 
 def test_download_playlists_with_youtube_url_with_preloaded_cache(monkeypatch, sptfy_mock,
                             patch_get_all_playlists_no_songs, patch_get_playlist_with_songs,
-                            patch_get_saved_tracks_as_playlist):
+                            patch_get_saved_tracks_as_playlist, patch_spotipy_me):
     runner = CliRunner()
     tmpdir = tempfile.mkdtemp()
     temp_file = os.path.join(tmpdir, "test.json")
@@ -551,3 +524,82 @@ def test_preload_youtube_url_cache_with_unvalidated_urls(ytm_mock):
 
     commands.playlist.download.preload_youtube_url_cache(ytm_mock, test_case, True)
     assert ytm_mock.cache == expected
+
+
+@pytest.mark.parametrize("test_case", [
+    {
+        "playlists": [
+            PlaylistNoSongs(
+                id="A Playlist",
+                name="A Playlist",
+                total=2,
+                spotify_playlist_url="https://example.invalid",
+                owner_spotify_id="111111111111"
+            ),
+            PlaylistNoSongs(
+                id="A Playlist",
+                name="A Playlist",
+                total=2,
+                spotify_playlist_url="https://example.invalid",
+                owner_spotify_id="222222222222"
+            ),
+        ],
+        "current_user_id": "111111111111",
+        "filter_owned": False,
+        "expected": [
+            PlaylistNoSongs(
+                id="A Playlist",
+                name="A Playlist",
+                total=2,
+                spotify_playlist_url="https://example.invalid",
+                owner_spotify_id="111111111111"
+            ),
+            PlaylistNoSongs(
+                id="A Playlist",
+                name="A Playlist",
+                total=2,
+                spotify_playlist_url="https://example.invalid",
+                owner_spotify_id="222222222222"
+            ),
+        ]
+    },
+    {
+        "playlists": [
+            PlaylistNoSongs(
+                id="A Playlist",
+                name="A Playlist",
+                total=2,
+                spotify_playlist_url="https://example.invalid",
+                owner_spotify_id="111111111111"
+            ),
+            PlaylistNoSongs(
+                id="A Playlist",
+                name="A Playlist",
+                total=2,
+                spotify_playlist_url="https://example.invalid",
+                owner_spotify_id="222222222222"
+            ),
+        ],
+        "current_user_id": "111111111111",
+        "filter_owned": True,
+        "expected": [
+            PlaylistNoSongs(
+                id="A Playlist",
+                name="A Playlist",
+                total=2,
+                spotify_playlist_url="https://example.invalid",
+                owner_spotify_id="111111111111"
+            ),
+        ]
+    }
+])
+def test_filter_playlists(test_case):
+    input_playlists = test_case["playlists"]
+    current_user_id = test_case["current_user_id"]
+    filter_owned = test_case["filter_owned"]
+    expected = test_case["expected"]
+
+    actual = filter_playlists(current_user_id, input_playlists, filter_owned)
+
+    assert actual == expected
+
