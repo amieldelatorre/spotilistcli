@@ -149,7 +149,9 @@ def add_youtube_url_to_songs(playlist: PlaylistWithSongs, ytm: YTM, interrupt_ev
         if interrupt_event.is_set():
             logger.warning(f"interrupted playlist '{playlist.name}")
             return playlist
-        song.youtube_url = ytm.get_youtube_url(song)
+        cache_value = ytm.get_youtube_url(song)
+        song.youtube_url = cache_value.youtube_url
+        song.youtube_url_validated = cache_value.youtube_url_validated
 
 
 def preload_youtube_url_cache(ytm: YTM, filename: str, use_unvalidated_url: bool):
@@ -181,7 +183,7 @@ def preload_youtube_url_cache(ytm: YTM, filename: str, use_unvalidated_url: bool
             if song.youtube_url is None:
                 continue
             if song.youtube_url_validated or use_unvalidated_url:
-                ytm.add_to_cache(song.spotify_url, song.youtube_url)
+                ytm.add_to_cache(song.spotify_url, song.youtube_url, song.youtube_url_validated)
 
     except FileNotFoundError:
         logger.error(f"file: {filename} could not be found")

@@ -12,6 +12,7 @@ import ytmusic
 from datetime import datetime
 import commands
 from commands.playlist.download import get_filename, get_playlist_with_songs
+from ytmusic import YTMusicCache
 
 FROZEN_TIME = datetime(2024, 4, 3, 21, 2, 0)
 
@@ -291,6 +292,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
 
 @pytest.mark.parametrize("test_case", [
     {
+        "youtube_url_validated": False,
         "playlist": sptfy.PlaylistWithSongs(playlist=sptfy.PlaylistNoSongs(
             id="1234",
             name="a playlist",
@@ -332,33 +334,109 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                 name="A Song",
                 artists=["Artist"],
                 spotify_url="https://example.invalid",
-                youtube_url="https://music.youtube.com/watch?v=wxyz"
+                youtube_url="https://music.youtube.com/watch?v=wxyz",
+                youtube_url_validated=False
             ),
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
                 spotify_url="https://example.invalid",
-                youtube_url="https://music.youtube.com/watch?v=wxyz"
+                youtube_url="https://music.youtube.com/watch?v=wxyz",
+                youtube_url_validated=False
             ),
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
                 spotify_url="https://example.invalid",
-                youtube_url="https://music.youtube.com/watch?v=wxyz"
+                youtube_url="https://music.youtube.com/watch?v=wxyz",
+                youtube_url_validated=False
             ),
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
                 spotify_url="https://example.invalid",
-                youtube_url="https://music.youtube.com/watch?v=wxyz"
+                youtube_url="https://music.youtube.com/watch?v=wxyz",
+                youtube_url_validated=False
+            ),
+        ]),
+    },
+    {
+        "youtube_url_validated": True,
+        "playlist": sptfy.PlaylistWithSongs(playlist=sptfy.PlaylistNoSongs(
+            id="1234",
+            name="a playlist",
+            total=4,
+            spotify_playlist_url="https://example.invalid"
+        ), songs=[
+            sptfy.Song(
+                name="A Song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url=None
+            ),
+            sptfy.Song(
+                name="A Song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url=None
+            ),
+            sptfy.Song(
+                name="A Song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url=None
+            ),
+            sptfy.Song(
+                name="A Song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url=None
+            ),
+        ]),
+        "expected": sptfy.PlaylistWithSongs(playlist=sptfy.PlaylistNoSongs(
+            id="1234",
+            name="a playlist",
+            total=4,
+            spotify_playlist_url="https://example.invalid"
+        ), songs=[
+            sptfy.Song(
+                name="A Song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url="https://music.youtube.com/watch?v=wxyz",
+                youtube_url_validated=True
+            ),
+            sptfy.Song(
+                name="A Song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url="https://music.youtube.com/watch?v=wxyz",
+                youtube_url_validated=True
+            ),
+            sptfy.Song(
+                name="A Song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url="https://music.youtube.com/watch?v=wxyz",
+                youtube_url_validated=True
+            ),
+            sptfy.Song(
+                name="A Song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url="https://music.youtube.com/watch?v=wxyz",
+                youtube_url_validated=True
             ),
         ]),
     }
 ])
 def test_add_youtube_url_to_songs(monkeypatch, ytm_mock, test_case):
     playlist_input = test_case["playlist"]
+    youtube_url_validated = test_case["youtube_url_validated"]
     expected = test_case["expected"]
-    monkeypatch.setattr(ytmusic.YTM, "get_youtube_url", lambda self, song: "https://music.youtube.com/watch?v=wxyz")
+    monkeypatch.setattr(ytmusic.YTM, "get_youtube_url", lambda self,
+                                                               song: YTMusicCache("https://music.youtube.com/watch?v=wxyz",
+                                                                                  youtube_url_validated))
     monkeypatch.setattr(threading.Event, "is_set", lambda self: False)
     event = threading.Event()
     commands.playlist.download.add_youtube_url_to_songs(playlist_input, ytm_mock, event)
@@ -373,8 +451,11 @@ def test_download_playlists_with_youtube_url(monkeypatch, sptfy_mock,
     tmpdir = tempfile.mkdtemp()
     temp_file = os.path.join(tmpdir, "test.json")
     args_list = ["--filename", temp_file, "--with-youtube-url"]
+    youtube_url_validated = False
 
-    monkeypatch.setattr(ytmusic.YTM, "get_youtube_url", lambda self, song: "https://music.youtube.com/watch?v=wxyz")
+    monkeypatch.setattr(ytmusic.YTM, "get_youtube_url", lambda self,
+                                                               song:  YTMusicCache("https://music.youtube.com/watch?v=wxyz",
+                                                                                  youtube_url_validated))
 
     runner.invoke(commands.playlist.download.download, args_list)
 
@@ -403,7 +484,7 @@ def test_download_playlists_with_youtube_url_with_youtube_url_cache(monkeypatch,
     def mocked_func(name, artists):
         nonlocal calls_to_ytm_search_youtube_music
         calls_to_ytm_search_youtube_music += 1
-        return "https://music.youtube.com/watch?v=123"
+        return  YTMusicCache("https://music.youtube.com/watch?v=123", False)
 
     monkeypatch.setattr(ytmusic.YTM, "search_youtube_music", mocked_func)
 
@@ -412,7 +493,7 @@ def test_download_playlists_with_youtube_url_with_youtube_url_cache(monkeypatch,
     with open(temp_file) as file:
         actual = json.load(file)
 
-    with open("tests/files/expected_download_playlist_with_youtube_url.json.test") as file:
+    with open("tests/files/expected_download_playlist_with_youtube_url_cache.json.test") as file:
         expected = json.load(file)
 
     assert actual == expected
@@ -427,14 +508,15 @@ def test_download_playlists_with_youtube_url_with_preloaded_cache(monkeypatch, s
     temp_file = os.path.join(tmpdir, "test.json")
     args_list = ["--filename", temp_file, "--with-youtube-url"]
 
-    monkeypatch.setattr(ytmusic.YTM, "get_youtube_url", lambda self, song: "https://music.youtube.com/watch?v=wxyz")
+    monkeypatch.setattr(ytmusic.YTM, "get_youtube_url", lambda self,
+                                                               song: YTMusicCache("https://music.youtube.com/watch?v=wxyz", True))
 
     runner.invoke(commands.playlist.download.download, args_list)
 
     with open(temp_file) as file:
         actual = json.load(file)
 
-    with open("tests/files/expected_download_playlist_with_youtube_url.json.test") as file:
+    with open("tests/files/expected_download_playlist_with_youtube_url_cache.json.test") as file:
         expected = json.load(file)
 
     assert actual == expected
@@ -453,7 +535,7 @@ def test_preload_youtube_url_cache_file_not_found(ytm_mock):
 def test_preload_youtube_url_cache(ytm_mock):
     test_case = "tests/files/preload_youtube_url_cache.json.test"
     expected = {
-        "https://example.invalid": "https://music.youtube.com/watch?v=wxyz",
+        "https://example.invalid": YTMusicCache("https://music.youtube.com/watch?v=wxyz", True),
     }
 
     commands.playlist.download.preload_youtube_url_cache(ytm_mock, test_case, False)
@@ -463,8 +545,8 @@ def test_preload_youtube_url_cache(ytm_mock):
 def test_preload_youtube_url_cache_with_unvalidated_urls(ytm_mock):
     test_case = "tests/files/preload_youtube_url_cache.json.test"
     expected = {
-        "https://example.invalid": "https://music.youtube.com/watch?v=wxyz",
-        "https://example2.invalid": "https://music.youtube.com/watch?v=1234",
+        "https://example.invalid": YTMusicCache("https://music.youtube.com/watch?v=wxyz", True),
+        "https://example2.invalid": YTMusicCache("https://music.youtube.com/watch?v=1234", False),
     }
 
     commands.playlist.download.preload_youtube_url_cache(ytm_mock, test_case, True)
