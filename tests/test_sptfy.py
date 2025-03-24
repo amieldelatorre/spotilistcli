@@ -2,6 +2,7 @@ import json
 import spotipy
 import pytest
 import sptfy
+from tests_shared import patch_spotipy_me
 
 
 @pytest.fixture
@@ -83,7 +84,7 @@ def test_get_playlist_content(monkeypatch, sptfy_mock):
     assert len(playlist_items) == 150
 
 
-def test_get_saved_tracks_as_playlist(monkeypatch, sptfy_mock):
+def test_get_saved_tracks_as_playlist(monkeypatch, sptfy_mock, patch_spotipy_me):
     with open("tests/files/sptfy_playlist_items_queries.json.test", "r") as file:
         data = json.load(file)
     data_iter = iter(data)

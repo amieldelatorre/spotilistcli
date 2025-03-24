@@ -13,6 +13,7 @@ from datetime import datetime
 import commands
 from commands.playlist.download import get_filename, get_playlist_with_songs
 from ytmusic import YTMusicCache
+from tests_shared import patch_spotipy_me
 
 FROZEN_TIME = datetime(2024, 4, 3, 21, 2, 0)
 
@@ -31,46 +32,6 @@ def sptfy_mock(monkeypatch):
 def ytm_mock():
     ytm_obj = ytmusic.YTM()
     return ytm_obj
-
-
-@pytest.fixture
-def patch_spotipy_me(monkeypatch):
-    expected_query_return = {
-        "display_name": "First Last",
-        "external_urls": {
-            "spotify": "https://example.invalid"
-        },
-        "href": "https://example.invalid",
-        "id": "111111111111",
-        "images": [
-            {
-                "url": "https://example.invalid",
-                "height": 299,
-                "width": 299
-            },
-            {
-                "url": "https://example.invalid",
-                "height": 299,
-                "width": 299
-            },
-            {
-                "url": "https://example.invalid",
-                "height": 299,
-                "width": 299
-            }
-        ],
-        "type": "user",
-        "uri": "spotify:user:111111111111",
-        "followers": {
-            "href": None,
-            "total": 221
-        }
-
-    }
-    monkeypatch.setattr(
-        spotipy.Spotify, "me",
-        lambda self: expected_query_return
-    )
 
 
 @pytest.fixture
