@@ -42,7 +42,6 @@ python3 app.py help
 python -m venv .venv
 source ./.venv/bin/activate
 pip install -r requirements.txt
-pip install pyinstaller
 pyinstaller --hidden-import http.server --hidden-import commands.playlist --add-data=commands:commands --onedir --name spotilistcli app.py
 spotilistcli help
 ```

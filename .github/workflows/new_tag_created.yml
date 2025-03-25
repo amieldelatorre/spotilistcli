@@ -49,7 +49,6 @@ jobs:
           python -m venv .venv
           source ./.venv/bin/activate
           pip install -r requirements.txt
-          pip install pyinstaller
           pyinstaller --hidden-import http.server --hidden-import commands.playlist --add-data=commands:commands --onedir --name spotilistcli app.py
           tar -C dist -czvf dist/spotilistcli_linux_amd64.tar.gz spotilistcli
           gh release upload "$TAG" --clobber dist/spotilistcli_linux_amd64.tar.gz
@@ -78,7 +77,6 @@ jobs:
           python -m venv .venv
           .\.venv\Scripts\activate
           pip install -r requirements.txt
-          pip install pyinstaller
           pyinstaller --hidden-import http.server --hidden-import commands.playlist --add-data=commands:commands --onedir --name spotilistcli app.py
           Compress-Archive -Path dist\spotilistcli -DestinationPath dist\spotilistcli_windows_amd64.zip
           gh release upload "$env:TAG" --clobber dist\spotilistcli_windows_amd64.zip
@@ -107,7 +105,6 @@ jobs:
           python -m venv .venv
           source ./.venv/bin/activate
           pip install -r requirements.txt
-          pip install pyinstaller
           pyinstaller --hidden-import http.server --hidden-import commands.playlist --add-data=commands:commands --onedir --name spotilistcli app.py
           tar -C dist -czvf dist/spotilistcli_darwin_arm64.tar.gz spotilistcli
           gh release upload "$TAG" --clobber dist/spotilistcli_darwin_arm64.tar.gz
