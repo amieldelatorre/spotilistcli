@@ -4,8 +4,9 @@ import tempfile
 from tempfile import tempdir
 
 from commands.validate.youtube_urls import (load_playlists_file, get_songs_to_validate,
-                                            get_songs_to_validate_iterator, update_validated_song)
-from sptfy import Song
+                                            get_songs_to_validate_iterator, update_validated_song,
+                                            overwrite_youtube_url)
+from sptfy import Song, PlaylistWithSongs, PlaylistNoSongs
 
 
 def test_load_playlists_file():
@@ -139,4 +140,98 @@ def test_update_validated_song():
         expected = json.load(file)
 
     assert actual == expected
+
+
+def test_overwrite_youtube_url():
+    input_playlists = [
+        PlaylistWithSongs(PlaylistNoSongs(
+            id="somethingAb1234Af9D9Cb",
+            name="A Playlist",
+            total=2,
+            spotify_playlist_url="https://example.invalid",
+            owner_spotify_id="111111111111"
+        ), songs=[
+           Song(
+               name="A song",
+               artists=["Artist"],
+               spotify_url="https://example.invalid",
+               youtube_url="https://music.youtube.com/watch?v=wxyz"
+           ),
+            Song(
+                name="A song",
+                artists=["Artist"],
+                spotify_url="https://example2.invalid",
+                youtube_url="https://music.youtube.com/watch?v=abcd"
+            )
+        ]),
+        PlaylistWithSongs(PlaylistNoSongs(
+            id="somethingAb1234Af9D9Cb",
+            name="A Playlist",
+            total=2,
+            spotify_playlist_url="https://example.invalid",
+            owner_spotify_id="111111111111"
+        ), songs=[
+            Song(
+                name="A song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url="https://music.youtube.com/watch?v=wxyz"
+            ),
+            Song(
+                name="A song",
+                artists=["Artist"],
+                spotify_url="https://example2.invalid",
+                youtube_url="https://music.youtube.com/watch?v=abcd"
+            )
+        ])
+    ]
+    input_spotify_url = "https://example.invalid"
+    input_youtube_url = "https://music.youtube.com/watch?v=1234"
+    expected = [
+        PlaylistWithSongs(PlaylistNoSongs(
+            id="somethingAb1234Af9D9Cb",
+            name="A Playlist",
+            total=2,
+            spotify_playlist_url="https://example.invalid",
+            owner_spotify_id="111111111111"
+        ), songs=[
+            Song(
+                name="A song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url="https://music.youtube.com/watch?v=1234"
+            ),
+            Song(
+                name="A song",
+                artists=["Artist"],
+                spotify_url="https://example2.invalid",
+                youtube_url="https://music.youtube.com/watch?v=abcd"
+            )
+        ]),
+        PlaylistWithSongs(PlaylistNoSongs(
+            id="somethingAb1234Af9D9Cb",
+            name="A Playlist",
+            total=2,
+            spotify_playlist_url="https://example.invalid",
+            owner_spotify_id="111111111111"
+        ), songs=[
+            Song(
+                name="A song",
+                artists=["Artist"],
+                spotify_url="https://example.invalid",
+                youtube_url="https://music.youtube.com/watch?v=1234"
+            ),
+            Song(
+                name="A song",
+                artists=["Artist"],
+                spotify_url="https://example2.invalid",
+                youtube_url="https://music.youtube.com/watch?v=abcd"
+            )
+        ])
+    ]
+
+    actual = overwrite_youtube_url(input_playlists, input_spotify_url, input_youtube_url)
+
+    assert actual == expected
+
 
