@@ -78,7 +78,6 @@ class MainWindow(QMainWindow):
         overwrite_entry_layout.addWidget(self.overwrite_entry_input)
         overwrite_entry_layout.addWidget(self.overwrite_entry_button, alignment=QtCore.Qt.AlignmentFlag.AlignCenter)
         buttons_layout.addLayout(overwrite_entry_layout)
-        self.overwrite_notification = None
 
         buttons_layout.addWidget(self.is_valid_button)
         browsers_layout.addWidget(self.spotify_page)
