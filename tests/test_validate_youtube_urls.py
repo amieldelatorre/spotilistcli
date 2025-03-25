@@ -2,10 +2,11 @@ import json
 import os.path
 import tempfile
 from tempfile import tempdir
+import pytest
 
 from commands.validate.youtube_urls import (load_playlists_file, get_songs_to_validate,
                                             get_songs_to_validate_iterator, update_validated_song,
-                                            overwrite_youtube_url)
+                                            overwrite_youtube_url, is_valid_youtube_music_url)
 from sptfy import Song, PlaylistWithSongs, PlaylistNoSongs
 
 
@@ -234,4 +235,17 @@ def test_overwrite_youtube_url():
 
     assert actual == expected
 
+
+@pytest.mark.parametrize("url, expected", [
+    ("https://music.youtube.com/watch?v=1234", True),
+    ("http://music.youtube.com/watch?v=1234", True),
+    ("htts://music.youtube.com/watch?v=1234", False),
+    ("music.youtube.com/watch?v=1234", False),
+    ("music.youtube.com/watch", False),
+    ("music.youtube.com", False),
+    ("music", False)
+])
+def test_is_valid_url(url, expected):
+    actual = is_valid_youtube_music_url(url)
+    assert actual == expected
 

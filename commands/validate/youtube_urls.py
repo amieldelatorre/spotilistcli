@@ -1,6 +1,8 @@
 import json
 import os
 import sys
+from urllib.parse import urlparse
+
 import click
 from typing import List, Dict, Iterator
 from PySide6 import QtCore
@@ -25,7 +27,7 @@ class OverwriteYoutubeUrlErrorDialog(QDialog):
         self.button_box = QDialogButtonBox(button)
         self.button_box.accepted.connect(self.accept)
         layout = QVBoxLayout()
-        message = QLabel("Youtube URL for overwrite cannot be empty!")
+        message = QLabel("Youtube URL for overwrite cannot be empty and must be a valid Youtube Music URL!\nExample: https://music.youtube.com/watch?v='videoId'")
         message.setStyleSheet(
             """
             color: white;
@@ -144,7 +146,7 @@ class MainWindow(QMainWindow):
 
     def overwrite_youtube_url(self):
         youtube_url = self.overwrite_entry_input.text()
-        if youtube_url is None or youtube_url.strip() == "":
+        if youtube_url is None or youtube_url.strip() == "" or not is_valid_youtube_music_url(youtube_url.strip()):
             dialog = OverwriteYoutubeUrlErrorDialog()
             dialog.exec()
             return
@@ -267,3 +269,13 @@ def overwrite_youtube_url(original_playlists: List[PlaylistWithSongs], spotify_u
             if song.spotify_url == spotify_url:
                 song.youtube_url = youtube_url
     return original_playlists
+
+
+def is_valid_youtube_music_url(url: str) -> bool:
+    try:
+        if not url.startswith("http://music.youtube.com/watch?v=") and not url.startswith("https://music.youtube.com/watch?v="):
+            return False
+        result = urlparse(url)
+        return all([result.scheme, result.netloc])
+    except:
+        return False
