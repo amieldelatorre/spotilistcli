@@ -20,7 +20,7 @@ class OverwriteYoutubeUrlErrorDialog(QDialog):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Invalid Youtube URL")
-        palette = QPalette("#FF474C")
+        palette = QPalette("#000")
         self.setPalette(palette)
 
         button = (QDialogButtonBox.Ok)
@@ -30,7 +30,7 @@ class OverwriteYoutubeUrlErrorDialog(QDialog):
         message = QLabel("Youtube URL for overwrite cannot be empty and must be a valid Youtube Music URL!\nExample: https://music.youtube.com/watch?v='videoId'")
         message.setStyleSheet(
             """
-            color: white;
+            color: #FF474C;
             font-weight: bold;
             font-size: 18px;
             """
@@ -114,11 +114,22 @@ class MainWindow(QMainWindow):
 
     def next_song(self):
         try:
+            self.is_valid_button.setEnabled(True)
+
             song_to_validate = next(self.songs_to_validate_iterator)
+            if (song_to_validate.youtube_url is None or song_to_validate.youtube_url.strip() == "" or
+                    not is_valid_youtube_music_url(song_to_validate.youtube_url.strip())):
+                self.is_valid_button.setDisabled(True)
+                self.youtube_page.setHtml(f"""
+                <h1 style="background-color: #000; color: #FF474C; height: 100%; text-align: center;">Invalid youtube URL '{song_to_validate.youtube_url}'</h1>
+                """)
+            else:
+                yt_url = song_to_validate.youtube_url.strip()
+                self.current_song_youtube_url = yt_url
+                self.youtube_page.load(QUrl(yt_url))
+
             self.current_song_spotify_url = song_to_validate.spotify_url
-            self.current_song_youtube_url = song_to_validate.youtube_url
             self.spotify_page.load(QUrl(song_to_validate.spotify_url))
-            self.youtube_page.load(QUrl(song_to_validate.youtube_url))
         except StopIteration:
             self.clear_window(self.main_layout)
             self.add_end_screen()
@@ -237,8 +248,7 @@ def get_songs_to_validate(playlists: List[PlaylistWithSongs]) -> Dict[str, Song]
 
     for playlist in playlists:
         for song in playlist.songs:
-            if (song.spotify_url is None or song.spotify_url.strip() == "" or
-                    song.youtube_url is None or song.youtube_url.strip() == ""):
+            if song.spotify_url is None or song.spotify_url.strip() == "":
                 continue
             if not song.youtube_url_validated and song.spotify_url not in songs_to_validate.keys():
                 songs_to_validate[song.spotify_url] = song

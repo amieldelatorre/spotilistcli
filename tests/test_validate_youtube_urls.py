@@ -53,17 +53,15 @@ def test_get_songs_to_validate():
             name="A Song",
             artists=[
                 "Artist",
-                "Artist2"
             ],
             spotify_url="https://example.invalid",
-            youtube_url="https://music.youtube.com/watch?v=wxyz",
+            youtube_url=None,
             youtube_url_validated=False,
         ),
     }
 
 
     actual = get_songs_to_validate(playlists)
-    print(actual)
 
     assert len(actual) == 4
     assert actual == expected
