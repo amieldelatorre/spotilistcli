@@ -45,3 +45,13 @@ pip install -r requirements.txt
 pyinstaller --hidden-import http.server --hidden-import commands.playlist --add-data=commands:commands --onedir --name spotilistcli app.py
 spotilistcli help
 ```
+
+## Downloading all playlists with a youtube URL cache from a previous download
+```bash
+python app.py playlist download --show-progress --with-youtube-url --with-youtube-url-cache-from <previous_filename> --with-youtube-url-cache-unvalidated --filter-owned
+```
+
+## Validating youtube URLs in downloaded file
+```bash
+python app.py validate youtube-urls --input-filename <filename>
+```
