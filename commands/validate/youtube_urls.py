@@ -14,6 +14,7 @@ from PySide6.QtWebEngineWidgets import QWebEngineView
 
 from helpers import get_obj_dict
 from sptfy import PlaylistWithSongs, Song, PlaylistNoSongs
+from log import logger
 
 
 class OverwriteYoutubeUrlErrorDialog(QDialog):
@@ -109,6 +110,7 @@ class MainWindow(QMainWindow):
         self.next_song()
 
     def skip_button_clicked(self):
+        logger.info(f"Skipped song `{self.current_song_spotify_url}` that had youtube url `{self.current_song_youtube_url}`")
         self.next_song()
 
     def next_song(self):
@@ -269,6 +271,7 @@ def update_validated_song(original_playlists: List[PlaylistWithSongs], spotify_u
     with open(filename, "w") as file:
         file.write(json.dumps(original_playlists, indent=4, default=get_obj_dict))
 
+    logger.info(f"Validated song `{spotify_url}")
     return original_playlists
 
 
