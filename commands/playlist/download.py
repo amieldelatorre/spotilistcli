@@ -158,6 +158,7 @@ def add_youtube_url_to_songs(playlist: PlaylistWithSongs, ytm: YTM, interrupt_ev
         cache_value = ytm.get_youtube_url(song)
         song.youtube_url = cache_value.youtube_url
         song.youtube_url_validated = cache_value.youtube_url_validated
+        song.youtube_url_permanently_skip = cache_value.youtube_url_permanently_skip
 
 
 def preload_youtube_url_cache(ytm: YTM, filename: str, use_unvalidated_url: bool):
@@ -176,20 +177,22 @@ def preload_youtube_url_cache(ytm: YTM, filename: str, use_unvalidated_url: bool
                 song_spotify_url = item_song["spotify_url"]
                 song_youtube_url = item_song["youtube_url"]
                 song_youtube_url_validated = item_song["youtube_url_validated"]
+                song_youtube_url_permanently_skip = item_song.get("youtube_url_permanently_skip", False)
 
                 songs.append(Song(
                     name=song_name,
                     artists=song_artists,
                     spotify_url=song_spotify_url,
                     youtube_url=song_youtube_url,
-                    youtube_url_validated=song_youtube_url_validated
+                    youtube_url_validated=song_youtube_url_validated,
+                    youtube_url_permanently_skip=song_youtube_url_permanently_skip
                 ))
 
         for song in songs:
             if song.youtube_url is None:
                 continue
             if song.youtube_url_validated or use_unvalidated_url:
-                ytm.add_to_cache(song.spotify_url, song.youtube_url, song.youtube_url_validated)
+                ytm.add_to_cache(song.spotify_url, song.youtube_url, song.youtube_url_validated, song.youtube_url_permanently_skip)
 
     except FileNotFoundError:
         logger.error(f"file: {filename} could not be found")

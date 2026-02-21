@@ -9,6 +9,7 @@ from log import logger
 class YTMusicCache:
     youtube_url: Optional[str]
     youtube_url_validated: bool
+    youtube_url_permanently_skip: bool
 
 
 
@@ -46,5 +47,5 @@ class YTM:
 
         return f"https://music.youtube.com/watch?v={top_result["videoId"]}"
 
-    def add_to_cache(self, spotify_url: str, youtube_url: str, youtube_url_validated: bool) -> None:
-        self.cache[spotify_url] = YTMusicCache(youtube_url=youtube_url, youtube_url_validated=youtube_url_validated)
+    def add_to_cache(self, spotify_url: str, youtube_url: str, youtube_url_validated: bool, youtube_url_permanently_skip: bool) -> None:
+        self.cache[spotify_url] = YTMusicCache(youtube_url=youtube_url, youtube_url_validated=youtube_url_validated, youtube_url_permanently_skip=youtube_url_permanently_skip)

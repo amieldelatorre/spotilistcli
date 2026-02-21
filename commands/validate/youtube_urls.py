@@ -45,12 +45,13 @@ class OverwriteYoutubeUrlErrorDialog(QDialog):
 
 
 class MainWindow(QMainWindow):
-    def __init__(self, original_playlists: List[PlaylistWithSongs], songs_to_validate_iterator: Iterator[Song], output_filename: str):
+    def __init__(self, original_playlists: List[PlaylistWithSongs], songs_to_validate_iterator: Iterator[Song], output_filename: str, include_permanently_skipped: bool):
         super().__init__()
         self.setWindowTitle("Validate Youtube URLs")
         self.original_playlists = original_playlists
         self.songs_to_validate_iterator = songs_to_validate_iterator
         self.output_filename = output_filename
+        self.include_permanently_skipped = include_permanently_skipped
 
         self.spotify_page = QWebEngineView()
         self.spotify_page.show()
@@ -60,15 +61,20 @@ class MainWindow(QMainWindow):
         self.is_valid_button.clicked.connect(self.is_valid_button_clicked)
         self.skip_button = QPushButton("Skip")
         self.skip_button.clicked.connect(self.skip_button_clicked)
+        self.permanently_skip_button = QPushButton("Skip Permanently")
+        self.permanently_skip_button.clicked.connect(self.permanently_skip_button_clicked)
 
         self.main_layout = QVBoxLayout()
         buttons_layout = QHBoxLayout()
         browsers_layout = QHBoxLayout()
         self.main_layout.addLayout(browsers_layout)
         self.main_layout.addLayout(buttons_layout)
+        skip_buttons_layout = QVBoxLayout()
+        skip_buttons_layout.addWidget(self.skip_button)
+        skip_buttons_layout.addWidget(self.permanently_skip_button)
 
         buttons_layout.setContentsMargins(QMargins(100,70,100,70))
-        buttons_layout.addWidget(self.skip_button)
+        buttons_layout.addLayout(skip_buttons_layout)
 
         overwrite_entry_layout = QVBoxLayout()
         self.overwrite_entry_input = QLineEdit(placeholderText="Overwrite the Youtube URL with this value")
@@ -101,6 +107,9 @@ class MainWindow(QMainWindow):
         self.skip_button.setFixedSize(100, 40)
         self.skip_button.setStyleSheet("font-size: 18px;")
 
+        self.permanently_skip_button.setFixedSize(200, 40)
+        self.permanently_skip_button.setStyleSheet("font-size: 18px;")
+
         self.current_song_spotify_url = None
         self.current_song_youtube_url = None
         self.next_song() # Call this here to get the first value from the iterator
@@ -112,6 +121,11 @@ class MainWindow(QMainWindow):
     def skip_button_clicked(self):
         logger.info(f"Skipped song `{self.current_song_spotify_url}` that had youtube url `{self.current_song_youtube_url}`")
         self.next_song()
+
+    def permanently_skip_button_clicked(self):
+        self.original_playlists = update_permanently_skipped_song(self.original_playlists, self.current_song_spotify_url, self.output_filename)
+        self.next_song()
+
 
     def next_song(self):
         try:
@@ -181,7 +195,9 @@ class MainWindow(QMainWindow):
                    "but make sure to keep a copy of your original file in case of errors. If an output filename is not "
                    "specified, there is a chance that the input file will be overwritten if it already follows the "
                    "format of `validated_youtube_urls_<input-filename>`.")
-def youtube_urls(input_filename: str, output_filename: str):
+@click.option("--include-permanently-skipped", required=False, default=False, is_flag=True,
+              help="Include the youtube urls that have been permenently skipped")
+def youtube_urls(input_filename: str, output_filename: str, include_permanently_skipped: bool):
     if output_filename is None:
         prefix = "validated_youtube_urls_"
         if os.path.basename(input_filename).startswith(prefix):
@@ -196,11 +212,11 @@ def youtube_urls(input_filename: str, output_filename: str):
         sys.exit(1)
 
     original_playlists = load_playlists_file(input_filename)
-    songs_to_validate = get_songs_to_validate(original_playlists)
+    songs_to_validate = get_songs_to_validate(original_playlists, include_permanently_skipped)
     iterator = get_songs_to_validate_iterator(songs_to_validate)
 
     app = QApplication()
-    window = MainWindow(original_playlists, iterator, output_filename)
+    window = MainWindow(original_playlists, iterator, output_filename, include_permanently_skipped)
     window.show()
     app.exec()
 
@@ -224,6 +240,7 @@ def load_playlists_file(filename: str) -> List[PlaylistWithSongs]:
             song_spotify_url = item_song["spotify_url"]
             song_youtube_url = item_song["youtube_url"]
             song_youtube_url_validated = item_song["youtube_url_validated"]
+            youtube_url_permanently_skip = item_song["youtube_url_permanently_skip"]
 
             songs.append(Song(
                 name=song_name,
@@ -231,6 +248,7 @@ def load_playlists_file(filename: str) -> List[PlaylistWithSongs]:
                 spotify_url=song_spotify_url,
                 youtube_url=song_youtube_url,
                 youtube_url_validated=song_youtube_url_validated,
+                youtube_url_permanently_skip=youtube_url_permanently_skip,
             ))
 
         playlists.append(PlaylistWithSongs(PlaylistNoSongs(
@@ -244,14 +262,14 @@ def load_playlists_file(filename: str) -> List[PlaylistWithSongs]:
     return playlists
 
 
-def get_songs_to_validate(playlists: List[PlaylistWithSongs]) -> Dict[str, Song]:
+def get_songs_to_validate(playlists: List[PlaylistWithSongs], include_permanently_skipped) -> Dict[str, Song]:
     songs_to_validate = {}
 
     for playlist in playlists:
         for song in playlist.songs:
             if song.spotify_url is None or song.spotify_url.strip() == "":
                 continue
-            if not song.youtube_url_validated and song.spotify_url not in songs_to_validate.keys():
+            if not song.youtube_url_validated and song.spotify_url not in songs_to_validate.keys() and (not song.youtube_url_permanently_skip or include_permanently_skipped):
                 songs_to_validate[song.spotify_url] = song
 
     return songs_to_validate
@@ -272,6 +290,19 @@ def update_validated_song(original_playlists: List[PlaylistWithSongs], spotify_u
         file.write(json.dumps(original_playlists, indent=4, default=get_obj_dict))
 
     logger.info(f"Validated song `{spotify_url}")
+    return original_playlists
+
+def update_permanently_skipped_song(original_playlists: List[PlaylistWithSongs], spotify_url: str, filename: str) -> List[PlaylistWithSongs]:
+    for playlist in original_playlists:
+        for song in playlist.songs:
+            if song.spotify_url == spotify_url and (song.youtube_url is not None and song.youtube_url.strip() != ""):
+                song.youtube_url_permanently_skip = True
+                print(song.youtube_url_permanently_skip)
+
+    with open(filename, "w") as file:
+        file.write(json.dumps(original_playlists, indent=4, default=get_obj_dict))
+
+    logger.info(f"Permanently skipped song `{spotify_url}")
     return original_playlists
 
 
