@@ -60,7 +60,7 @@ def test_search_youtube_music(monkeypatch, ytm_mock, test_case):
         "cache": {},
         "search_result": [],
         "expected_num_calls_to_search": 1,
-        "expected_value": YTMusicCache(None, False),
+        "expected_value": YTMusicCache(None, False, False),
     },
     {
         "song": sptfy.Song(
@@ -72,7 +72,7 @@ def test_search_youtube_music(monkeypatch, ytm_mock, test_case):
         "cache": {},
         "search_result": [{"title": "a song", "videoId": "1234"}],
         "expected_num_calls_to_search": 1,
-        "expected_value": YTMusicCache("https://music.youtube.com/watch?v=1234", False),
+        "expected_value": YTMusicCache("https://music.youtube.com/watch?v=1234", False, False),
     },
     {
         "song": sptfy.Song(
@@ -82,11 +82,11 @@ def test_search_youtube_music(monkeypatch, ytm_mock, test_case):
             youtube_url=None
         ),
         "cache": {
-            "https://example.invalid": YTMusicCache("https://music.youtube.com/watch?v=1234", False)
+            "https://example.invalid": YTMusicCache("https://music.youtube.com/watch?v=1234", False, False)
         },
         "search_result": [{"title": "a song", "videoId": "1234"}],
         "expected_num_calls_to_search": 0,
-        "expected_value": YTMusicCache("https://music.youtube.com/watch?v=1234", False)
+        "expected_value": YTMusicCache("https://music.youtube.com/watch?v=1234", False, False)
     },
     {
         "song": sptfy.Song(
@@ -129,17 +129,20 @@ def test_get_youtube_url(monkeypatch, ytm_mock, test_case):
         "spotify_url": "https://example.invalid",
         "youtube_url": "https://music.youtube.com/watch?v=wxyz",
         "youtube_url_validated": False,
+        "youtube_url_permanently_skip": False,
         "expected": {
-            "https://example.invalid": YTMusicCache(youtube_url="https://music.youtube.com/watch?v=wxyz", youtube_url_validated=False)
+            "https://example.invalid": YTMusicCache(youtube_url="https://music.youtube.com/watch?v=wxyz", youtube_url_validated=False, youtube_url_permanently_skip=False)
         }
     },
     {
         "spotify_url": "https://example.invalid",
         "youtube_url": "https://music.youtube.com/watch?v=wxyz",
         "youtube_url_validated": False,
+        "youtube_url_permanently_skip": False,
         "expected": {
             "https://example.invalid": YTMusicCache(youtube_url="https://music.youtube.com/watch?v=wxyz",
-                                                    youtube_url_validated=False)
+                                                    youtube_url_validated=False,
+                                                    youtube_url_permanently_skip=False)
         }
     }
 ])
@@ -147,8 +150,9 @@ def test_add_to_cache(ytm_mock, test_case):
     input_spotify_url = test_case["spotify_url"]
     input_youtube_url = test_case["youtube_url"]
     input_youtube_url_validated = test_case["youtube_url_validated"]
+    input_youtube_url_permanently_skip = test_case["youtube_url_permanently_skip"]
     expected = test_case["expected"]
 
-    ytm_mock.add_to_cache(input_spotify_url, input_youtube_url, input_youtube_url_validated)
+    ytm_mock.add_to_cache(input_spotify_url, input_youtube_url, input_youtube_url_validated, input_youtube_url_permanently_skip)
 
     assert ytm_mock.cache == expected

@@ -25,9 +25,9 @@ class YTM:
         yt_url = self.search_youtube_music(song.name, song.artists)
         if yt_url is None:
             logger.warning(f"couldn't find song: {song.name} by {', '.join(song.artists)} with a spotify url of '{song.spotify_url}'")
-            self.cache[song.spotify_url] = YTMusicCache(None, False)
+            self.cache[song.spotify_url] = YTMusicCache(None, False, False)
         else:
-            self.cache[song.spotify_url] = YTMusicCache(yt_url, False)
+            self.cache[song.spotify_url] = YTMusicCache(yt_url, False, False)
         return self.cache[song.spotify_url]
 
     def search_youtube_music(self, name: str, artists: List[str]) -> Optional[str]:

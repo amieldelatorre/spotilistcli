@@ -13,7 +13,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -23,7 +24,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -41,7 +43,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -51,7 +54,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -69,7 +73,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -79,7 +84,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -97,7 +103,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -107,7 +114,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -125,7 +133,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -135,7 +144,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -153,7 +163,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -163,7 +174,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -181,7 +193,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -191,7 +204,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -209,7 +223,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -219,7 +234,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -237,7 +253,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -247,7 +264,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -265,7 +283,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -275,7 +294,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -293,7 +313,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -303,7 +324,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -321,7 +343,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -331,7 +354,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -349,7 +373,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -359,7 +384,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -377,7 +403,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -387,7 +414,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -405,7 +433,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -415,7 +444,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -433,7 +463,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -443,7 +474,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -461,7 +493,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -471,7 +504,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -489,7 +523,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -499,7 +534,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -517,7 +553,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -527,7 +564,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -545,7 +583,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -555,7 +594,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -573,7 +613,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -583,7 +624,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -601,7 +643,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -611,7 +654,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -629,7 +673,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -639,7 +684,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -657,7 +703,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -667,7 +714,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -685,7 +733,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -695,7 +744,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -713,7 +763,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -723,7 +774,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -741,7 +793,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -751,7 +804,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -769,7 +823,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -779,7 +834,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -797,7 +853,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -807,7 +864,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -825,7 +883,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -835,7 +894,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -853,7 +913,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -863,7 +924,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -881,7 +943,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -891,7 +954,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -909,7 +973,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -919,7 +984,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -937,7 +1003,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -947,7 +1014,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -965,7 +1033,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -975,7 +1044,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -993,7 +1063,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1003,7 +1074,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1021,7 +1093,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1031,7 +1104,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1049,7 +1123,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1059,7 +1134,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1077,7 +1153,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1087,7 +1164,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1105,7 +1183,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1115,7 +1194,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1133,7 +1213,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1143,7 +1224,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1161,7 +1243,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1171,7 +1254,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1189,7 +1273,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1199,7 +1284,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1217,7 +1303,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1227,7 +1314,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1245,7 +1333,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1255,7 +1344,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1273,7 +1363,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1283,7 +1374,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1301,7 +1393,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1311,7 +1404,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1329,7 +1423,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1339,7 +1434,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1357,7 +1453,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1367,7 +1464,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1385,7 +1483,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1395,7 +1494,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1413,7 +1513,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1423,7 +1524,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1441,7 +1543,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1451,7 +1554,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1469,7 +1573,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1479,7 +1584,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1497,7 +1603,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1507,7 +1614,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1525,7 +1633,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1535,7 +1644,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1553,7 +1663,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1563,7 +1674,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1581,7 +1693,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1591,7 +1704,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1609,7 +1723,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1619,7 +1734,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1637,7 +1753,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1647,7 +1764,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1665,7 +1783,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1675,7 +1794,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1693,7 +1813,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1703,7 +1824,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1721,7 +1843,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1731,7 +1854,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1749,7 +1873,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1759,7 +1884,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1777,7 +1903,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1787,7 +1914,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1805,7 +1933,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1815,7 +1944,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1833,7 +1963,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1843,7 +1974,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1861,7 +1993,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1871,7 +2004,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1889,7 +2023,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1899,7 +2034,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1917,7 +2053,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1927,7 +2064,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1945,7 +2083,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1955,7 +2094,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -1973,7 +2113,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -1983,7 +2124,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2001,7 +2143,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2011,7 +2154,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2029,7 +2173,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2039,7 +2184,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2057,7 +2203,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2067,7 +2214,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2085,7 +2233,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2095,7 +2244,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2113,7 +2263,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2123,7 +2274,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2141,7 +2293,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2151,7 +2304,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2169,7 +2323,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2179,7 +2334,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2197,7 +2353,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2207,7 +2364,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2225,7 +2383,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2235,7 +2394,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2253,7 +2413,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2263,7 +2424,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2281,7 +2443,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2291,7 +2454,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2309,7 +2473,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2319,7 +2484,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2337,7 +2503,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2347,7 +2514,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2365,7 +2533,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2375,7 +2544,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2393,7 +2563,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2403,7 +2574,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2421,7 +2593,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2431,7 +2604,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2449,7 +2623,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2459,7 +2634,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2477,7 +2653,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2487,7 +2664,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2505,7 +2683,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2515,7 +2694,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2533,7 +2713,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2543,7 +2724,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2561,7 +2743,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2571,7 +2754,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2589,7 +2773,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2599,7 +2784,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2617,7 +2803,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2627,7 +2814,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2645,7 +2833,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2655,7 +2844,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2673,7 +2863,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2683,7 +2874,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2701,7 +2893,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2711,7 +2904,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2729,7 +2923,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2739,7 +2934,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2757,7 +2953,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2767,7 +2964,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2785,7 +2983,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2795,7 +2994,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2813,7 +3013,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2823,7 +3024,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2841,7 +3043,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2851,7 +3054,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2869,7 +3073,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2879,7 +3084,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2897,7 +3103,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2907,7 +3114,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2925,7 +3133,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2935,7 +3144,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2953,7 +3163,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2963,7 +3174,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -2981,7 +3193,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -2991,7 +3204,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -3009,7 +3223,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -3019,7 +3234,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -3037,7 +3253,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -3047,7 +3264,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -3065,7 +3283,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -3075,7 +3294,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -3093,7 +3313,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -3103,7 +3324,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -3121,7 +3343,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -3131,7 +3354,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -3149,7 +3373,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -3159,7 +3384,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -3177,7 +3403,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -3187,7 +3414,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -3205,7 +3433,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -3215,7 +3444,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -3233,7 +3463,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -3243,7 +3474,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -3261,7 +3493,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -3271,7 +3504,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -3289,7 +3523,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -3299,7 +3534,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     },
@@ -3317,7 +3553,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3326,7 +3563,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3335,7 +3573,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3344,71 +3583,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist",
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3418,7 +3594,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3427,7 +3604,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3436,7 +3614,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3445,7 +3624,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3454,17 +3634,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist",
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3473,7 +3644,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3482,241 +3654,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3726,7 +3665,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3735,7 +3675,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3744,17 +3685,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist",
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3763,7 +3695,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3772,16 +3705,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3791,7 +3716,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3800,7 +3726,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3809,7 +3736,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3818,17 +3746,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist",
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3837,7 +3756,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3846,17 +3766,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist",
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3865,7 +3776,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3874,7 +3786,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3883,7 +3796,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3892,7 +3806,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3901,7 +3816,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3910,7 +3826,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3919,7 +3836,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3928,7 +3846,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3937,7 +3856,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3946,7 +3866,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3955,7 +3876,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3964,7 +3886,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3973,7 +3896,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3982,7 +3906,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -3991,7 +3916,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4000,7 +3926,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4009,7 +3936,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4018,7 +3946,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4027,7 +3956,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4036,7 +3966,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4045,7 +3976,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4054,7 +3986,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4063,34 +3996,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4100,7 +4007,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4109,7 +4017,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4118,25 +4027,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4146,7 +4038,38 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4156,7 +4079,38 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4166,7 +4120,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4175,7 +4130,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4184,34 +4140,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4221,7 +4151,268 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4231,7 +4422,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4240,7 +4432,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4249,7 +4442,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4258,18 +4452,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist",
-                    "artist",
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4278,63 +4462,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist",
-                    "artist",
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4344,16 +4473,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4363,91 +4484,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist",
-                    "artist",
-                    "artist",
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4457,7 +4495,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4466,7 +4505,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4475,17 +4515,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist",
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4494,7 +4525,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4503,17 +4535,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist",
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4522,52 +4545,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4577,7 +4556,49 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4588,7 +4609,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4597,7 +4619,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4606,7 +4629,20 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4615,7 +4651,38 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4625,7 +4692,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4634,16 +4702,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
-            },
-            {
-                "name": "A Track",
-                "artists": [
-                    "artist"
-                ],
-                "spotify_url": "https://example.invalid",
-                "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4653,7 +4713,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4662,7 +4723,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4671,7 +4733,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4680,7 +4743,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Track",
@@ -4689,7 +4753,329 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist",
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist",
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
+            },
+            {
+                "name": "A Track",
+                "artists": [
+                    "artist"
+                ],
+                "spotify_url": "https://example.invalid",
+                "youtube_url": null,
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             }
         ]
     }

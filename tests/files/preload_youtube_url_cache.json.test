@@ -12,7 +12,8 @@
                 ],
                 "spotify_url": "https://example3.invalid",
                 "youtube_url": null,
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -21,7 +22,8 @@
                 ],
                 "spotify_url": "https://example2.invalid",
                 "youtube_url": "https://music.youtube.com/watch?v=1234",
-                "youtube_url_validated": false
+                "youtube_url_validated": false,
+                "youtube_url_permanently_skip": false
             },
             {
                 "name": "A Song",
@@ -31,7 +33,8 @@
                 ],
                 "spotify_url": "https://example.invalid",
                 "youtube_url": "https://music.youtube.com/watch?v=wxyz",
-                "youtube_url_validated": true
+                "youtube_url_validated": true,
+                "youtube_url_permanently_skip": false
             }
         ]
     }

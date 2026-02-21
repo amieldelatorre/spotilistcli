@@ -61,7 +61,7 @@ def test_get_songs_to_validate():
     }
 
 
-    actual = get_songs_to_validate(playlists)
+    actual = get_songs_to_validate(playlists, False)
 
     assert len(actual) == 4
     assert actual == expected

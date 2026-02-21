@@ -409,7 +409,8 @@ def test_add_youtube_url_to_songs(monkeypatch, ytm_mock, test_case):
     expected = test_case["expected"]
     monkeypatch.setattr(ytmusic.YTM, "get_youtube_url", lambda self,
                                                                song: YTMusicCache("https://music.youtube.com/watch?v=wxyz",
-                                                                                  youtube_url_validated))
+                                                                                  youtube_url_validated,
+                                                                                  False))
     monkeypatch.setattr(threading.Event, "is_set", lambda self: False)
     event = threading.Event()
     commands.playlist.download.add_youtube_url_to_songs(playlist_input, ytm_mock, event)
@@ -428,7 +429,7 @@ def test_download_playlists_with_youtube_url(monkeypatch, sptfy_mock,
 
     monkeypatch.setattr(ytmusic.YTM, "get_youtube_url", lambda self,
                                                                song:  YTMusicCache("https://music.youtube.com/watch?v=wxyz",
-                                                                                  youtube_url_validated))
+                                                                                  youtube_url_validated, False))
 
     runner.invoke(commands.playlist.download.download, args_list)
 
@@ -482,7 +483,7 @@ def test_download_playlists_with_youtube_url_with_preloaded_cache(monkeypatch, s
     args_list = ["--filename", temp_file, "--with-youtube-url"]
 
     monkeypatch.setattr(ytmusic.YTM, "get_youtube_url", lambda self,
-                                                               song: YTMusicCache("https://music.youtube.com/watch?v=wxyz", True))
+                                                               song: YTMusicCache("https://music.youtube.com/watch?v=wxyz", True, False))
 
     runner.invoke(commands.playlist.download.download, args_list)
 
@@ -508,7 +509,7 @@ def test_preload_youtube_url_cache_file_not_found(ytm_mock):
 def test_preload_youtube_url_cache(ytm_mock):
     test_case = "tests/files/preload_youtube_url_cache.json.test"
     expected = {
-        "https://example.invalid": YTMusicCache("https://music.youtube.com/watch?v=wxyz", True),
+        "https://example.invalid": YTMusicCache("https://music.youtube.com/watch?v=wxyz", True, False),
     }
 
     commands.playlist.download.preload_youtube_url_cache(ytm_mock, test_case, False)
@@ -518,8 +519,8 @@ def test_preload_youtube_url_cache(ytm_mock):
 def test_preload_youtube_url_cache_with_unvalidated_urls(ytm_mock):
     test_case = "tests/files/preload_youtube_url_cache.json.test"
     expected = {
-        "https://example.invalid": YTMusicCache("https://music.youtube.com/watch?v=wxyz", True),
-        "https://example2.invalid": YTMusicCache("https://music.youtube.com/watch?v=1234", False),
+        "https://example.invalid": YTMusicCache("https://music.youtube.com/watch?v=wxyz", True, False),
+        "https://example2.invalid": YTMusicCache("https://music.youtube.com/watch?v=1234", False, False),
     }
 
     commands.playlist.download.preload_youtube_url_cache(ytm_mock, test_case, True)

@@ -240,7 +240,7 @@ def load_playlists_file(filename: str) -> List[PlaylistWithSongs]:
             song_spotify_url = item_song["spotify_url"]
             song_youtube_url = item_song["youtube_url"]
             song_youtube_url_validated = item_song["youtube_url_validated"]
-            youtube_url_permanently_skip = item_song["youtube_url_permanently_skip"]
+            youtube_url_permanently_skip = item_song.get("youtube_url_permanently_skip", False)
 
             songs.append(Song(
                 name=song_name,
