@@ -8,8 +8,8 @@ from typing import List, Dict, Iterator
 from PySide6 import QtCore
 from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLabel, \
     QLineEdit, QDialogButtonBox, QDialog
-from PySide6.QtGui import QScreen, QFont, QPalette
-from PySide6.QtCore import QUrl, QMargins
+from PySide6.QtGui import QScreen, QFont, QPalette, QCursor
+from PySide6.QtCore import QUrl, QMargins, Qt
 from PySide6.QtWebEngineWidgets import QWebEngineView
 
 from helpers import get_obj_dict
@@ -99,16 +99,20 @@ class MainWindow(QMainWindow):
         height = int(screen_size.height() - screen_size.height() * 0.1)
         self.setGeometry(0, 0, width, height)
 
-
+        self.is_valid_button.setCursor(QCursor(Qt.PointingHandCursor))
         self.is_valid_button.setFixedSize(100, 40)
         self.is_valid_button.setStyleSheet("background-color: #5CE65C;"
                                            "font-size: 18px;")
 
+        self.skip_button.setCursor(QCursor(Qt.PointingHandCursor))
         self.skip_button.setFixedSize(100, 40)
         self.skip_button.setStyleSheet("font-size: 18px;")
 
+        self.permanently_skip_button.setCursor(QCursor(Qt.PointingHandCursor))
         self.permanently_skip_button.setFixedSize(200, 40)
         self.permanently_skip_button.setStyleSheet("font-size: 18px;")
+
+        self.overwrite_entry_button.setCursor(QCursor(Qt.PointingHandCursor))
 
         self.current_song_spotify_url = None
         self.current_song_youtube_url = None
