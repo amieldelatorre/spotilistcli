@@ -293,7 +293,7 @@ def update_validated_song(original_playlists: List[PlaylistWithSongs], spotify_u
     with open(filename, "w") as file:
         file.write(json.dumps(original_playlists, indent=4, default=get_obj_dict))
 
-    logger.info(f"Validated song `{spotify_url}")
+    logger.info(f"Validated song `{spotify_url}`")
     return original_playlists
 
 def update_permanently_skipped_song(original_playlists: List[PlaylistWithSongs], spotify_url: str, filename: str) -> List[PlaylistWithSongs]:
