@@ -140,7 +140,7 @@ class MainWindow(QMainWindow):
                     not is_valid_youtube_music_url(song_to_validate.youtube_url.strip())):
                 self.is_valid_button.setDisabled(True)
                 self.youtube_page.setHtml(f"""
-                <h1 style="background-color: #000; color: #FF474C; height: 100%; text-align: center;">Invalid youtube URL '{song_to_validate.youtube_url}'</h1>
+                <h1 style="background-color: #000; color: #FF474C; text-align: center;">Invalid youtube URL '{song_to_validate.youtube_url}'</h1>
                 """)
             else:
                 yt_url = song_to_validate.youtube_url.strip()
@@ -148,7 +148,22 @@ class MainWindow(QMainWindow):
                 self.youtube_page.load(QUrl(yt_url))
 
             self.current_song_spotify_url = song_to_validate.spotify_url
-            self.spotify_page.load(QUrl(song_to_validate.spotify_url))
+            if (song_to_validate.spotify_url is None or song_to_validate.spotify_url.strip() == "" or 
+                song_to_validate.spotify_url.strip() == "None" or not is_valid_url(song_to_validate.spotify_url)):
+                self.spotify_page.setHtml(
+                f"""
+                <html>
+                    <body style="background-color: #000">
+                        <div>
+                            <h1 style="background-color: #000; color: #FF474C; text-align: center;">Invalid spotify URL '{song_to_validate.spotify_url}'</h1>
+                            <h2 style="background-color: #000; color: #FF474C; text-align: center;">Title: '{song_to_validate.name}'</h2>
+                            <h2 style="background-color: #000; color: #FF474C; text-align: center;">Artists: '{', '.join(song_to_validate.artists)}'</h2>
+                        </div>
+                    </body>
+                </html>
+                """)
+            else:
+                self.spotify_page.load(QUrl(song_to_validate.spotify_url))
         except StopIteration:
             self.clear_window(self.main_layout)
             self.add_end_screen()
@@ -322,6 +337,12 @@ def is_valid_youtube_music_url(url: str) -> bool:
     try:
         if not url.startswith("http://music.youtube.com/watch?v=") and not url.startswith("https://music.youtube.com/watch?v="):
             return False
+        return is_valid_url(url)
+    except:
+        return False
+
+def is_valid_url(url: str) -> bool:
+    try:
         result = urlparse(url)
         return all([result.scheme, result.netloc])
     except:

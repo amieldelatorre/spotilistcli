@@ -173,6 +173,7 @@ class Sptfy:
 
                 artists = get_artists(item)
                 spotify_url = get_spotify_url(item)
+                spotify_url = spotify_url if spotify_url != "None" else item["track"]["name"] + "---" + ", ".join(artists)
                 song = Song(
                     name=item["track"]["name"],
                     artists=artists,
