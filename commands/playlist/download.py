@@ -170,16 +170,27 @@ def preload_youtube_url_cache(ytm: YTM, filename: str, use_unvalidated_url: bool
         for item in data:
             item_songs = item["songs"]
             for item_song in item_songs:
-                album_name = item_song["album"]["name"]
-                album_artists = item_song["album"]["artists"]
-                album_release_date = item_song["album"]["release_date"]
+                album = None
+                if "album" in item_song:
+                    album_name = item_song["album"]["name"]
+                    album_artists = item_song["album"]["artists"]
+                    album_release_date = item_song["album"]["release_date"]
+                    album = Album(name=album_name, artists=album_artists, release_date=album_release_date)
+                
+                track_number = None
+                if "track_number" in item_song:
+                    track_number = item_song["track_number"]
+                
+                disc_number = None
+                if "disc_number" in item_song:
+                    disc_number = item_song["disc_number"]
+
+                duration_ms = None
+                if "duration_ms" in item_song:
+                    duration_ms = item_song["duration_ms"]
 
                 song_name = item_song["name"]
                 song_artists = item_song["artists"]
-                album = Album(name=album_name, artists=album_artists, release_date=album_release_date)
-                track_number = item_song["track_number"]
-                disc_number = item_song["disc_number"]
-                duration_ms = item_song["duration_ms"]
                 song_spotify_url = item_song["spotify_url"]
                 song_youtube_url = item_song["youtube_url"]
                 song_youtube_url_validated = item_song["youtube_url_validated"]

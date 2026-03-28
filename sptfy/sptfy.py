@@ -59,9 +59,9 @@ class Song:
     name: str
     artists: List[str]
     album: Optional[Album]
-    track_number: int
-    disc_number: int
-    duration_ms: int
+    track_number: Optional[int]
+    disc_number: Optional[int]
+    duration_ms: Optional[int]
     spotify_url: str
     youtube_url: Optional[str] = None
     youtube_url_validated: bool = False
