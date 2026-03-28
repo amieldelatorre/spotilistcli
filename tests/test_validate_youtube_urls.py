@@ -7,7 +7,7 @@ import pytest
 from commands.validate.youtube_urls import (load_playlists_file, get_songs_to_validate,
                                             get_songs_to_validate_iterator, update_validated_song,
                                             overwrite_youtube_url, is_valid_youtube_music_url)
-from sptfy import Song, PlaylistWithSongs, PlaylistNoSongs, Album
+from sptfy import Song, PlaylistWithSongs, PlaylistNoSongs, Album, AlbumImage
 
 
 def test_load_playlists_file():
@@ -26,7 +26,18 @@ def test_get_songs_to_validate():
             artists=[
                 "Artist"
             ],
-            album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            album=Album(
+                name="An Album",
+                artists=["Artist"],
+                release_date="2001-01-01",
+                images=[
+                    AlbumImage(
+                        url="https://example.invalid",
+                        height=640,
+                        width=640
+                    )
+                ]
+            ),
             track_number=1,
             disc_number=1,
             duration_ms=244000,
@@ -40,7 +51,18 @@ def test_get_songs_to_validate():
                 "Artist",
                 "Artist2"
             ],
-            album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            album=Album(
+                name="An Album",
+                artists=["Artist"],
+                release_date="2001-01-01",
+                images=[
+                    AlbumImage(
+                        url="https://example.invalid",
+                        height=640,
+                        width=640
+                    )
+                ]
+            ),
             track_number=1,
             disc_number=1,
             duration_ms=244000,
@@ -53,7 +75,18 @@ def test_get_songs_to_validate():
             artists=[
                 "Artist"
             ],
-            album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            album=Album(
+                name="An Album",
+                artists=["Artist"],
+                release_date="2001-01-01",
+                images=[
+                    AlbumImage(
+                        url="https://example.invalid",
+                        height=640,
+                        width=640
+                    )
+                ]
+            ),
             track_number=1,
             disc_number=1,
             duration_ms=244000,
@@ -66,7 +99,18 @@ def test_get_songs_to_validate():
             artists=[
                 "Artist",
             ],
-            album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            album=Album(
+                name="An Album",
+                artists=["Artist"],
+                release_date="2001-01-01",
+                images=[
+                    AlbumImage(
+                        url="https://example.invalid",
+                        height=640,
+                        width=640
+                    )
+                ]
+            ),
             track_number=1,
             disc_number=1,
             duration_ms=244000,
@@ -90,7 +134,18 @@ def test_get_songs_to_validate_iterator():
             artists=[
                 "Artist"
             ],
-            album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            album=Album(
+                name="An Album",
+                artists=["Artist"],
+                release_date="2001-01-01",
+                images=[
+                    AlbumImage(
+                        url="https://example.invalid",
+                        height=640,
+                        width=640
+                    )
+                ]
+            ),
             track_number=1,
             disc_number=1,
             duration_ms=244000,
@@ -104,7 +159,18 @@ def test_get_songs_to_validate_iterator():
                 "Artist",
                 "Artist2"
             ],
-            album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            album=Album(
+                name="An Album",
+                artists=["Artist"],
+                release_date="2001-01-01",
+                images=[
+                    AlbumImage(
+                        url="https://example.invalid",
+                        height=640,
+                        width=640
+                    )
+                ]
+            ),
             track_number=1,
             disc_number=1,
             duration_ms=244000,
@@ -117,7 +183,18 @@ def test_get_songs_to_validate_iterator():
             artists=[
                 "Artist"
             ],
-            album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            album=Album(
+                name="An Album",
+                artists=["Artist"],
+                release_date="2001-01-01",
+                images=[
+                    AlbumImage(
+                        url="https://example.invalid",
+                        height=640,
+                        width=640
+                    )
+                ]
+            ),
             track_number=1,
             disc_number=1,
             duration_ms=244000,
@@ -131,7 +208,18 @@ def test_get_songs_to_validate_iterator():
                 "Artist",
                 "Artist2"
             ],
-            album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            album=Album(
+                name="An Album",
+                artists=["Artist"],
+                release_date="2001-01-01",
+                images=[
+                    AlbumImage(
+                        url="https://example.invalid",
+                        height=640,
+                        width=640
+                    )
+                ]
+            ),
             track_number=1,
             disc_number=1,
             duration_ms=244000,
@@ -185,7 +273,18 @@ def test_overwrite_youtube_url():
            Song(
                 name="A song",
                 artists=["Artist"],
-                album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -195,7 +294,18 @@ def test_overwrite_youtube_url():
             Song(
                 name="A song",
                 artists=["Artist"],
-                album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -213,7 +323,18 @@ def test_overwrite_youtube_url():
             Song(
                 name="A song",
                 artists=["Artist"],
-                album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -223,7 +344,18 @@ def test_overwrite_youtube_url():
             Song(
                 name="A song",
                 artists=["Artist"],
-                album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -245,7 +377,18 @@ def test_overwrite_youtube_url():
             Song(
                 name="A song",
                 artists=["Artist"],
-                album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -255,7 +398,18 @@ def test_overwrite_youtube_url():
             Song(
                 name="A song",
                 artists=["Artist"],
-                album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -273,7 +427,18 @@ def test_overwrite_youtube_url():
             Song(
                 name="A song",
                 artists=["Artist"],
-                album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -283,7 +448,18 @@ def test_overwrite_youtube_url():
             Song(
                 name="A song",
                 artists=["Artist"],
-                album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,

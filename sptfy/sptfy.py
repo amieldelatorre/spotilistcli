@@ -40,11 +40,27 @@ class Artist:
             sort_keys=True
         )
 
+
+@dataclass
+class AlbumImage:
+    url: str
+    height: int
+    width: int
+
+    def to_json(self) -> str:
+        return json.dumps(
+            self,
+            default=lambda o: o.__dict__,
+            sort_keys=True
+        )
+
+
 @dataclass
 class Album:
     name: str
     artists: List[str]
     release_date: str
+    images: List[AlbumImage]
 
     def to_json(self) -> str:
         return json.dumps(
@@ -137,10 +153,25 @@ def get_album(song: Dict) -> Album:
     if "artists" in album and album["artists"] is not None:
         artists = [artist["name"] for artist in album["artists"]]
 
+    images = []
+    if "images" in album and album["images"] is not None and len(album["images"]) != 0:
+        for image in album["images"]:
+            try:
+                images.append(
+                    AlbumImage(
+                        url=image["url"],
+                        height=image["height"],
+                        width=image["width"]
+                    )
+                )
+            except:
+                logger.warning(f"Couldn't process image from album '{album["name"]}'")
+
     return Album(
         name=album["name"],
         artists=artists,
-        release_date=album["release_date"]
+        release_date=album["release_date"],
+        images=images
     )
 
 
@@ -198,7 +229,7 @@ class Sptfy:
                 playlist_id=playlist_id,
                 limit=limit,
                 offset=offset,
-                fields="items(track(name,artists(name),album(name,release_date,artists(name)),track_number,disc_number,duration_ms,external_urls(spotify))),next"
+                fields="items(track(name,artists(name),album(name,release_date,artists(name),images),track_number,disc_number,duration_ms,external_urls(spotify))),next"
             )
 
             for item in query["items"]:

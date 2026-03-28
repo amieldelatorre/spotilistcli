@@ -13,7 +13,7 @@ from PySide6.QtCore import QUrl, QMargins, Qt
 from PySide6.QtWebEngineWidgets import QWebEngineView
 
 from helpers import get_obj_dict
-from sptfy import PlaylistWithSongs, Song, PlaylistNoSongs, Album
+from sptfy import PlaylistWithSongs, Song, PlaylistNoSongs, Album, AlbumImage
 from log import logger
 
 
@@ -254,13 +254,30 @@ def load_playlists_file(filename: str) -> List[PlaylistWithSongs]:
         songs = []
 
         for item_song in item["songs"]:
-            album_name = item_song["album"]["name"]
-            album_artists = item_song["album"]["artists"]
-            album_release_date = item_song["album"]["release_date"]
+            album_name = ""
+            album_artists = []
+            album_release_date = ""
+            album_images = []
+            if "album" in item_song:
+                item_album = item_song["album"]
+
+                if "name" in item_album:
+                    album_name = item_album["name"]
+                if "artists" in item_album:
+                    album_artists = item_album["artists"]
+                if "release_date" in item_album:
+                    album_release_date = item_album["release_date"]
+                if "images" in item_album:
+                    for image in item_album["images"]:
+                        album_images.append(AlbumImage(
+                            url=image["url"],
+                            height=image["height"],
+                            width=image["width"])
+                        )
             
             song_name = item_song["name"]
             song_artists = item_song["artists"]
-            album = Album(name=album_name, artists=album_artists, release_date=album_release_date)
+            album = Album(name=album_name, artists=album_artists, release_date=album_release_date, images=album_images)
             track_number = item_song["track_number"]
             disc_number = item_song["disc_number"]
             duration_ms = item_song["duration_ms"]

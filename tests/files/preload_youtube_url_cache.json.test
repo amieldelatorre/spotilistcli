@@ -8,6 +8,13 @@
           "artists": [
             "Artist"
           ],
+          "images": [
+            {
+              "height": 640,
+              "url": "https://example.invalid",
+              "width": 640
+            }
+          ],
           "name": "An Album",
           "release_date": "2001-01-01"
         },
@@ -28,6 +35,13 @@
           "artists": [
             "Artist"
           ],
+          "images": [
+            {
+              "height": 640,
+              "url": "https://example.invalid",
+              "width": 640
+            }
+          ],
           "name": "An Album",
           "release_date": "2001-01-01"
         },
@@ -47,6 +61,13 @@
         "album": {
           "artists": [
             "Artist"
+          ],
+          "images": [
+            {
+              "height": 640,
+              "url": "https://example.invalid",
+              "width": 640
+            }
           ],
           "name": "An Album",
           "release_date": "2001-01-01"

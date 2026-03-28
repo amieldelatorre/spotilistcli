@@ -9,7 +9,7 @@ from typing import List, Optional
 from commands.playlist.shared import filter_playlists
 from helpers import time_taken, get_obj_dict
 from log import logger
-from sptfy import Sptfy, get_sptfy, PlaylistWithSongs, PlaylistNoSongs, Song, Album
+from sptfy import Sptfy, get_sptfy, PlaylistWithSongs, PlaylistNoSongs, Song, Album, AlbumImage
 from datetime import datetime
 
 from ytmusic import YTM
@@ -175,7 +175,8 @@ def preload_youtube_url_cache(ytm: YTM, filename: str, use_unvalidated_url: bool
                     album_name = item_song["album"]["name"]
                     album_artists = item_song["album"]["artists"]
                     album_release_date = item_song["album"]["release_date"]
-                    album = Album(name=album_name, artists=album_artists, release_date=album_release_date)
+                    album_images = [AlbumImage(url=image["url"], height=image["height"], width=image["width"]) for image in item_song["album"]["images"]]
+                    album = Album(name=album_name, artists=album_artists, release_date=album_release_date, images=album_images)
                 
                 track_number = None
                 if "track_number" in item_song:

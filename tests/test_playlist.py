@@ -207,7 +207,18 @@ def patch_get_playlist_with_songs(monkeypatch):
         sptfy.Song(
             name="A Song",
             artists=["Artist"],
-            album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            album=sptfy.Album(
+                name="An Album",
+                artists=["Artist"],
+                release_date="2001-01-01",
+                images=[
+                    sptfy.AlbumImage(
+                        url="https://example.invalid",
+                        height=640,
+                        width=640
+                    )
+                ]
+            ),
             track_number=1,
             disc_number=1,
             duration_ms=244000,
@@ -217,7 +228,18 @@ def patch_get_playlist_with_songs(monkeypatch):
         sptfy.Song(
             name="A Song",
             artists=["Artist", "Artist2"],
-            album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            album=sptfy.Album(
+                name="An Album",
+                artists=["Artist"],
+                release_date="2001-01-01",
+                images=[
+                    sptfy.AlbumImage(
+                        url="https://example.invalid",
+                        height=640,
+                        width=640
+                    )
+                ]
+            ),
             track_number=1,
             disc_number=1,
             duration_ms=244000,
@@ -279,7 +301,18 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
         ), songs=[
             sptfy.Song(
                 name="A Song",
-                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=sptfy.Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        sptfy.AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -290,7 +323,18 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
-                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=sptfy.Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        sptfy.AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -300,7 +344,18 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
-                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=sptfy.Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        sptfy.AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -310,7 +365,18 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
-                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=sptfy.Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        sptfy.AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -328,7 +394,18 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
-                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=sptfy.Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        sptfy.AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -339,7 +416,18 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
-                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=sptfy.Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        sptfy.AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -350,7 +438,18 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
-                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=sptfy.Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        sptfy.AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -361,7 +460,18 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
-                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=sptfy.Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        sptfy.AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -383,7 +493,18 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
-                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=sptfy.Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        sptfy.AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -393,7 +514,18 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
-                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=sptfy.Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        sptfy.AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -403,7 +535,18 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
-                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=sptfy.Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        sptfy.AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -413,7 +556,18 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
-                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=sptfy.Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        sptfy.AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -431,7 +585,18 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
-                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=sptfy.Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        sptfy.AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -442,7 +607,18 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
-                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=sptfy.Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        sptfy.AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -453,7 +629,18 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
-                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=sptfy.Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        sptfy.AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
@@ -464,7 +651,18 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
-                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                album=sptfy.Album(
+                    name="An Album",
+                    artists=["Artist"],
+                    release_date="2001-01-01",
+                    images=[
+                        sptfy.AlbumImage(
+                            url="https://example.invalid",
+                            height=640,
+                            width=640
+                        )
+                    ]
+                ),
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,

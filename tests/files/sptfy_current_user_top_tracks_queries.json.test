@@ -3,7 +3,14 @@
   "items": [
     {
       "album": {
-        "album_type": "ALBUM"
+        "album_type": "ALBUM",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://example.invalid",
+            "width": 640
+          }
+        ]
       },
       "artists": [
         {
@@ -47,7 +54,14 @@
     },
     {
       "album": {
-        "album_type": "ALBUM"
+        "album_type": "ALBUM",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://example.invalid",
+            "width": 640
+          }
+        ]
       },
       "artists": [
         {
@@ -91,7 +105,14 @@
     },
     {
       "album": {
-        "album_type": "ALBUM"
+        "album_type": "ALBUM",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://example.invalid",
+            "width": 640
+          }
+        ]
       },
       "artists": [
         {
@@ -135,7 +156,14 @@
     },
     {
       "album": {
-        "album_type": "ALBUM"
+        "album_type": "ALBUM",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://example.invalid",
+            "width": 640
+          }
+        ]
       },
       "artists": [
         {
@@ -179,7 +207,14 @@
     },
     {
       "album": {
-        "album_type": "ALBUM"
+        "album_type": "ALBUM",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://example.invalid",
+            "width": 640
+          }
+        ]
       },
       "artists": [
         {
@@ -223,7 +258,14 @@
     },
     {
       "album": {
-        "album_type": "ALBUM"
+        "album_type": "ALBUM",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://example.invalid",
+            "width": 640
+          }
+        ]
       },
       "artists": [
         {
@@ -267,7 +309,14 @@
     },
     {
       "album": {
-        "album_type": "ALBUM"
+        "album_type": "ALBUM",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://example.invalid",
+            "width": 640
+          }
+        ]
       },
       "artists": [
         {
@@ -311,7 +360,14 @@
     },
     {
       "album": {
-        "album_type": "ALBUM"
+        "album_type": "ALBUM",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://example.invalid",
+            "width": 640
+          }
+        ]
       },
       "artists": [
         {
@@ -355,7 +411,14 @@
     },
     {
       "album": {
-        "album_type": "ALBUM"
+        "album_type": "ALBUM",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://example.invalid",
+            "width": 640
+          }
+        ]
       },
       "artists": [
         {
@@ -399,7 +462,14 @@
     },
     {
       "album": {
-        "album_type": "ALBUM"
+        "album_type": "ALBUM",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://example.invalid",
+            "width": 640
+          }
+        ]
       },
       "artists": [
         {
