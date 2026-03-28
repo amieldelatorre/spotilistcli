@@ -7,7 +7,7 @@ import pytest
 from commands.validate.youtube_urls import (load_playlists_file, get_songs_to_validate,
                                             get_songs_to_validate_iterator, update_validated_song,
                                             overwrite_youtube_url, is_valid_youtube_music_url)
-from sptfy import Song, PlaylistWithSongs, PlaylistNoSongs
+from sptfy import Song, PlaylistWithSongs, PlaylistNoSongs, Album
 
 
 def test_load_playlists_file():
@@ -26,6 +26,10 @@ def test_get_songs_to_validate():
             artists=[
                 "Artist"
             ],
+            album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            track_number=1,
+            disc_number=1,
+            duration_ms=244000,
             spotify_url="https://example01.invalid",
             youtube_url="https://music.youtube.com/watch?v=01",
             youtube_url_validated=False,
@@ -36,6 +40,10 @@ def test_get_songs_to_validate():
                 "Artist",
                 "Artist2"
             ],
+            album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            track_number=1,
+            disc_number=1,
+            duration_ms=244000,
             spotify_url="https://example02.invalid",
             youtube_url="https://music.youtube.com/watch?v=02",
             youtube_url_validated=False,
@@ -45,6 +53,10 @@ def test_get_songs_to_validate():
             artists=[
                 "Artist"
             ],
+            album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            track_number=1,
+            disc_number=1,
+            duration_ms=244000,
             spotify_url="https://example03.invalid",
             youtube_url="https://music.youtube.com/watch?v=03",
             youtube_url_validated=False,
@@ -54,6 +66,10 @@ def test_get_songs_to_validate():
             artists=[
                 "Artist",
             ],
+            album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            track_number=1,
+            disc_number=1,
+            duration_ms=244000,
             spotify_url="https://example.invalid",
             youtube_url=None,
             youtube_url_validated=False,
@@ -74,6 +90,10 @@ def test_get_songs_to_validate_iterator():
             artists=[
                 "Artist"
             ],
+            album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            track_number=1,
+            disc_number=1,
+            duration_ms=244000,
             spotify_url="https://example01.invalid",
             youtube_url="https://music.youtube.com/watch?v=01",
             youtube_url_validated=False,
@@ -84,6 +104,10 @@ def test_get_songs_to_validate_iterator():
                 "Artist",
                 "Artist2"
             ],
+            album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            track_number=1,
+            disc_number=1,
+            duration_ms=244000,
             spotify_url="https://example02.invalid",
             youtube_url="https://music.youtube.com/watch?v=02",
             youtube_url_validated=False,
@@ -93,6 +117,10 @@ def test_get_songs_to_validate_iterator():
             artists=[
                 "Artist"
             ],
+            album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            track_number=1,
+            disc_number=1,
+            duration_ms=244000,
             spotify_url="https://example03.invalid",
             youtube_url="https://music.youtube.com/watch?v=03",
             youtube_url_validated=False,
@@ -103,6 +131,10 @@ def test_get_songs_to_validate_iterator():
                 "Artist",
                 "Artist2"
             ],
+            album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            track_number=1,
+            disc_number=1,
+            duration_ms=244000,
             spotify_url="https://example.invalid",
             youtube_url="https://music.youtube.com/watch?v=wxyz",
             youtube_url_validated=False,
@@ -151,14 +183,22 @@ def test_overwrite_youtube_url():
             owner_spotify_id="111111111111"
         ), songs=[
            Song(
-               name="A song",
-               artists=["Artist"],
-               spotify_url="https://example.invalid",
-               youtube_url="https://music.youtube.com/watch?v=wxyz"
+                name="A song",
+                artists=["Artist"],
+                album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
+                spotify_url="https://example.invalid",
+                youtube_url="https://music.youtube.com/watch?v=wxyz"
            ),
             Song(
                 name="A song",
                 artists=["Artist"],
+                album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example2.invalid",
                 youtube_url="https://music.youtube.com/watch?v=abcd"
             )
@@ -173,12 +213,20 @@ def test_overwrite_youtube_url():
             Song(
                 name="A song",
                 artists=["Artist"],
+                album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz"
             ),
             Song(
                 name="A song",
                 artists=["Artist"],
+                album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example2.invalid",
                 youtube_url="https://music.youtube.com/watch?v=abcd"
             )
@@ -197,12 +245,20 @@ def test_overwrite_youtube_url():
             Song(
                 name="A song",
                 artists=["Artist"],
+                album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=1234"
             ),
             Song(
                 name="A song",
                 artists=["Artist"],
+                album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example2.invalid",
                 youtube_url="https://music.youtube.com/watch?v=abcd"
             )
@@ -217,12 +273,20 @@ def test_overwrite_youtube_url():
             Song(
                 name="A song",
                 artists=["Artist"],
+                album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=1234"
             ),
             Song(
                 name="A song",
                 artists=["Artist"],
+                album=Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example2.invalid",
                 youtube_url="https://music.youtube.com/watch?v=abcd"
             )

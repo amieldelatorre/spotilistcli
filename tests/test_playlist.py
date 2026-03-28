@@ -207,12 +207,20 @@ def patch_get_playlist_with_songs(monkeypatch):
         sptfy.Song(
             name="A Song",
             artists=["Artist"],
+            album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            track_number=1,
+            disc_number=1,
+            duration_ms=244000,
             spotify_url="https://example.invalid",
             youtube_url=None
         ),
         sptfy.Song(
             name="A Song",
             artists=["Artist", "Artist2"],
+            album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+            track_number=1,
+            disc_number=1,
+            duration_ms=244000,
             spotify_url="https://example.invalid",
             youtube_url=None
         )
@@ -271,6 +279,10 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
         ), songs=[
             sptfy.Song(
                 name="A Song",
+                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 artists=["Artist"],
                 spotify_url="https://example.invalid",
                 youtube_url=None
@@ -278,18 +290,30 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
+                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example.invalid",
                 youtube_url=None
             ),
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
+                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example.invalid",
                 youtube_url=None
             ),
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
+                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example.invalid",
                 youtube_url=None
             ),
@@ -304,6 +328,10 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
+                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz",
                 youtube_url_validated=False
@@ -311,6 +339,10 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
+                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz",
                 youtube_url_validated=False
@@ -318,6 +350,10 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
+                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz",
                 youtube_url_validated=False
@@ -325,6 +361,10 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
+                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz",
                 youtube_url_validated=False
@@ -343,24 +383,40 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
+                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example.invalid",
                 youtube_url=None
             ),
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
+                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example.invalid",
                 youtube_url=None
             ),
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
+                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example.invalid",
                 youtube_url=None
             ),
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
+                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example.invalid",
                 youtube_url=None
             ),
@@ -375,6 +431,10 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
+                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz",
                 youtube_url_validated=True
@@ -382,6 +442,10 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
+                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz",
                 youtube_url_validated=True
@@ -389,6 +453,10 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
+                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz",
                 youtube_url_validated=True
@@ -396,6 +464,10 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
             sptfy.Song(
                 name="A Song",
                 artists=["Artist"],
+                album=sptfy.Album(name="An Album", artists=["Artist"], release_date="2001-01-01"),
+                track_number=1,
+                disc_number=1,
+                duration_ms=244000,
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz",
                 youtube_url_validated=True

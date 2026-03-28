@@ -13,7 +13,7 @@ from PySide6.QtCore import QUrl, QMargins, Qt
 from PySide6.QtWebEngineWidgets import QWebEngineView
 
 from helpers import get_obj_dict
-from sptfy import PlaylistWithSongs, Song, PlaylistNoSongs
+from sptfy import PlaylistWithSongs, Song, PlaylistNoSongs, Album
 from log import logger
 
 
@@ -254,8 +254,16 @@ def load_playlists_file(filename: str) -> List[PlaylistWithSongs]:
         songs = []
 
         for item_song in item["songs"]:
+            album_name = item_song["album"]["name"]
+            album_artists = item_song["album"]["artists"]
+            album_release_date = item_song["album"]["release_date"]
+            
             song_name = item_song["name"]
             song_artists = item_song["artists"]
+            album = Album(name=album_name, artists=album_artists, release_date=album_release_date)
+            track_number = item_song["track_number"]
+            disc_number = item_song["disc_number"]
+            duration_ms = item_song["duration_ms"]
             song_spotify_url = item_song["spotify_url"]
             song_youtube_url = item_song["youtube_url"]
             song_youtube_url_validated = item_song["youtube_url_validated"]
@@ -264,6 +272,10 @@ def load_playlists_file(filename: str) -> List[PlaylistWithSongs]:
             songs.append(Song(
                 name=song_name,
                 artists=song_artists,
+                album=album,
+                track_number=track_number,
+                disc_number=disc_number,
+                duration_ms=duration_ms,
                 spotify_url=song_spotify_url,
                 youtube_url=song_youtube_url,
                 youtube_url_validated=song_youtube_url_validated,

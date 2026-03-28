@@ -40,11 +40,28 @@ class Artist:
             sort_keys=True
         )
 
+@dataclass
+class Album:
+    name: str
+    artists: List[str]
+    release_date: str
+
+    def to_json(self) -> str:
+        return json.dumps(
+            self,
+            default=lambda o: o.__dict__,
+            sort_keys=True
+        )
+
 
 @dataclass
 class Song:
     name: str
     artists: List[str]
+    album: Optional[Album]
+    track_number: int
+    disc_number: int
+    duration_ms: int
     spotify_url: str
     youtube_url: Optional[str] = None
     youtube_url_validated: bool = False
@@ -110,6 +127,23 @@ def get_spotify_url(song: Dict) -> str:
     return spotify_url
 
 
+def get_album(song: Dict) -> Album:
+    if "album" not in song["track"] or song["track"]["album"] is None:
+        return None
+    
+    album = song["track"]["album"]
+
+    artists = []
+    if "artists" in album and album["artists"] is not None:
+        artists = [artist["name"] for artist in album["artists"]]
+
+    return Album(
+        name=album["name"],
+        artists=artists,
+        release_date=album["release_date"]
+    )
+
+
 class Sptfy:
     def __init__(self, spotify_client_id, spotify_client_secret, spotify_redirect_uri):
         logger.info(f"Authenticating with spotify")
@@ -164,19 +198,26 @@ class Sptfy:
                 playlist_id=playlist_id,
                 limit=limit,
                 offset=offset,
-                fields="items(track(name,artists(name),external_urls(spotify))),next"
+                fields="items(track(name,artists(name),album(name,release_date,artists(name)),track_number,disc_number,duration_ms,external_urls(spotify))),next"
             )
 
             for item in query["items"]:
                 if item is None or item["track"] is None:
                     continue
-
                 artists = get_artists(item)
+                album = get_album(item)
+                track_number = item["track"]["track_number"]
+                disc_number = item["track"]["disc_number"]
+                duration_ms = item["track"]["duration_ms"]
                 spotify_url = get_spotify_url(item)
                 spotify_url = spotify_url if spotify_url != "None" else item["track"]["name"] + "---" + ", ".join(artists)
                 song = Song(
                     name=item["track"]["name"],
                     artists=artists,
+                    album=album,
+                    track_number=track_number,
+                    disc_number=disc_number,
+                    duration_ms=duration_ms,
                     spotify_url=spotify_url,
                     youtube_url=None
                 )
@@ -205,10 +246,18 @@ class Sptfy:
                     continue
 
                 artists = get_artists(item)
+                album = get_album(item)
+                track_number = item["track"]["track_number"]
+                disc_number = item["track"]["disc_number"]
+                duration_ms = item["track"]["duration_ms"]
                 spotify_url = get_spotify_url(item)
                 song = Song(
                     name=item["track"]["name"],
                     artists=artists,
+                    album=album,
+                    track_number=track_number,
+                    disc_number=disc_number,
+                    duration_ms=duration_ms,
                     spotify_url=spotify_url,
                     youtube_url=None
                 )
@@ -266,9 +315,17 @@ class Sptfy:
             return artists
 
         for item in query["items"]:
+            album = get_album(item)
+            track_number = item["track"]["track_number"]
+            disc_number = item["track"]["disc_number"]
+            duration_ms = item["track"]["duration_ms"]
             song = Song(
                 name=item["name"],
                 artists=get_top_tracks_artists(item),
+                album=album,
+                track_number=track_number,
+                disc_number=disc_number,
+                duration_ms=duration_ms,
                 spotify_url="spotify_url",
                 youtube_url=None
             )

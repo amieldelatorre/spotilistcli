@@ -9,7 +9,7 @@ from typing import List, Optional
 from commands.playlist.shared import filter_playlists
 from helpers import time_taken, get_obj_dict
 from log import logger
-from sptfy import Sptfy, get_sptfy, PlaylistWithSongs, PlaylistNoSongs, Song
+from sptfy import Sptfy, get_sptfy, PlaylistWithSongs, PlaylistNoSongs, Song, Album
 from datetime import datetime
 
 from ytmusic import YTM
@@ -145,8 +145,6 @@ def modify_playlists_with_songs_youtube_url(playlists: List[PlaylistWithSongs], 
                     print(f"Added Youtube URL for playlists' songs: {count}/{num_playlists} completed")
         except KeyboardInterrupt:
             interrupt_event.set()
-        finally:
-            return
 
 
 def add_youtube_url_to_songs(playlist: PlaylistWithSongs, ytm: YTM, interrupt_event: threading.Event):
@@ -172,8 +170,16 @@ def preload_youtube_url_cache(ytm: YTM, filename: str, use_unvalidated_url: bool
         for item in data:
             item_songs = item["songs"]
             for item_song in item_songs:
+                album_name = item_song["album"]["name"]
+                album_artists = item_song["album"]["artists"]
+                album_release_date = item_song["album"]["release_date"]
+
                 song_name = item_song["name"]
                 song_artists = item_song["artists"]
+                album = Album(name=album_name, artists=album_artists, release_date=album_release_date)
+                track_number = item_song["track_number"]
+                disc_number = item_song["disc_number"]
+                duration_ms = item_song["duration_ms"]
                 song_spotify_url = item_song["spotify_url"]
                 song_youtube_url = item_song["youtube_url"]
                 song_youtube_url_validated = item_song["youtube_url_validated"]
@@ -182,6 +188,10 @@ def preload_youtube_url_cache(ytm: YTM, filename: str, use_unvalidated_url: bool
                 songs.append(Song(
                     name=song_name,
                     artists=song_artists,
+                    album=album,
+                    track_number=track_number,
+                    disc_number=disc_number,
+                    duration_ms=duration_ms,
                     spotify_url=song_spotify_url,
                     youtube_url=song_youtube_url,
                     youtube_url_validated=song_youtube_url_validated,
