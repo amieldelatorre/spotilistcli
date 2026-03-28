@@ -2,10 +2,8 @@ import os
 import sys
 import click
 import commands
-from helpers import get_parent_dir
 from spotipy.oauth2 import SpotifyOauthError
 from log import logger
-from pathlib import Path
 
 
 @click.group(help="A CLI tool to make a backup of the music you listen to on Spotify. "
@@ -21,10 +19,6 @@ if __name__ == "__main__":
     main.add_command(commands.user_top.user_top)
     main.add_command(commands.validate.validate)
     
-    # parent_dir = get_parent_dir()
-    parent_dir = Path.cwd()
-    os.chdir(parent_dir)
-
     try:
         main()
     except SpotifyOauthError as e:
