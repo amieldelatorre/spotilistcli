@@ -119,7 +119,7 @@ class MainWindow(QMainWindow):
         self.next_song() # Call this here to get the first value from the iterator
 
     def is_valid_button_clicked(self):
-        self.original_playlists = update_validated_song(self.original_playlists, self.current_song_spotify_url, self.output_filename)
+        self.original_playlists = update_validated_song(self.original_playlists, self.current_song_spotify_url, self.current_song_youtube_url, self.output_filename)
         self.next_song()
 
     def skip_button_clicked(self):
@@ -198,7 +198,7 @@ class MainWindow(QMainWindow):
 
         youtube_url = youtube_url.strip()
         self.original_playlists = overwrite_youtube_url(self.original_playlists, self.current_song_spotify_url, youtube_url)
-        self.original_playlists = update_validated_song(self.original_playlists, self.current_song_spotify_url, self.output_filename)
+        self.original_playlists = update_validated_song(self.original_playlists, self.current_song_spotify_url, self.current_song_youtube_url, self.output_filename)
         self.overwrite_entry_input.clear()
         self.next_song()
 
@@ -332,11 +332,12 @@ def get_songs_to_validate_iterator(songs: Dict[str, Song]):
         yield song
 
 
-def update_validated_song(original_playlists: List[PlaylistWithSongs], spotify_url: str, filename: str) -> List[PlaylistWithSongs]:
+def update_validated_song(original_playlists: List[PlaylistWithSongs], spotify_url: str, youtube_url: str, filename: str) -> List[PlaylistWithSongs]:
     for playlist in original_playlists:
         for song in playlist.songs:
-            if song.spotify_url == spotify_url and (song.youtube_url is not None and song.youtube_url.strip() != ""):
+            if song.spotify_url == spotify_url:
                 song.youtube_url_validated = True
+                song.youtube_url = youtube_url
 
     with open(filename, "w") as file:
         file.write(json.dumps(original_playlists, indent=4, default=get_obj_dict))

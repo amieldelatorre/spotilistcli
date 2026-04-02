@@ -353,9 +353,9 @@
         "name": "A Song",
         "spotify_url": "https://example01.invalid",
         "track_number": 1,
-        "youtube_url": "",
+        "youtube_url": "https://music.youtube.com/watch?v=01",
         "youtube_url_permanently_skip": false,
-        "youtube_url_validated": false
+        "youtube_url_validated": true
       },
       {
         "album": {
@@ -418,9 +418,9 @@
         "name": "A Song",
         "spotify_url": "https://example01.invalid",
         "track_number": 1,
-        "youtube_url": null,
+        "youtube_url": "https://music.youtube.com/watch?v=01",
         "youtube_url_permanently_skip": false,
-        "youtube_url_validated": false
+        "youtube_url_validated": true
       },
       {
         "album": {

@@ -247,9 +247,14 @@ def test_update_validated_song():
     tmpdir = tempfile.mkdtemp()
     temp_file = os.path.join(tmpdir, "test.json")
 
-    test_case = ["https://example01.invalid", "https://example02.invalid", "https://example03.invalid"]
-    for valid in test_case:
-        playlists = update_validated_song(playlists, valid, temp_file)
+    test_case = []
+    test_case = {
+        "https://example01.invalid": "https://music.youtube.com/watch?v=01",
+        "https://example02.invalid": "https://music.youtube.com/watch?v=02",
+        "https://example03.invalid": "https://music.youtube.com/watch?v=03",
+    }
+    for spotify_url, youtube_url in test_case.items():
+        playlists = update_validated_song(playlists, spotify_url, youtube_url, temp_file)
 
 
     with open(temp_file) as file:
