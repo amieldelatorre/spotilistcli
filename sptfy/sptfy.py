@@ -98,6 +98,7 @@ class Song:
 class PlaylistNoSongs:
     id: str
     name: str
+    description: str
     total: int
     spotify_playlist_url: str
     owner_spotify_id: str
@@ -113,6 +114,7 @@ class PlaylistWithSongs(PlaylistNoSongs):
     def __init__(self, playlist: PlaylistNoSongs, songs: List[Song]):
         self.id = playlist.id
         self.name = playlist.name
+        self.description = playlist.description
         self.total = playlist.total
         self.spotify_playlist_url = playlist.spotify_playlist_url
         self.owner_spotify_id = playlist.owner_spotify_id
@@ -210,6 +212,7 @@ class Sptfy:
                 playlist = PlaylistNoSongs(
                     id=item['id'],
                     name=item['name'],
+                    description=item['description'],
                     total=item['tracks']['total'],
                     spotify_playlist_url=item['external_urls']['spotify'],
                     owner_spotify_id= item["owner"]["id"]
@@ -303,6 +306,7 @@ class Sptfy:
             PlaylistNoSongs(
                 id="liked_songs",
                 name="Liked Songs",
+                description="Liked Songs",
                 total=len(songs),
                 spotify_playlist_url="None",
                 owner_spotify_id=user_id

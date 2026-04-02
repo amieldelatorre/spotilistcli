@@ -251,6 +251,9 @@ def load_playlists_file(filename: str) -> List[PlaylistWithSongs]:
         playlist_total = item["total"]
         spotify_playlist_url = item["spotify_playlist_url"]
         playlist_owner_id = item["owner_spotify_id"]
+        playlist_description = ""
+        if "description" in item:
+            playlist_description = item["description"]
         songs = []
 
         for item_song in item["songs"]:
@@ -302,6 +305,7 @@ def load_playlists_file(filename: str) -> List[PlaylistWithSongs]:
         playlists.append(PlaylistWithSongs(PlaylistNoSongs(
             id=playlist_id,
             name=playlist_name,
+            description=playlist_description,
             total=playlist_total,
             spotify_playlist_url=spotify_playlist_url,
             owner_spotify_id=playlist_owner_id

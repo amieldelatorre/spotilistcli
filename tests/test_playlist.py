@@ -69,6 +69,7 @@ def test_get_playlist_with_songs(monkeypatch, sptfy_mock):
     playlist_no_song = sptfy.PlaylistNoSongs(
         id="somethingAb1234Af9D9Cb",
         name="A Playlist",
+        description="something something",
         total=347,
         spotify_playlist_url="https://example.invalid",
         owner_spotify_id="111111111111"
@@ -198,6 +199,7 @@ def patch_get_playlist_with_songs(monkeypatch):
     playlist_no_songs = sptfy.PlaylistNoSongs(
         id="somethingAb1234Af9D9Cb",
         name="A Playlist",
+        description="something something",
         total=2,
         spotify_playlist_url="https://example.invalid",
         owner_spotify_id="111111111111"
@@ -295,6 +297,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
         "playlist": sptfy.PlaylistWithSongs(playlist=sptfy.PlaylistNoSongs(
             id="1234",
             name="a playlist",
+            description="something something",
             total=4,
             spotify_playlist_url="https://example.invalid",
             owner_spotify_id="111111111111"
@@ -387,6 +390,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
         "expected": sptfy.PlaylistWithSongs(playlist=sptfy.PlaylistNoSongs(
             id="1234",
             name="a playlist",
+            description="something something",
             total=4,
             spotify_playlist_url="https://example.invalid",
             owner_spotify_id="111111111111"
@@ -486,6 +490,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
         "playlist": sptfy.PlaylistWithSongs(playlist=sptfy.PlaylistNoSongs(
             id="1234",
             name="a playlist",
+            description="something something",
             total=4,
             spotify_playlist_url="https://example.invalid",
             owner_spotify_id="111111111111"
@@ -578,6 +583,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
         "expected": sptfy.PlaylistWithSongs(playlist=sptfy.PlaylistNoSongs(
             id="1234",
             name="a playlist",
+            description="something something",
             total=4,
             spotify_playlist_url="https://example.invalid",
             owner_spotify_id="111111111111"
@@ -803,6 +809,7 @@ def test_preload_youtube_url_cache_with_unvalidated_urls(ytm_mock):
             PlaylistNoSongs(
                 id="A Playlist",
                 name="A Playlist",
+                description="something something",
                 total=2,
                 spotify_playlist_url="https://example.invalid",
                 owner_spotify_id="111111111111"
@@ -810,6 +817,7 @@ def test_preload_youtube_url_cache_with_unvalidated_urls(ytm_mock):
             PlaylistNoSongs(
                 id="A Playlist",
                 name="A Playlist",
+                description="something something",
                 total=2,
                 spotify_playlist_url="https://example.invalid",
                 owner_spotify_id="222222222222"
@@ -821,6 +829,7 @@ def test_preload_youtube_url_cache_with_unvalidated_urls(ytm_mock):
             PlaylistNoSongs(
                 id="A Playlist",
                 name="A Playlist",
+                description="something something",
                 total=2,
                 spotify_playlist_url="https://example.invalid",
                 owner_spotify_id="111111111111"
@@ -828,6 +837,7 @@ def test_preload_youtube_url_cache_with_unvalidated_urls(ytm_mock):
             PlaylistNoSongs(
                 id="A Playlist",
                 name="A Playlist",
+                description="something something",
                 total=2,
                 spotify_playlist_url="https://example.invalid",
                 owner_spotify_id="222222222222"
@@ -839,6 +849,7 @@ def test_preload_youtube_url_cache_with_unvalidated_urls(ytm_mock):
             PlaylistNoSongs(
                 id="A Playlist",
                 name="A Playlist",
+                description="something something",
                 total=2,
                 spotify_playlist_url="https://example.invalid",
                 owner_spotify_id="111111111111"
@@ -846,6 +857,7 @@ def test_preload_youtube_url_cache_with_unvalidated_urls(ytm_mock):
             PlaylistNoSongs(
                 id="A Playlist",
                 name="A Playlist",
+                description="something something",
                 total=2,
                 spotify_playlist_url="https://example.invalid",
                 owner_spotify_id="222222222222"
@@ -857,6 +869,7 @@ def test_preload_youtube_url_cache_with_unvalidated_urls(ytm_mock):
             PlaylistNoSongs(
                 id="A Playlist",
                 name="A Playlist",
+                description="something something",
                 total=2,
                 spotify_playlist_url="https://example.invalid",
                 owner_spotify_id="111111111111"

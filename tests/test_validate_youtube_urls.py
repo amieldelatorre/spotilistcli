@@ -266,6 +266,7 @@ def test_overwrite_youtube_url():
         PlaylistWithSongs(PlaylistNoSongs(
             id="somethingAb1234Af9D9Cb",
             name="A Playlist",
+            description="something something",
             total=2,
             spotify_playlist_url="https://example.invalid",
             owner_spotify_id="111111111111"
@@ -316,6 +317,7 @@ def test_overwrite_youtube_url():
         PlaylistWithSongs(PlaylistNoSongs(
             id="somethingAb1234Af9D9Cb",
             name="A Playlist",
+            description="something something",
             total=2,
             spotify_playlist_url="https://example.invalid",
             owner_spotify_id="111111111111"
@@ -370,6 +372,7 @@ def test_overwrite_youtube_url():
         PlaylistWithSongs(PlaylistNoSongs(
             id="somethingAb1234Af9D9Cb",
             name="A Playlist",
+            description="something something",
             total=2,
             spotify_playlist_url="https://example.invalid",
             owner_spotify_id="111111111111"
@@ -420,6 +423,7 @@ def test_overwrite_youtube_url():
         PlaylistWithSongs(PlaylistNoSongs(
             id="somethingAb1234Af9D9Cb",
             name="A Playlist",
+            description="something something",
             total=2,
             spotify_playlist_url="https://example.invalid",
             owner_spotify_id="111111111111"
