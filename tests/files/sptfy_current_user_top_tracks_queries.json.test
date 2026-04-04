@@ -3,14 +3,20 @@
   "items": [
     {
       "album": {
-        "album_type": "ALBUM",
+        "artists": [
+          {
+            "name": "Artist"
+          }
+        ],
         "images": [
           {
             "height": 640,
             "url": "https://example.invalid",
             "width": 640
           }
-        ]
+        ],
+        "name": "An Album",
+        "release_date": "2001-01-01"
       },
       "artists": [
         {
@@ -26,7 +32,7 @@
       ],
       "available_markets": [],
       "disc_number": 1,
-      "duration_ms": 222222,
+      "duration_ms": 244000,
       "explicit": false,
       "external_urls": {
         "spotify": "https://example.invalid"
@@ -35,33 +41,26 @@
       "id": "somethingAb1234Af9D9Cb",
       "name": "Song Name",
       "popularity": 100,
-      "track": {
-        "album": {
-          "artists": [
-            {
-              "name": "Artist"
-            }
-          ],
-          "name": "An Album",
-          "release_date": "2001-01-01"
-        },
-        "disc_number": 1,
-        "duration_ms": 244000,
-        "track_number": 1
-      },
+      "track_number": 1,
       "type": "track",
       "uri": "spotify:artist:somethingAb1234Af9D9Cb"
     },
     {
       "album": {
-        "album_type": "ALBUM",
+        "artists": [
+          {
+            "name": "Artist"
+          }
+        ],
         "images": [
           {
             "height": 640,
             "url": "https://example.invalid",
             "width": 640
           }
-        ]
+        ],
+        "name": "An Album",
+        "release_date": "2001-01-01"
       },
       "artists": [
         {
@@ -77,7 +76,7 @@
       ],
       "available_markets": [],
       "disc_number": 1,
-      "duration_ms": 222222,
+      "duration_ms": 244000,
       "explicit": false,
       "external_urls": {
         "spotify": "https://example.invalid"
@@ -86,33 +85,26 @@
       "id": "somethingAb1234Af9D9Cb",
       "name": "Song Name",
       "popularity": 100,
-      "track": {
-        "album": {
-          "artists": [
-            {
-              "name": "Artist"
-            }
-          ],
-          "name": "An Album",
-          "release_date": "2001-01-01"
-        },
-        "disc_number": 1,
-        "duration_ms": 244000,
-        "track_number": 1
-      },
+      "track_number": 1,
       "type": "track",
       "uri": "spotify:artist:somethingAb1234Af9D9Cb"
     },
     {
       "album": {
-        "album_type": "ALBUM",
+        "artists": [
+          {
+            "name": "Artist"
+          }
+        ],
         "images": [
           {
             "height": 640,
             "url": "https://example.invalid",
             "width": 640
           }
-        ]
+        ],
+        "name": "An Album",
+        "release_date": "2001-01-01"
       },
       "artists": [
         {
@@ -128,7 +120,7 @@
       ],
       "available_markets": [],
       "disc_number": 1,
-      "duration_ms": 222222,
+      "duration_ms": 244000,
       "explicit": false,
       "external_urls": {
         "spotify": "https://example.invalid"
@@ -137,33 +129,26 @@
       "id": "somethingAb1234Af9D9Cb",
       "name": "Song Name",
       "popularity": 100,
-      "track": {
-        "album": {
-          "artists": [
-            {
-              "name": "Artist"
-            }
-          ],
-          "name": "An Album",
-          "release_date": "2001-01-01"
-        },
-        "disc_number": 1,
-        "duration_ms": 244000,
-        "track_number": 1
-      },
+      "track_number": 1,
       "type": "track",
       "uri": "spotify:artist:somethingAb1234Af9D9Cb"
     },
     {
       "album": {
-        "album_type": "ALBUM",
+        "artists": [
+          {
+            "name": "Artist"
+          }
+        ],
         "images": [
           {
             "height": 640,
             "url": "https://example.invalid",
             "width": 640
           }
-        ]
+        ],
+        "name": "An Album",
+        "release_date": "2001-01-01"
       },
       "artists": [
         {
@@ -179,7 +164,7 @@
       ],
       "available_markets": [],
       "disc_number": 1,
-      "duration_ms": 222222,
+      "duration_ms": 244000,
       "explicit": false,
       "external_urls": {
         "spotify": "https://example.invalid"
@@ -188,33 +173,26 @@
       "id": "somethingAb1234Af9D9Cb",
       "name": "Song Name",
       "popularity": 100,
-      "track": {
-        "album": {
-          "artists": [
-            {
-              "name": "Artist"
-            }
-          ],
-          "name": "An Album",
-          "release_date": "2001-01-01"
-        },
-        "disc_number": 1,
-        "duration_ms": 244000,
-        "track_number": 1
-      },
+      "track_number": 1,
       "type": "track",
       "uri": "spotify:artist:somethingAb1234Af9D9Cb"
     },
     {
       "album": {
-        "album_type": "ALBUM",
+        "artists": [
+          {
+            "name": "Artist"
+          }
+        ],
         "images": [
           {
             "height": 640,
             "url": "https://example.invalid",
             "width": 640
           }
-        ]
+        ],
+        "name": "An Album",
+        "release_date": "2001-01-01"
       },
       "artists": [
         {
@@ -230,7 +208,7 @@
       ],
       "available_markets": [],
       "disc_number": 1,
-      "duration_ms": 222222,
+      "duration_ms": 244000,
       "explicit": false,
       "external_urls": {
         "spotify": "https://example.invalid"
@@ -239,33 +217,26 @@
       "id": "somethingAb1234Af9D9Cb",
       "name": "Song Name",
       "popularity": 100,
-      "track": {
-        "album": {
-          "artists": [
-            {
-              "name": "Artist"
-            }
-          ],
-          "name": "An Album",
-          "release_date": "2001-01-01"
-        },
-        "disc_number": 1,
-        "duration_ms": 244000,
-        "track_number": 1
-      },
+      "track_number": 1,
       "type": "track",
       "uri": "spotify:artist:somethingAb1234Af9D9Cb"
     },
     {
       "album": {
-        "album_type": "ALBUM",
+        "artists": [
+          {
+            "name": "Artist"
+          }
+        ],
         "images": [
           {
             "height": 640,
             "url": "https://example.invalid",
             "width": 640
           }
-        ]
+        ],
+        "name": "An Album",
+        "release_date": "2001-01-01"
       },
       "artists": [
         {
@@ -281,7 +252,7 @@
       ],
       "available_markets": [],
       "disc_number": 1,
-      "duration_ms": 222222,
+      "duration_ms": 244000,
       "explicit": false,
       "external_urls": {
         "spotify": "https://example.invalid"
@@ -290,33 +261,26 @@
       "id": "somethingAb1234Af9D9Cb",
       "name": "Song Name",
       "popularity": 100,
-      "track": {
-        "album": {
-          "artists": [
-            {
-              "name": "Artist"
-            }
-          ],
-          "name": "An Album",
-          "release_date": "2001-01-01"
-        },
-        "disc_number": 1,
-        "duration_ms": 244000,
-        "track_number": 1
-      },
+      "track_number": 1,
       "type": "track",
       "uri": "spotify:artist:somethingAb1234Af9D9Cb"
     },
     {
       "album": {
-        "album_type": "ALBUM",
+        "artists": [
+          {
+            "name": "Artist"
+          }
+        ],
         "images": [
           {
             "height": 640,
             "url": "https://example.invalid",
             "width": 640
           }
-        ]
+        ],
+        "name": "An Album",
+        "release_date": "2001-01-01"
       },
       "artists": [
         {
@@ -332,7 +296,7 @@
       ],
       "available_markets": [],
       "disc_number": 1,
-      "duration_ms": 222222,
+      "duration_ms": 244000,
       "explicit": false,
       "external_urls": {
         "spotify": "https://example.invalid"
@@ -341,33 +305,26 @@
       "id": "somethingAb1234Af9D9Cb",
       "name": "Song Name",
       "popularity": 100,
-      "track": {
-        "album": {
-          "artists": [
-            {
-              "name": "Artist"
-            }
-          ],
-          "name": "An Album",
-          "release_date": "2001-01-01"
-        },
-        "disc_number": 1,
-        "duration_ms": 244000,
-        "track_number": 1
-      },
+      "track_number": 1,
       "type": "track",
       "uri": "spotify:artist:somethingAb1234Af9D9Cb"
     },
     {
       "album": {
-        "album_type": "ALBUM",
+        "artists": [
+          {
+            "name": "Artist"
+          }
+        ],
         "images": [
           {
             "height": 640,
             "url": "https://example.invalid",
             "width": 640
           }
-        ]
+        ],
+        "name": "An Album",
+        "release_date": "2001-01-01"
       },
       "artists": [
         {
@@ -383,7 +340,7 @@
       ],
       "available_markets": [],
       "disc_number": 1,
-      "duration_ms": 222222,
+      "duration_ms": 244000,
       "explicit": false,
       "external_urls": {
         "spotify": "https://example.invalid"
@@ -392,33 +349,26 @@
       "id": "somethingAb1234Af9D9Cb",
       "name": "Song Name",
       "popularity": 100,
-      "track": {
-        "album": {
-          "artists": [
-            {
-              "name": "Artist"
-            }
-          ],
-          "name": "An Album",
-          "release_date": "2001-01-01"
-        },
-        "disc_number": 1,
-        "duration_ms": 244000,
-        "track_number": 1
-      },
+      "track_number": 1,
       "type": "track",
       "uri": "spotify:artist:somethingAb1234Af9D9Cb"
     },
     {
       "album": {
-        "album_type": "ALBUM",
+        "artists": [
+          {
+            "name": "Artist"
+          }
+        ],
         "images": [
           {
             "height": 640,
             "url": "https://example.invalid",
             "width": 640
           }
-        ]
+        ],
+        "name": "An Album",
+        "release_date": "2001-01-01"
       },
       "artists": [
         {
@@ -434,7 +384,7 @@
       ],
       "available_markets": [],
       "disc_number": 1,
-      "duration_ms": 222222,
+      "duration_ms": 244000,
       "explicit": false,
       "external_urls": {
         "spotify": "https://example.invalid"
@@ -443,33 +393,26 @@
       "id": "somethingAb1234Af9D9Cb",
       "name": "Song Name",
       "popularity": 100,
-      "track": {
-        "album": {
-          "artists": [
-            {
-              "name": "Artist"
-            }
-          ],
-          "name": "An Album",
-          "release_date": "2001-01-01"
-        },
-        "disc_number": 1,
-        "duration_ms": 244000,
-        "track_number": 1
-      },
+      "track_number": 1,
       "type": "track",
       "uri": "spotify:artist:somethingAb1234Af9D9Cb"
     },
     {
       "album": {
-        "album_type": "ALBUM",
+        "artists": [
+          {
+            "name": "Artist"
+          }
+        ],
         "images": [
           {
             "height": 640,
             "url": "https://example.invalid",
             "width": 640
           }
-        ]
+        ],
+        "name": "An Album",
+        "release_date": "2001-01-01"
       },
       "artists": [
         {
@@ -485,7 +428,7 @@
       ],
       "available_markets": [],
       "disc_number": 1,
-      "duration_ms": 222222,
+      "duration_ms": 244000,
       "explicit": false,
       "external_urls": {
         "spotify": "https://example.invalid"
@@ -494,20 +437,7 @@
       "id": "somethingAb1234Af9D9Cb",
       "name": "Song Name",
       "popularity": 100,
-      "track": {
-        "album": {
-          "artists": [
-            {
-              "name": "Artist"
-            }
-          ],
-          "name": "An Album",
-          "release_date": "2001-01-01"
-        },
-        "disc_number": 1,
-        "duration_ms": 244000,
-        "track_number": 1
-      },
+      "track_number": 1,
       "type": "track",
       "uri": "spotify:artist:somethingAb1234Af9D9Cb"
     }

@@ -350,10 +350,10 @@ class Sptfy:
             return artists
 
         for item in query["items"]:
-            album = get_album(item)
-            track_number = item["track"]["track_number"]
-            disc_number = item["track"]["disc_number"]
-            duration_ms = item["track"]["duration_ms"]
+            album = get_album({"track":item})
+            track_number = item["track_number"]
+            disc_number = item["disc_number"]
+            duration_ms = item["duration_ms"]
             song = Song(
                 name=item["name"],
                 artists=get_top_tracks_artists(item),
