@@ -75,7 +75,7 @@ def test_get_playlist_content(monkeypatch, sptfy_mock):
 
     monkeypatch.setattr(
         spotipy.Spotify, "playlist_items",
-        lambda self, playlist_id, limit, offset, fields: next(data_iter)
+        lambda self, playlist_id, limit, offset: next(data_iter)
     )
     playlist_items = sptfy_mock.get_playlist_content("something")
 

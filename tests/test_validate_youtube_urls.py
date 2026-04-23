@@ -7,7 +7,7 @@ import pytest
 from commands.validate.youtube_urls import (load_playlists_file, get_songs_to_validate,
                                             get_songs_to_validate_iterator, update_validated_song,
                                             overwrite_youtube_url, is_valid_youtube_music_url)
-from sptfy import Song, PlaylistWithSongs, PlaylistNoSongs, Album, AlbumImage
+from sptfy import Song, PlaylistWithSongs, PlaylistNoSongs, Album, AlbumImage, ExternalIds
 
 
 def test_load_playlists_file():
@@ -41,6 +41,7 @@ def test_get_songs_to_validate():
             track_number=1,
             disc_number=1,
             duration_ms=244000,
+            external_ids=ExternalIds("something", None, None),
             spotify_url="https://example01.invalid",
             youtube_url="https://music.youtube.com/watch?v=01",
             youtube_url_validated=False,
@@ -66,6 +67,7 @@ def test_get_songs_to_validate():
             track_number=1,
             disc_number=1,
             duration_ms=244000,
+            external_ids=ExternalIds("something", None, None),
             spotify_url="https://example02.invalid",
             youtube_url="https://music.youtube.com/watch?v=02",
             youtube_url_validated=False,
@@ -90,6 +92,7 @@ def test_get_songs_to_validate():
             track_number=1,
             disc_number=1,
             duration_ms=244000,
+            external_ids=ExternalIds("something", None, None),
             spotify_url="https://example03.invalid",
             youtube_url="https://music.youtube.com/watch?v=03",
             youtube_url_validated=False,
@@ -114,6 +117,7 @@ def test_get_songs_to_validate():
             track_number=1,
             disc_number=1,
             duration_ms=244000,
+            external_ids=ExternalIds("something", None, None),
             spotify_url="https://example.invalid",
             youtube_url=None,
             youtube_url_validated=False,
@@ -149,6 +153,7 @@ def test_get_songs_to_validate_iterator():
             track_number=1,
             disc_number=1,
             duration_ms=244000,
+            external_ids=ExternalIds("something", None, None),
             spotify_url="https://example01.invalid",
             youtube_url="https://music.youtube.com/watch?v=01",
             youtube_url_validated=False,
@@ -174,6 +179,7 @@ def test_get_songs_to_validate_iterator():
             track_number=1,
             disc_number=1,
             duration_ms=244000,
+            external_ids=ExternalIds("something", None, None),
             spotify_url="https://example02.invalid",
             youtube_url="https://music.youtube.com/watch?v=02",
             youtube_url_validated=False,
@@ -198,6 +204,7 @@ def test_get_songs_to_validate_iterator():
             track_number=1,
             disc_number=1,
             duration_ms=244000,
+            external_ids=ExternalIds("something", None, None),
             spotify_url="https://example03.invalid",
             youtube_url="https://music.youtube.com/watch?v=03",
             youtube_url_validated=False,
@@ -223,6 +230,7 @@ def test_get_songs_to_validate_iterator():
             track_number=1,
             disc_number=1,
             duration_ms=244000,
+            external_ids=ExternalIds("something", None, None),
             spotify_url="https://example.invalid",
             youtube_url="https://music.youtube.com/watch?v=wxyz",
             youtube_url_validated=False,
@@ -294,6 +302,7 @@ def test_overwrite_youtube_url():
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz"
            ),
@@ -315,6 +324,7 @@ def test_overwrite_youtube_url():
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=ExternalIds("something", None, None),
                 spotify_url="https://example2.invalid",
                 youtube_url="https://music.youtube.com/watch?v=abcd"
             )
@@ -345,6 +355,7 @@ def test_overwrite_youtube_url():
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz"
             ),
@@ -366,6 +377,7 @@ def test_overwrite_youtube_url():
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=ExternalIds("something", None, None),
                 spotify_url="https://example2.invalid",
                 youtube_url="https://music.youtube.com/watch?v=abcd"
             )
@@ -400,6 +412,7 @@ def test_overwrite_youtube_url():
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=1234"
             ),
@@ -421,6 +434,7 @@ def test_overwrite_youtube_url():
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=ExternalIds("something", None, None),
                 spotify_url="https://example2.invalid",
                 youtube_url="https://music.youtube.com/watch?v=abcd"
             )
@@ -451,6 +465,7 @@ def test_overwrite_youtube_url():
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=1234"
             ),
@@ -472,6 +487,7 @@ def test_overwrite_youtube_url():
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=ExternalIds("something", None, None),
                 spotify_url="https://example2.invalid",
                 youtube_url="https://music.youtube.com/watch?v=abcd"
             )

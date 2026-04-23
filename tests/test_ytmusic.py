@@ -69,6 +69,7 @@ def test_search_youtube_music(monkeypatch, ytm_mock, test_case):
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=sptfy.ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url=None
             ),
@@ -96,6 +97,7 @@ def test_search_youtube_music(monkeypatch, ytm_mock, test_case):
             track_number=1,
             disc_number=1,
             duration_ms=244000,
+            external_ids=sptfy.ExternalIds("something", None, None),
             spotify_url="https://example.invalid",
             youtube_url=None
         ),
@@ -123,6 +125,7 @@ def test_search_youtube_music(monkeypatch, ytm_mock, test_case):
             track_number=1,
             disc_number=1,
             duration_ms=244000,
+            external_ids=sptfy.ExternalIds("something", None, None),
             spotify_url="https://example.invalid",
             youtube_url=None
         ),
@@ -152,6 +155,7 @@ def test_search_youtube_music(monkeypatch, ytm_mock, test_case):
             track_number=1,
             disc_number=1,
             duration_ms=244000,
+            external_ids=sptfy.ExternalIds("something", None, None),
             spotify_url="https://example.invalid",
             youtube_url=None
         ),

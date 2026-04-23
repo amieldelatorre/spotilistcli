@@ -69,6 +69,19 @@ class Album:
             sort_keys=True
         )
 
+@dataclass
+class ExternalIds:
+    isrc: str
+    ean: str
+    upc: str
+
+    def to_json(self) -> str:
+        return json.dumps(
+            self,
+            default=lambda o: o.__dict__,
+            sort_keys=True
+        )
+
 
 @dataclass
 class Song:
@@ -78,6 +91,7 @@ class Song:
     track_number: Optional[int]
     disc_number: Optional[int]
     duration_ms: Optional[int]
+    external_ids: Optional[ExternalIds]
     spotify_url: str
     youtube_url: Optional[str] = None
     youtube_url_validated: bool = False
@@ -177,6 +191,22 @@ def get_album(song: Dict) -> Album:
     )
 
 
+def get_external_ids(song: Dict) -> Optional[ExternalIds]:
+    if "external_ids" not in song["track"]:
+        return None
+    
+    external_ids_dict = song["track"]["external_ids"]
+    isrc = external_ids_dict["isrc"] if "isrc" in external_ids_dict else None
+    ean = external_ids_dict["ean"] if "ean" in external_ids_dict else None
+    upc = external_ids_dict["upc"] if "upc" in external_ids_dict else None
+
+    return ExternalIds(
+        isrc=isrc,
+        ean=ean,
+        upc=upc
+    )
+
+
 class Sptfy:
     def __init__(self, spotify_client_id, spotify_client_secret, spotify_redirect_uri):
         logger.info(f"Authenticating with spotify")
@@ -232,7 +262,7 @@ class Sptfy:
                 playlist_id=playlist_id,
                 limit=limit,
                 offset=offset,
-                fields="items(track(name,artists(name),album(name,release_date,artists(name),images),track_number,disc_number,duration_ms,external_urls(spotify))),next"
+                # fields="items(track(name,artists(name),album(name,release_date,artists(name),images),track_number,disc_number,duration_ms,external_urls(spotify),external_ids(isrc,ean,upc))),next"
             )
 
             for item in query["items"]:
@@ -245,6 +275,7 @@ class Sptfy:
                 duration_ms = item["track"]["duration_ms"]
                 spotify_url = get_spotify_url(item)
                 spotify_url = spotify_url if spotify_url != "None" else item["track"]["name"] + "---" + ", ".join(artists)
+                external_ids = get_external_ids(item)
                 song = Song(
                     name=item["track"]["name"],
                     artists=artists,
@@ -252,6 +283,7 @@ class Sptfy:
                     track_number=track_number,
                     disc_number=disc_number,
                     duration_ms=duration_ms,
+                    external_ids=external_ids,
                     spotify_url=spotify_url,
                     youtube_url=None
                 )
@@ -284,6 +316,7 @@ class Sptfy:
                 track_number = item["track"]["track_number"]
                 disc_number = item["track"]["disc_number"]
                 duration_ms = item["track"]["duration_ms"]
+                external_ids = get_external_ids(item)
                 spotify_url = get_spotify_url(item)
                 song = Song(
                     name=item["track"]["name"],
@@ -292,6 +325,7 @@ class Sptfy:
                     track_number=track_number,
                     disc_number=disc_number,
                     duration_ms=duration_ms,
+                    external_ids=external_ids,
                     spotify_url=spotify_url,
                     youtube_url=None
                 )
@@ -354,12 +388,14 @@ class Sptfy:
             track_number = item["track_number"]
             disc_number = item["disc_number"]
             duration_ms = item["duration_ms"]
+            external_ids = get_external_ids({"track":item})
             song = Song(
                 name=item["name"],
                 artists=get_top_tracks_artists(item),
                 album=album,
                 track_number=track_number,
                 disc_number=disc_number,
+                external_ids=external_ids,
                 duration_ms=duration_ms,
                 spotify_url="spotify_url",
                 youtube_url=None

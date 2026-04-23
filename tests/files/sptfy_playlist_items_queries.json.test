@@ -26,6 +26,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -58,6 +63,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -90,6 +100,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -122,233 +137,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
           },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            },
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -384,6 +177,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -416,6 +214,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -448,6 +251,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -480,6 +288,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -512,41 +325,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
           },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            },
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -579,6 +362,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -611,838 +399,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
           },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -1478,6 +439,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -1510,6 +476,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -1542,41 +513,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
           },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            },
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -1609,6 +550,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -1641,38 +587,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
           },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -1708,6 +627,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -1740,6 +664,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -1772,6 +701,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -1804,41 +738,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
           },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            },
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -1871,6 +775,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -1903,41 +812,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
           },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            },
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -1970,6 +849,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2002,6 +886,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2034,6 +923,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2066,6 +960,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2098,6 +997,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2130,6 +1034,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2162,6 +1071,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2194,6 +1108,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2226,6 +1145,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2258,6 +1182,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2290,6 +1219,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2322,6 +1256,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2354,6 +1293,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2386,6 +1330,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2418,6 +1367,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2450,6 +1404,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2482,6 +1441,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2514,6 +1478,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2546,6 +1515,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2578,6 +1552,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2610,6 +1589,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2642,6 +1626,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2674,265 +1663,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
           },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            },
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -2968,6 +1703,85 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -3003,6 +1817,122 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -3038,6 +1968,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -3070,6 +2005,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -3102,6 +2042,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -3134,70 +2079,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
           },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -3233,6 +2119,1620 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            },
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            },
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            },
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            },
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            },
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            },
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -3273,6 +3773,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -3305,6 +3810,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -3337,6 +3847,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -3369,108 +3884,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
           },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            },
-            {
-              "name": "artist"
-            },
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -3509,6 +3927,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -3541,6 +3964,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -3573,929 +4001,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
           },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            },
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            },
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            },
-            {
-              "name": "artist"
-            },
-            {
-              "name": "artist"
-            },
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            },
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            },
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            },
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
-          },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            },
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -4534,6 +4044,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -4566,6 +4081,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -4598,6 +4118,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -4630,41 +4155,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
           },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            },
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -4697,38 +4192,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
-          "external_urls": {
-            "spotify": "https://example.invalid"
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
           },
-          "name": "A Track",
-          "track_number": 1
-        }
-      },
-      {
-        "track": {
-          "album": {
-            "artists": [
-              {
-                "name": "Artist"
-              }
-            ],
-            "images": [
-              {
-                "height": 640,
-                "url": "https://example.invalid",
-                "width": 640
-              }
-            ],
-            "name": "An Album",
-            "release_date": "2001-01-01"
-          },
-          "artists": [
-            {
-              "name": "artist"
-            }
-          ],
-          "disc_number": 1,
-          "duration_ms": 244000,
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -4764,6 +4232,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -4796,6 +4269,51 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            },
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -4828,6 +4346,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -4860,6 +4383,11 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },
@@ -4892,6 +4420,1228 @@
           ],
           "disc_number": 1,
           "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            },
+            {
+              "name": "artist"
+            },
+            {
+              "name": "artist"
+            },
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            },
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            },
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            },
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            },
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            },
+            {
+              "name": "artist"
+            },
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            },
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            },
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
+          "external_urls": {
+            "spotify": "https://example.invalid"
+          },
+          "name": "A Track",
+          "track_number": 1
+        }
+      },
+      {
+        "track": {
+          "album": {
+            "artists": [
+              {
+                "name": "Artist"
+              }
+            ],
+            "images": [
+              {
+                "height": 640,
+                "url": "https://example.invalid",
+                "width": 640
+              }
+            ],
+            "name": "An Album",
+            "release_date": "2001-01-01"
+          },
+          "artists": [
+            {
+              "name": "artist"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 244000,
+          "external_ids": {
+            "ean": null,
+            "isrc": "something",
+            "upc": null
+          },
           "external_urls": {
             "spotify": "https://example.invalid"
           },

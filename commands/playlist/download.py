@@ -9,7 +9,7 @@ from typing import List, Optional
 from commands.playlist.shared import filter_playlists
 from helpers import time_taken, get_obj_dict
 from log import logger
-from sptfy import Sptfy, get_sptfy, PlaylistWithSongs, PlaylistNoSongs, Song, Album, AlbumImage
+from sptfy import Sptfy, get_sptfy, PlaylistWithSongs, PlaylistNoSongs, Song, Album, AlbumImage, ExternalIds
 from datetime import datetime
 
 from ytmusic import YTM
@@ -190,6 +190,17 @@ def preload_youtube_url_cache(ytm: YTM, filename: str, use_unvalidated_url: bool
                 if "duration_ms" in item_song:
                     duration_ms = item_song["duration_ms"]
 
+                external_ids = None
+                if "external_ids" in item_song:
+                    isrc = item_song["external_ids"]["isrc"] if "isrc" in item_song["external_ids"] else None
+                    ean = item_song["external_ids"]["ean"] if "ean" in item_song["external_ids"] else None
+                    upc = item_song["external_ids"]["upc"] if "upc" in item_song["external_ids"] else None
+                    external_ids = ExternalIds(
+                        isrc=isrc,
+                        ean=ean,
+                        upc=upc
+                    )
+
                 song_name = item_song["name"]
                 song_artists = item_song["artists"]
                 song_spotify_url = item_song["spotify_url"]
@@ -204,6 +215,7 @@ def preload_youtube_url_cache(ytm: YTM, filename: str, use_unvalidated_url: bool
                     track_number=track_number,
                     disc_number=disc_number,
                     duration_ms=duration_ms,
+                    external_ids=external_ids,
                     spotify_url=song_spotify_url,
                     youtube_url=song_youtube_url,
                     youtube_url_validated=song_youtube_url_validated,

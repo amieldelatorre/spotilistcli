@@ -63,7 +63,7 @@ def test_get_playlist_with_songs(monkeypatch, sptfy_mock):
 
     monkeypatch.setattr(
         spotipy.Spotify, "playlist_items",
-        lambda self, playlist_id, limit, offset, fields: next(data_iter)
+        lambda self, playlist_id, limit, offset: next(data_iter)
     )
 
     playlist_no_song = sptfy.PlaylistNoSongs(
@@ -127,7 +127,7 @@ def test_show_playlist(monkeypatch, capfd, sptfy_mock,
 
     monkeypatch.setattr(
         spotipy.Spotify, "playlist_items",
-        lambda self, playlist_id, limit, offset, fields: next(data_iter)
+        lambda self, playlist_id, limit, offset: next(data_iter)
     )
 
     monkeypatch.setattr(
@@ -224,6 +224,7 @@ def patch_get_playlist_with_songs(monkeypatch):
             track_number=1,
             disc_number=1,
             duration_ms=244000,
+            external_ids=sptfy.ExternalIds("something", None, None),
             spotify_url="https://example.invalid",
             youtube_url=None
         ),
@@ -245,6 +246,7 @@ def patch_get_playlist_with_songs(monkeypatch):
             track_number=1,
             disc_number=1,
             duration_ms=244000,
+            external_ids=sptfy.ExternalIds("something", None, None),
             spotify_url="https://example.invalid",
             youtube_url=None
         )
@@ -288,6 +290,9 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
     with open("tests/files/expected_download_playlist.json.test") as file:
         expected = json.load(file)
 
+    with open("actual", "w") as f:
+        f.write(json.dumps(actual, indent=2, sort_keys=True))
+
     assert actual == expected
 
 
@@ -319,6 +324,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=sptfy.ExternalIds("something", None, None),
                 artists=["Artist"],
                 spotify_url="https://example.invalid",
                 youtube_url=None
@@ -341,6 +347,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=sptfy.ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url=None
             ),
@@ -362,6 +369,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=sptfy.ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url=None
             ),
@@ -383,6 +391,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=sptfy.ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url=None
             ),
@@ -413,6 +422,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=sptfy.ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz",
                 youtube_url_validated=False
@@ -435,6 +445,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=sptfy.ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz",
                 youtube_url_validated=False
@@ -457,6 +468,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=sptfy.ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz",
                 youtube_url_validated=False
@@ -479,6 +491,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=sptfy.ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz",
                 youtube_url_validated=False
@@ -513,6 +526,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=sptfy.ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url=None
             ),
@@ -534,6 +548,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=sptfy.ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url=None
             ),
@@ -555,6 +570,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=sptfy.ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url=None
             ),
@@ -576,6 +592,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=sptfy.ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url=None
             ),
@@ -606,6 +623,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=sptfy.ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz",
                 youtube_url_validated=True
@@ -628,6 +646,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=sptfy.ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz",
                 youtube_url_validated=True
@@ -650,6 +669,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=sptfy.ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz",
                 youtube_url_validated=True
@@ -672,6 +692,7 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
                 track_number=1,
                 disc_number=1,
                 duration_ms=244000,
+                external_ids=sptfy.ExternalIds("something", None, None),
                 spotify_url="https://example.invalid",
                 youtube_url="https://music.youtube.com/watch?v=wxyz",
                 youtube_url_validated=True
