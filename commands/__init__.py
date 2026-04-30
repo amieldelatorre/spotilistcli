@@ -3,3 +3,4 @@ import commands.configure
 import commands.playlist
 import commands.user_top
 import commands.validate
+import commands.scrobble

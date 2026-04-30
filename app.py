@@ -18,6 +18,7 @@ if __name__ == "__main__":
     main.add_command(commands.playlist.playlist)
     main.add_command(commands.user_top.user_top)
     main.add_command(commands.validate.validate)
+    main.add_command(commands.scrobble.scrobble)
     
     try:
         main()

@@ -228,6 +228,14 @@ class Sptfy:
     def auth(self) -> bool:
         self.spotify.current_user()
         return True
+    
+    def get_track(self, id: str) -> Dict:
+        logger.debug(f"Retrieving track with id '{id}'")
+        return self.spotify.track(id)
+    
+    def get_tracks(self, ids: List[str]) -> Dict:
+        logger.debug(f"Retrieving tracks")
+        return self.spotify.tracks(ids)["tracks"]
 
     def get_all_playlists_no_songs(self, limit=50, offset=0) -> List[PlaylistNoSongs]:
         logger.info(f"Retrieving all playlists")
