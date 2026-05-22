@@ -198,7 +198,7 @@ class MainWindow(QMainWindow):
 
         youtube_url = youtube_url.strip()
         self.original_playlists = overwrite_youtube_url(self.original_playlists, self.current_song_spotify_url, youtube_url)
-        self.original_playlists = update_validated_song(self.original_playlists, self.current_song_spotify_url, self.current_song_youtube_url, self.output_filename)
+        self.original_playlists = update_validated_song(self.original_playlists, self.current_song_spotify_url, youtube_url, self.output_filename)
         self.overwrite_entry_input.clear()
         self.next_song()
 
