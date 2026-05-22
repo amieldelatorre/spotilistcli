@@ -290,9 +290,6 @@ def test_download_playlists(monkeypatch, capfd, sptfy_mock,
     with open("tests/files/expected_download_playlist.json.test") as file:
         expected = json.load(file)
 
-    with open("actual", "w") as f:
-        f.write(json.dumps(actual, indent=2, sort_keys=True))
-
     assert actual == expected
 
 
